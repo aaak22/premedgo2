@@ -22036,6 +22036,13 @@ div.tagsinput span.tag a {
   font-family: "nunitobold";
   src: url("../../fonts/Nunito/Nunito-Bold.ttf");
 }
+body .navbar, body .navbar-brand-wrapper, body .navbar-menu-wrapper {
+  background-color: #F3F4F4 !important;
+}
+body .page-body-wrapper .main-panel .content-wrapper {
+  background-color: #F3F4F4;
+}
+
 .bg-login-left {
   background-color: #E1E7F5;
 }
@@ -22195,6 +22202,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #10E4BE;
 }
 
+.sidebar {
+  background-color: #F3F4F4;
+}
+
+.sidebar-icon-only .sidebar .nav .nav-item .nav-link img.menu-icon {
+  margin-right: 0;
+}
+.sidebar-icon-only .sidebar .nav .nav-item .nav-link svg {
+  display: none;
+}
 .sidebar-icon-only .logotext {
   display: none;
 }/*# sourceMappingURL=style.css.map */

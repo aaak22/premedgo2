@@ -23,7 +23,18 @@
     font-family: 'nunitobold';
     src: url('../../fonts/Nunito/Nunito-Bold.ttf');
 }
-
+body {
+    .navbar, .navbar-brand-wrapper, .navbar-menu-wrapper {
+        background-color: $portalBackground !important;
+    }
+    .page-body-wrapper {
+        .main-panel {
+            .content-wrapper {
+                background-color: $portalBackground;
+            }
+        }
+    }
+}
 .bg-login-left {
     background-color: $login-bg-left;
 }
@@ -170,7 +181,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
         color: $headingBorder;
     }
 }
+
+
+.sidebar {
+    background-color: $portalBackground;
+}
+
 .sidebar-icon-only{
+    .sidebar .nav .nav-item .nav-link img.menu-icon{
+        margin-right: 0;
+    }
+    
+    .sidebar .nav .nav-item .nav-link svg{
+        display: none;
+    }
+     
     .logotext{
         display: none;
     }

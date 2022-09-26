@@ -22212,6 +22212,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link svg {
   display: none;
 }
-.sidebar-icon-only .logotext {
+.sidebar-icon-only .brand-logo {
+  display: none;
+}
+.sidebar-icon-only .sidebar .nav .nav-item.active .nav-link:before {
+  display: none;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler img {
+  display: none;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
+  transform: rotate(360deg);
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) img {
+  display: block;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) svg {
   display: none;
 }/*# sourceMappingURL=style.css.map */

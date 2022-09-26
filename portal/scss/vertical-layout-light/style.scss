@@ -196,7 +196,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
         display: none;
     }
      
-    .logotext{
+    .brand-logo {
         display: none;
+    }
+    .sidebar .nav .nav-item.active .nav-link:before{
+        display: none;
+    }
+    .navbar .navbar-brand-wrapper .navbar-toggler img{
+        display: none;
+    }
+    .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right){
+        transform: rotate(360deg);
+        img{
+            display: block;
+        }
+        svg{
+            display: none;
+        }
     }
 }

@@ -1,0 +1,156 @@
+@import "../common/light/common";
+@import "variables";
+@import "vertical-wrapper";
+@import "sidebar";
+@import "navbar";
+@import "layouts";
+@import "settings-panel";
+
+
+@font-face {
+    font-family: 'nunitomedium';
+    src: url('../../fonts/Nunito/Nunito-Black.ttf');
+}
+@font-face {
+    font-family: 'nunitoregular';
+    src: url('../../fonts/Nunito/Nunito-Regular.ttf');
+}
+@font-face {
+    font-family: 'nunitosemibold';
+    src: url('../../fonts/Nunito/Nunito-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'nunitobold';
+    src: url('../../fonts/Nunito/Nunito-Bold.ttf');
+}
+
+.bg-login-left {
+    background-color: $login-bg-left;
+}
+.fw-bold{
+    font-family: 'nunitobold';
+}
+
+.btn{
+    font-size: 18px;
+    border-radius: 10px;
+    height: 48px;
+
+    &.btn-small{
+        min-width: 140px;
+    }
+    &.btn-large{
+        min-width: 260px;
+    }
+}
+
+.btn-primary{
+    background-color: $primarybtn;
+    color: $white;
+
+    &:hover{
+        color: $white;
+        background-color: $primarybtnhover;
+    }
+}
+
+.btn-secondary{
+    color: $secondarybtn;
+    background-color: transparent;
+    border: 1px solid $secondarybtn;
+
+    &:hover{
+        color: $white;
+        background-color: $primarybtn;
+        border: 1px solid $primarybtn;
+    }
+}
+
+.defaultLink{
+    color: $primarybtn;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    min-width: 98px;
+    width: fit-content;
+    i{
+        position: absolute;
+        transition: ease-in-out 0.5s all;
+        right: -15px;
+    }
+    &:hover{
+        i{
+            transition: ease-in-out 0.5s all;
+            right: -22px;
+        }
+    }
+}
+
+.text-Primary{
+    color: $primarybtn;
+}
+.text-Black{
+    color: $textColorBlack;
+}
+.privacyLink{
+    color: $privacyLink;
+}
+.banHeading{
+    font-size: 45px;
+    font-weight: 600;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.headingWidthBorder{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+    width: fit-content;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: $headingBorder;
+        border-radius: 15px;
+        height: 3px;
+        width: 108px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.subHeading{
+    font-size: 22px;
+    font-family: 'nunitosemibold';
+}
+.paraText{
+    font-size: 18px;
+    font-weight: 600;
+}
+.subCTA{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.headerTextR{
+    font-size: 16px;
+    font-weight: 300;
+}
+.headerTextM{
+    font-size: 16px;
+    font-weight: 600;
+}
+.headerTextB{
+    font-size: 16px;
+    font-weight: 900;
+}
+.smallText{
+    font-size: 14px;
+}
+
+.frgtpswd{
+    margin-top: -10%;
+}

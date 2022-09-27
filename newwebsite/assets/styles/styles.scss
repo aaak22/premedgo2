@@ -1,0 +1,438 @@
+@import './bootstrap/bootstrap';
+@import './customvariables';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("./flickity.min.css");
+
+
+@font-face {
+    font-family: 'nunitomedium';
+    src: url('../fonts/Nunito-Black.ttf');
+}
+@font-face {
+    font-family: 'nunitoregular';
+    src: url('../fonts/Nunito-Regular.ttf');
+}
+@font-face {
+    font-family: 'nunitosemibold';
+    src: url('../fonts/Nunito-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'nunitobold';
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+body{
+    font-family: 'nunitoregular';
+    font-size: 16px;
+    background-color: $bgPageBaseColor;
+}
+section{
+    background-color: $bgPageBaseColor;
+}
+
+.btn{
+    font-size: 18px;
+    border-radius: 10px;
+    height: 48px;
+
+    &.btn-small{
+        min-width: 140px;
+    }
+    &.btn-large{
+        min-width: 260px;
+    }
+}
+
+.btn-primary{
+    background-color: $primarybtn;
+    color: $white;
+
+    &:hover{
+        color: $white;
+        background-color: $primarybtnhover;
+    }
+}
+
+.btn-secondary{
+    color: $secondarybtn;
+    background-color: transparent;
+    border: 1px solid $secondarybtn;
+
+    &:hover{
+        color: $white;
+        background-color: $primarybtn;
+        border: 1px solid $primarybtn;
+    }
+}
+
+.defaultLink{
+    color: $primarybtn;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    min-width: 98px;
+    width: fit-content;
+    i{
+        position: absolute;
+        transition: ease-in-out 0.5s all;
+        right: -15px;
+    }
+    &:hover{
+        i{
+            transition: ease-in-out 0.5s all;
+            right: -22px;
+        }
+    }
+}
+.sec-banner{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    &.homeBanner{
+        background-image: url('../images/homepagebanner.png');
+    }
+    &.aboutBanner{
+        background-image: url('../images/bannerabout.png');
+    }
+    &.providerBanner{
+        background-image: url('../images/providerbanner.png');
+    }
+    &.providerFormBanner{
+        background-image: url('../images/providerbanner.png');
+    }
+    &.privacyBanner{
+        background-color: $bgfooter;
+        height: 400px;
+    }
+}
+
+.text-Primary{
+    color: $primarybtn;
+}
+.text-Black{
+    color: $textColorBlack;
+}
+.banHeading{
+    font-size: 45px;
+    font-weight: 600;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.headingWidthBorder{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+    width: fit-content;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: $headingBorder;
+        border-radius: 15px;
+        height: 3px;
+        width: 108px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.subHeading{
+    font-size: 22px;
+    font-family: 'nunitosemibold';
+}
+.paraText{
+    font-size: 18px;
+    font-weight: 600;
+}
+.subCTA{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.headerTextR{
+    font-size: 16px;
+    font-weight: 300;
+}
+.headerTextM{
+    font-size: 16px;
+    font-weight: 600;
+}
+.headerTextB{
+    font-size: 16px;
+    font-weight: 900;
+}
+.smallText{
+    font-size: 14px;
+}
+.bgGray{
+    background-color: $bgGray;
+}
+.bgLightBlue{
+    background-color: $bglightBlue;
+}
+.bgaboutBlue{
+    background: transparent linear-gradient(180deg, #E1E7F5 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+}
+.iconblue{
+    filter: invert(26%) sepia(92%) saturate(2186%) hue-rotate(224deg) brightness(100%) contrast(88%);
+}
+.privacyLink{
+    color: $privacyLink;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: $primarybtn;
+    }
+}
+header{
+    .navbar{
+        background: transparent linear-gradient(180deg, #0E0E5296 0%, #09093442 51%, #03031000 100%) 0% 0% no-repeat padding-box;
+        transition: all linear 0.3s;
+        .nav-item{
+            .nav-link {
+                width: 140px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                &:hover{
+                   color: $headingBorder !important;
+                }
+            }
+            &.active{
+                color: $headingBorder;
+                .nav-link {
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        height: 6px;
+                        width: 6px;
+                        border-radius: 50%;
+                        background-color: #10E4BE;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        &.sticky{
+            background-color: $bgfooter;
+        }
+    }
+}
+
+.grayBoxCont{
+    padding: 22px 35px;
+}
+
+.iconCont{
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    background-color: $bgIconGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+// .faq-sec{
+//     .accordion-button{
+//         &::after{
+//             content: '\F4FE';
+//             background-image: none;
+//             display: inline-block;
+//             font-family: bootstrap-icons !important;
+//             font-style: normal;
+//             font-weight: normal !important;
+//             font-variant: normal;
+//             text-transform: none;
+//             line-height: 1;
+//             vertical-align: -0.125em;
+//         }
+//     }
+// }
+.subLetterCont{
+    background-image: url('../images/newsletter.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.newsletterInputField{
+    background-color: $white;
+    padding: 0.25rem;
+    border-radius: 10px;
+
+    .newsletterButton{
+        border-radius: 10px !important;
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: $bgfooter;
+    .footerlinks{
+        display: block;
+        color: $white;
+        font-size: 18px;
+        line-height: 33px;
+        text-decoration: none;
+    }
+}
+
+.bgblueShadowbox{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 30px #4162EF3B;
+    border-radius: 10px;
+    padding: 48px 24px;
+}
+
+.about{
+    &-mob-img{
+        @media (min-width: 768px) {
+            margin-top: -10%;
+            margin-left: -5%;
+        }
+    }
+}
+.providerList{
+    list-style: none;
+    li{
+        color: $textColorBlack;
+        padding-left: 3rem;
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+
+        @media (min-width: 768px) {
+            margin-bottom: 3rem;
+        }
+        &::before{
+            content: "";  
+            background-color: $primarybtn;
+            display: inline-block;
+            height: 0.8rem;
+            width: 0.8rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+    }
+}
+
+.accordion{
+    .accordion-header{
+        .accordion-button{
+            font-family: 18px;
+            font-weight: 700;
+
+            &::after{
+                content: '\F64D';
+                background-image: none;
+                display: inline-block;
+                font-family: bootstrap-icons !important;
+                font-style: normal;
+                font-weight: normal !important;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                vertical-align: -0.125em;
+            }
+
+            &:not(.collapsed){
+                background-color: transparent;
+
+                &::after{
+                    content: '\F63B';
+                }
+            }
+        }
+    }
+}
+.form-label{
+    color: #5D5D5D;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.main-carousel{
+    .carousel-cell{
+        &-inner{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-cont{
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+                transform: scale(0.8);
+                img{
+                    height: auto;
+                    width: 900px;
+                    transition: linear 0.5s all;
+                    border-radius: 10px;
+                    @include media-breakpoint-down(md){
+                        height: 400px;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-color: rgba(43, 71, 145, 0.5);
+                    z-index: 0;
+                    border-radius: 10px;
+                }
+            }
+            
+            .text-cont{
+                transform: scale(0.7);
+                color: white;
+                background-color: rgba(255, 255, 255, 0.2);
+                padding: 2rem 1rem;
+                position: absolute;
+                bottom: 10%;
+                left: auto;
+                right: auto;
+                max-width: 80%;
+                margin: auto;
+                border-radius: 10px;
+                z-index: 20;
+                backdrop-filter: blur(16px);
+                p{ 
+                    color: $white; 
+                }
+            }
+        }
+
+        &.is-selected{
+            .carousel-cell-inner{
+                .img-cont{
+                    z-index: 10;
+                    transform: scale(1);
+                }
+                .text-cont{
+                    transform: scale(1);
+                }
+            }
+        }
+
+    }
+}

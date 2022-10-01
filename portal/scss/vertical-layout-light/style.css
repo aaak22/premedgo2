@@ -22229,4 +22229,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) svg {
   display: none;
+}
+
+.progressBar {
+  color: #001737;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+.progressBar::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: -15px;
+  top: 10px;
+}
+.progressBar.totApp::before {
+  background-color: #727272;
+}
+.progressBar.outApp::before {
+  background-color: #ADADAD;
 }/*# sourceMappingURL=style.css.map */

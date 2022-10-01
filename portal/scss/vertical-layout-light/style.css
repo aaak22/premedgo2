@@ -22206,6 +22206,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: #F3F4F4;
 }
 
+.navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
+  transform: none;
+}
+
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link img.menu-icon {
   margin-right: 0;
 }
@@ -22222,12 +22226,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: none;
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
-  transform: rotate(360deg);
+  transform: none;
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) img {
   display: block;
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) svg {
+  display: none;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper {
+  padding: 0;
+  background-color: #fff;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper .logotext {
   display: none;
 }
 

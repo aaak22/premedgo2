@@ -186,8 +186,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
 .sidebar {
     background-color: $portalBackground;
 }
-
-.sidebar-icon-only{
+.navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right){
+    transform: none;
+}
+.sidebar-icon-only {
     .sidebar .nav .nav-item .nav-link img.menu-icon{
         margin-right: 0;
     }
@@ -205,8 +207,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
     .navbar .navbar-brand-wrapper .navbar-toggler img{
         display: none;
     }
+    
     .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right){
-        transform: rotate(360deg);
+        transform: none;
         img{
             display: block;
         }
@@ -214,6 +217,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
             display: none;
         }
     }
+    .navbar{
+        .navbar-brand-wrapper{
+            padding: 0;
+            background-color: #fff;
+
+            .logotext{
+                display: none;
+            }
+        }
+    } 
 }
 .progressBar{
     color: $progressBarText;

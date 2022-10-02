@@ -48,7 +48,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
 .btn{
     font-size: 18px;
     border-radius: 10px;
-    height: 48px;
+    border-radius: 5px;
+    padding: 12px 24px;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 
     &.btn-small{
         min-width: 140px;
@@ -56,17 +59,27 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
     &.btn-large{
         min-width: 260px;
     }
-}
-
-.btn-primary{
-    background-color: $primarybtn;
-    color: $white;
-
-    &:hover{
+    &.btn-primary{
+        background-color: $primarybtn;
         color: $white;
-        background-color: $primarybtnhover;
+    
+        &:hover{
+            color: $white;
+            background-color: $primarybtnhover;
+        }
+    }
+    &.btn-secondary{
+        background-color: $imgBackgroundColor;
+        border-color: $imgBackgroundColor;
+        color: $privacyLink;
+
+        &:hover{
+            color: $white;
+            background-color: $primarybtnhover;
+        }
     }
 }
+
 
 .btn-secondary{
     color: $secondarybtn;
@@ -252,4 +265,139 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
             background-color: #ADADAD;
         }
     }
+}
+
+.account-settings{
+    &.nav-pills{
+        border: 0;
+
+        .nav-item{
+            .nav-link{
+                background-color: transparent;
+                padding: 7px 20px;
+                border: 0;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                color: $privacyLink;
+                img{
+                    width: 14px;
+                    height: 14px;
+                    margin-right: 0.25rem;
+                }
+
+                &.active{
+                    background-color: $primarybtn;
+                    color: $white;
+
+                    img{
+                        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(118deg) brightness(200%) contrast(101%);
+                    }
+                }
+            }
+        }
+    }
+}
+.set-price-tabs{
+    &.nav-tabs {
+        border: 0;
+
+        .nav-item{
+            .nav-link{
+                background-color: transparent;
+                padding: 0;
+                padding-right: 10rem;
+                font-size: 20px;
+                border: 0;
+                border-radius: 0;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: $privacyLink;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-right: 10rem;
+
+                &.active{
+                    background-color: transparent;
+                    color: $primarybtn;
+                    border-bottom: 1px solid $primarybtn;
+                }
+            }
+        }
+    }
+}
+
+.uploadProfilePicCont{
+    .imgCont{
+        background-color: $imgBackgroundColor;
+        width: 150px;
+        height: 130px;
+        position: relative;
+
+        img{
+            position: absolute;
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.form-group{
+    label{
+        margin-bottom: 5px;
+    }
+    .form-control{
+        padding: 13px 19px;
+
+        &::placeholder{
+            color: $placeholderColor;
+        }
+    }
+}
+.borderBottomGrey{
+    border-bottom: 1px solid $tableBorderColor;
+}
+
+table {
+    &.securityTable{
+        thead,tbody{
+            th,td{
+                color: $privacyLink;
+            }
+        }
+    
+        & > :not(:last-child) > :last-child > *{
+            border-bottom-color: $tableBorderColor !important;
+        }
+        tr{
+            border-bottom: 1px solid $tableBorderColor;
+        }
+        tbody{
+            tr{
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+    &.notificationTable{
+        thead,tbody{
+            th,td{
+                color: $privacyLink;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+        tr{
+            &:last-child{
+                border-bottom: 1px solid $tableBorderColor;
+            }
+        }
+    }
+}
+.form-select{
+    font-size: 18px;
+    border-color: $selectBorderColor;
 }

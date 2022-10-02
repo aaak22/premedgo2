@@ -22058,7 +22058,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .btn, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel {
   font-size: 18px;
   border-radius: 10px;
-  height: 48px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .btn.btn-small, .ajax-upload-dragdrop .btn-small.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-small.swal2-styled {
   min-width: 140px;
@@ -22066,12 +22069,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .btn.btn-large, .ajax-upload-dragdrop .btn-large.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-large.swal2-styled {
   min-width: 260px;
 }
-
-.btn-primary {
+.btn.btn-primary, .ajax-upload-dragdrop .btn-primary.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-primary.swal2-styled {
   background-color: #4162ef;
   color: #ffffff;
 }
-.btn-primary:hover {
+.btn.btn-primary:hover, .ajax-upload-dragdrop .btn-primary.ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .btn-primary.swal2-styled:hover {
+  color: #ffffff;
+  background-color: #2848CE;
+}
+.btn.btn-secondary, .ajax-upload-dragdrop .btn-secondary.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-secondary.swal2-styled {
+  background-color: #E8E8E8;
+  border-color: #E8E8E8;
+  color: #5D5D5D;
+}
+.btn.btn-secondary:hover, .ajax-upload-dragdrop .btn-secondary.ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .btn-secondary.swal2-styled:hover {
   color: #ffffff;
   background-color: #2848CE;
 }
@@ -22262,4 +22273,117 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .progressBar.outApp::before {
   background-color: #ADADAD;
+}
+
+.account-settings.nav-pills {
+  border: 0;
+}
+.account-settings.nav-pills .nav-item .nav-link {
+  background-color: transparent;
+  padding: 7px 20px;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: #5D5D5D;
+}
+.account-settings.nav-pills .nav-item .nav-link img {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.25rem;
+}
+.account-settings.nav-pills .nav-item .nav-link.active {
+  background-color: #4162ef;
+  color: #ffffff;
+}
+.account-settings.nav-pills .nav-item .nav-link.active img {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(118deg) brightness(200%) contrast(101%);
+}
+
+.set-price-tabs.nav-tabs {
+  border: 0;
+}
+.set-price-tabs.nav-tabs .nav-item .nav-link {
+  background-color: transparent;
+  padding: 0;
+  padding-right: 10rem;
+  font-size: 20px;
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #5D5D5D;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10rem;
+}
+.set-price-tabs.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  color: #4162ef;
+  border-bottom: 1px solid #4162ef;
+}
+
+.uploadProfilePicCont .imgCont {
+  background-color: #E8E8E8;
+  width: 150px;
+  height: 130px;
+  position: relative;
+}
+.uploadProfilePicCont .imgCont img {
+  position: absolute;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+.form-group .form-control, .form-group .asColorPicker-input, .form-group .dataTables_wrapper select, .dataTables_wrapper .form-group select, .form-group .select2-container--default .select2-selection--single, .select2-container--default .form-group .select2-selection--single, .form-group .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .form-group .select2-search__field, .form-group .typeahead,
+.form-group .tt-query,
+.form-group .tt-hint {
+  padding: 13px 19px;
+}
+.form-group .form-control::-moz-placeholder, .form-group .asColorPicker-input::-moz-placeholder, .form-group .dataTables_wrapper select::-moz-placeholder, .dataTables_wrapper .form-group select::-moz-placeholder, .form-group .select2-container--default .select2-selection--single::-moz-placeholder, .select2-container--default .form-group .select2-selection--single::-moz-placeholder, .form-group .select2-container--default .select2-selection--single .select2-search__field::-moz-placeholder, .select2-container--default .select2-selection--single .form-group .select2-search__field::-moz-placeholder, .form-group .typeahead::-moz-placeholder, .form-group .tt-query::-moz-placeholder, .form-group .tt-hint::-moz-placeholder {
+  color: #A0A0A0;
+}
+.form-group .form-control:-ms-input-placeholder, .form-group .asColorPicker-input:-ms-input-placeholder, .form-group .dataTables_wrapper select:-ms-input-placeholder, .dataTables_wrapper .form-group select:-ms-input-placeholder, .form-group .select2-container--default .select2-selection--single:-ms-input-placeholder, .select2-container--default .form-group .select2-selection--single:-ms-input-placeholder, .form-group .select2-container--default .select2-selection--single .select2-search__field:-ms-input-placeholder, .select2-container--default .select2-selection--single .form-group .select2-search__field:-ms-input-placeholder, .form-group .typeahead:-ms-input-placeholder, .form-group .tt-query:-ms-input-placeholder, .form-group .tt-hint:-ms-input-placeholder {
+  color: #A0A0A0;
+}
+.form-group .form-control::placeholder, .form-group .asColorPicker-input::placeholder, .form-group .dataTables_wrapper select::placeholder, .dataTables_wrapper .form-group select::placeholder, .form-group .select2-container--default .select2-selection--single::placeholder, .select2-container--default .form-group .select2-selection--single::placeholder, .form-group .select2-container--default .select2-selection--single .select2-search__field::placeholder, .select2-container--default .select2-selection--single .form-group .select2-search__field::placeholder, .form-group .typeahead::placeholder,
+.form-group .tt-query::placeholder,
+.form-group .tt-hint::placeholder {
+  color: #A0A0A0;
+}
+
+.borderBottomGrey {
+  border-bottom: 1px solid #B1B1B1;
+}
+
+table.securityTable thead th, table.securityTable thead td, table.securityTable tbody th, table.securityTable tbody td {
+  color: #5D5D5D;
+}
+table.securityTable > :not(:last-child) > :last-child > * {
+  border-bottom-color: #B1B1B1 !important;
+}
+table.securityTable tr {
+  border-bottom: 1px solid #B1B1B1;
+}
+table.securityTable tbody tr:last-child {
+  border: none;
+}
+table.notificationTable thead th, table.notificationTable thead td, table.notificationTable tbody th, table.notificationTable tbody td {
+  color: #5D5D5D;
+  font-weight: bold;
+  font-size: 18px;
+}
+table.notificationTable tr:last-child {
+  border-bottom: 1px solid #B1B1B1;
+}
+
+.form-select {
+  font-size: 18px;
+  border-color: #C2C2C2;
 }/*# sourceMappingURL=style.css.map */

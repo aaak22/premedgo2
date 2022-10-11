@@ -102,9 +102,15 @@ section{
     &.providerFormBanner{
         background-image: url('../images/providerbanner.png');
     }
+    &.providerFormBannerOne{
+        background-image: url('../images/providerform.png');
+    }
+    &.faqBanner{
+        background-image: url('../images/privacypolicy.png');
+    }
     &.privacyBanner{
-        background-color: $bgfooter;
-        height: 400px;
+        background-image: url('../images/privacypolicy.png');
+        height: 70vh;
     }
 }
 
@@ -187,6 +193,13 @@ section{
     &:hover{
         color: $primarybtn;
     }
+}
+
+.font-nunitobold{
+    font-family: 'nunitobold';
+}
+.font-nunitoregular{
+    font-family: 'nunitoregular';
 }
 header{
     .navbar{
@@ -435,4 +448,11 @@ footer{
         }
 
     }
+}
+
+.img-350{
+    max-width: 350px;
+}
+.img-200{
+    max-width: 200px;
 }

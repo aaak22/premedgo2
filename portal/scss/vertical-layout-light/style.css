@@ -22358,6 +22358,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #A0A0A0;
 }
 
+label {
+  font-size: 20px !important;
+}
+
 .borderBottomGrey {
   border-bottom: 1px solid #B1B1B1;
 }
@@ -22386,4 +22390,9 @@ table.notificationTable tr:last-child {
 .form-select {
   font-size: 18px;
   border-color: #C2C2C2;
+}
+
+.form-switch .form-check-input {
+  height: 33px;
+  width: 66px;
 }/*# sourceMappingURL=style.css.map */

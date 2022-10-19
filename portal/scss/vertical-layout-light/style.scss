@@ -44,7 +44,9 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6{
     line-height: 24px !important;
 }
-
+.card{
+    border-radius: 10px;
+}
 .btn{
     font-size: 18px;
     border-radius: 10px;
@@ -408,5 +410,49 @@ table {
     .form-check-input{
         height: 33px;
         width: 66px;
+        margin-left: 0;
+    }
+}
+
+//Profile Page
+.profilDetailCont{
+    & > div{
+        &:nth-child(2){
+            margin-top: -5%;
+            margin-left: 50px;
+        }
+    }
+    .banner-top{
+        height: 50vh;
+        background: linear-gradient(90deg, rgba(16,228,190,1) 0%, rgba(65,98,239,1) 100%);
+        position: relative;
+        img{
+            position: absolute;
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .profileImgCont{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: #ffffff;
+        padding: 5px;
+        
+        .imgHolder{
+            width: 100%;
+            height: 100%;
+            background-color: #DADADA;
+            position: relative;
+
+            img{
+                object-fit: fill;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
     }
 }

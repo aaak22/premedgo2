@@ -22055,6 +22055,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 24px !important;
 }
 
+.card {
+  border-radius: 10px;
+}
+
 .btn, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel {
   font-size: 18px;
   border-radius: 10px;
@@ -22395,4 +22399,42 @@ table.notificationTable tr:last-child {
 .form-switch .form-check-input {
   height: 33px;
   width: 66px;
+  margin-left: 0;
+}
+
+.profilDetailCont > div:nth-child(2) {
+  margin-top: -5%;
+  margin-left: 50px;
+}
+.profilDetailCont .banner-top {
+  height: 50vh;
+  background: linear-gradient(90deg, rgb(16, 228, 190) 0%, rgb(65, 98, 239) 100%);
+  position: relative;
+}
+.profilDetailCont .banner-top img {
+  position: absolute;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+.profilDetailCont .profileImgCont {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+.profilDetailCont .profileImgCont .imgHolder {
+  width: 100%;
+  height: 100%;
+  background-color: #DADADA;
+  position: relative;
+}
+.profilDetailCont .profileImgCont .imgHolder img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

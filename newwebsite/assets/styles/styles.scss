@@ -149,11 +149,12 @@ section{
 }
 .subHeading{
     font-size: 22px;
-    font-family: 'nunitosemibold';
+    // font-family: 'nunitosemibold';
+    font-weight: 600;
 }
 .paraText{
     font-size: 18px;
-    font-family: 'nunitoregular';
+    font-family: 'nunitosemibold';
 }
 .subCTA{
     text-transform: uppercase;
@@ -233,6 +234,11 @@ header{
                         border-radius: 50%;
                         background-color: #10E4BE;
                         bottom: 0;
+
+                        @media (max-width: 600px) {
+                            width: 100%;
+                            border-radius: 5px;
+                        }
                     }
                 }
             }
@@ -464,9 +470,9 @@ footer{
     }
 }
 
-.img-350{
-    max-width: 350px;
+.mobImg{
+    max-width: 250px;
 }
-.img-200{
-    max-width: 200px;
+.storeImg{
+    max-width: 150px;
 }

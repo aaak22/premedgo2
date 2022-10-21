@@ -10,7 +10,7 @@
   <body>
     <header>
         <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
-          <div class="container">
+          <div class="container flex-md-row flex-column">
             <a class="navbar-brand" href="#">
               <img
                 class="img-fluid"
@@ -18,7 +18,7 @@
                 src="./assets/images/logo.png"
               />
             </a>
-            <div>
+            <div class="d-flex flex-lg-row flex-column">
             <button
               class="navbar-toggler"
               type="button"
@@ -28,7 +28,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list text-white"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -41,7 +41,7 @@
                 <li class="nav-item">
                   <a class="nav-link text-white" href="./faq.html">FAQ</a>
                 </li>
-                <li class="nav-item me-4">
+                <li class="nav-item me-md-4">
                   <a class="nav-link btn btn-secondary btn-small" href="#">For Providers</a>
                 </li>
                 <li class="nav-item">
@@ -57,9 +57,9 @@
       <section class="sec-banner homeBanner">
         <div class="container h-100">
           <div class="row justify-content-center align-items-center text-white h-100">
-            <div class="col-md-11 col-12">
-              <h1 class="banHeading mb-md-5">Welcome To PreMedGo</h1>
-              <h1 class="banHeading mb-md-5">YOUR HEALTH, <br />OUR GOAL</h1>
+            <div class="col-md-11 col-12 text-md-start text-center">
+              <h1 class="banHeading mb-md-5 text-md-start text-center">Welcome To PreMedGo</h1>
+              <h1 class="banHeading mb-md-5 text-md-start text-center">YOUR HEALTH, <br />OUR GOAL</h1>
               <Button class="btn btn-primary btn-large">Get the app</Button>
             </div>
           </div>
@@ -145,7 +145,7 @@
       </section>
       <section class="bgLightBlue">
         <div class="container">
-          <div class="row gx-5 py-5">
+          <div class="row gx-md-5 py-5">
             <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center align-items-center">
               <img class="img-fluid img-350" src="./assets/images/mobimg.png" alt="">
             </div>
@@ -153,7 +153,7 @@
               <h1 class="headingWidthBorder text-Primary text-center mx-auto my-5">Get Started</h1>
               <h2 class="subHeading text-Black font-nunitobold text-capitalize my-2">Your health, our goal</h2>
               <p class="paraText text-Black my-4">Book your next health check by downloading the PremedGo app today!</p>  
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center flex-md-row flex-column">
                 <img class="img-fluid img-200" src="./assets/images/app-store-icon.png" alt="">
                 <img class="img-fluid img-200" src="./assets/images/google-play-badge.png" alt="">
               </div>
@@ -165,9 +165,9 @@
         <div class="container py-md-3">
           <div class="row justify-content-center">
             <div class="col-12">
-              <div class="text-center position-relative">
-                <h2 class="headingWidthBorder text-Primary text-center mx-auto">FAQs</h2>
-                <div class="position-absolute end-0 top-0">
+              <div class="text-center d-flex align-items-center justify-content-md-start justify-content-between ">
+                <h2 class="headingWidthBorder text-Primary text-md-center mx-auto">FAQs</h2>
+                <div class="">
                   <a href="" class="defaultLink d-flex align-items-center "><span>VIEW ALL</span> <i class="fs-3 bi bi-arrow-right"></i></a>
                 </div>
               </div>

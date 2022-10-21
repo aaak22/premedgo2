@@ -10037,7 +10037,7 @@ section {
 
 .paraText {
   font-size: 18px;
-  font-weight: 600;
+  font-family: "nunitoregular";
 }
 
 .subCTA {
@@ -10097,6 +10097,10 @@ section {
   font-family: "nunitoregular";
 }
 
+.font-nunitosemibold {
+  font-family: "nunitosemibold";
+}
+
 header .navbar {
   background: transparent linear-gradient(180deg, rgba(14, 14, 82, 0.5882352941) 0%, rgba(9, 9, 52, 0.2588235294) 51%, rgba(3, 3, 16, 0) 100%) 0% 0% no-repeat padding-box;
   transition: all linear 0.3s;
@@ -10108,6 +10112,7 @@ header .navbar .nav-item .nav-link {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin: auto;
 }
 header .navbar .nav-item .nav-link:hover {
   color: #10E4BE !important;
@@ -10126,6 +10131,15 @@ header .navbar .nav-item.active .nav-link:after {
 }
 header .navbar.sticky {
   background-color: #2B4791;
+}
+@media (max-width: 600px) {
+  header .navbar-nav {
+    background-color: #2B4791;
+    padding: 10px;
+  }
+  header .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
 }
 
 .grayBoxCont {

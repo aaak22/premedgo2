@@ -24,13 +24,17 @@ body{
     font-family: 'nunitoregular';
     font-size: 16px;
     background-color: $bgPageBaseColor;
+
+    @media (max-width:600px) {
+        font-size: 14px;
+    }
 }
 section{
     background-color: $bgPageBaseColor;
 }
 
 .btn{
-    font-size: 18px;
+    font-size: 1.15em;
     border-radius: 10px;
     height: 48px;
 
@@ -121,15 +125,18 @@ section{
     color: $textColorBlack;
 }
 .banHeading{
-    font-size: 45px;
+    // font-size: 45px;
+    font-size: 2.8em;
     font-weight: 600;
 }
 .heading{
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: 1.9em;
     font-weight: 600;
 }
 .headingWidthBorder{
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: 1.9em;
     font-weight: 600;
     position: relative;
     padding-bottom: 20px;
@@ -148,32 +155,33 @@ section{
     }
 }
 .subHeading{
-    font-size: 22px;
-    // font-family: 'nunitosemibold';
+    // font-size: 22px;
+    font-size: 1.4em;
     font-weight: 600;
 }
 .paraText{
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1.1em;
     font-family: 'nunitosemibold';
 }
 .subCTA{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1em;
 }
 .headerTextR{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
 }
 .headerTextM{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
 }
 .headerTextB{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 900;
 }
 .smallText{
-    font-size: 14px;
+    font-size: 0.8em;
 }
 .bgGray{
     background-color: $bgGray;
@@ -475,4 +483,10 @@ footer{
 }
 .storeImg{
     max-width: 150px;
+}
+.paralinkWrapper{
+    &.active{
+        color: $primarybtn;
+        font-weight: bold;
+    }
 }

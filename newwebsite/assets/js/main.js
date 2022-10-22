@@ -26,3 +26,24 @@ let flkty = new Flickity( elem, {
   prevNextButtons: false,
   prevPrevButtons: false,
 });
+
+const sectionsList = document.querySelectorAll(".privacyParas");
+const navLi = document.querySelectorAll(".paralinkWrapper .privacyLink");
+
+window.onscroll = () => {
+  var current = "";
+
+  sectionsList.forEach((section) => {
+    console.log(sectionsList);
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};

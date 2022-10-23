@@ -10119,8 +10119,14 @@ header .navbar .nav-item .nav-link {
   position: relative;
   margin: auto;
 }
-header .navbar .nav-item .nav-link:hover {
+header .navbar .nav-item .nav-link:hover, header .navbar .nav-item .nav-link:focus {
+  background-color: #4162ef;
+  border: 1px solid #4162ef;
   color: #10E4BE !important;
+}
+header .navbar .nav-item .nav-link.btn-secondary:active {
+  background-color: #4162ef;
+  border: 1px solid #4162ef;
 }
 header .navbar .nav-item.active {
   color: #10E4BE;

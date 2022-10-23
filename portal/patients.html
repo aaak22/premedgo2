@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+  
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -445,6 +447,224 @@
                       </select>
                     </div>
                   </div>
+                  <div class="row">
+                    <table class="table patientDetailTable" id="patientDetail">
+                      <thead>
+                        <tr>
+                          <th scope="col">NAME</th>
+                          <th scope="col">LEVEL OF SERVICE</th>
+                          <th scope="col">APPOINTMENT DATE</th>
+                          <th scope="col">QUESTIONNAIRE RECEIVED</th>
+                          <th scope="col">BILLING</th>
+                          <th scope="col">STATUS</th>
+                          <th scope="col">TEST RESULT DATE</th>
+                          <th scope="col">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 2</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>-</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 2</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>-</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 2</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>-</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 2</td>
+                          <td>6-21-2022</td>
+                          <td>YES</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>-</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Basic</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Pending</td>
+                          <td>PENDING</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum lorem</td>
+                          <td>Level 1</td>
+                          <td>6-21-2022</td>
+                          <td>NO</td>
+                          <td>Paid</td>
+                          <td>COMPLETED</td>
+                          <td>6-21-2022</td>
+                          <td>menu</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -491,6 +711,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/solid.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
   
   <script src="./loading-bar.min.js" ></script>
 
@@ -498,6 +725,39 @@
     var bar1 = new ldBar("#myItem1");
     var bar2 = document.getElementById('myItem1').ldBar;
     bar1.set(60);
+  </script>
+
+  <script>
+    $(document).ready( function () {
+      $('#patientDetail').DataTable({
+        "autoWidth": false,
+        dom: 'lfrBtip',
+        scrollX: true,
+        scrollY: 200,
+        language: { 
+          search: "",
+          searchPlaceholder: "Search by Name"
+        },
+        buttons: [
+            {
+                extend: 'collection',
+                text: 'Export',
+                buttons: [
+                    'copy',
+                    'excel',
+                    'csv',
+                    'pdf',
+                    'print',
+                ]
+            }
+        ],
+        "lengthChange": true,
+        lengthMenu: [
+            [10, 25, 50, -1],
+            [10, 25, 50, 'All'],
+        ],
+      });
+    } );
   </script>
 </body>
 

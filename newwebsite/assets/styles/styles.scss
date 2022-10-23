@@ -125,17 +125,14 @@ section{
     color: $textColorBlack;
 }
 .banHeading{
-    // font-size: 45px;
     font-size: 2.8em;
     font-weight: 600;
 }
 .heading{
-    // font-size: 30px;
     font-size: 1.9em;
     font-weight: 600;
 }
 .headingWidthBorder{
-    // font-size: 30px;
     font-size: 1.9em;
     font-weight: 600;
     position: relative;
@@ -155,12 +152,10 @@ section{
     }
 }
 .subHeading{
-    // font-size: 22px;
     font-size: 1.4em;
     font-weight: 600;
 }
 .paraText{
-    // font-size: 18px;
     font-size: 1.1em;
     font-family: 'nunitosemibold';
 }
@@ -227,8 +222,16 @@ header{
                 position: relative;
                 margin: auto;
 
-                &:hover{
-                   color: $headingBorder !important;
+                &:hover,&:focus{
+                    background-color: $primarybtn;
+                    border: 1px solid $primarybtn;
+                    color: $headingBorder !important;
+                }
+                &.btn-secondary{
+                    &:active{
+                        background-color: $primarybtn;
+                        border: 1px solid $primarybtn;
+                    }
                 }
             }
             &.active{

@@ -456,3 +456,17 @@ table {
         
     }
 }
+#patientDetail_wrapper{
+    #patientDetail_length{
+        display: inline-block;
+        max-width: 60%;
+    }
+    .dt-buttons{
+        display: inline-block;
+        max-width: 20%;
+    }
+    #patientDetail_filter{
+        display: inline-block;
+        max-width: 20%;
+    }
+}

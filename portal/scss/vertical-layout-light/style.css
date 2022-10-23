@@ -22437,4 +22437,17 @@ table.notificationTable tr:last-child {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+#patientDetail_wrapper #patientDetail_length {
+  display: inline-block;
+  max-width: 60%;
+}
+#patientDetail_wrapper .dt-buttons {
+  display: inline-block;
+  max-width: 20%;
+}
+#patientDetail_wrapper #patientDetail_filter {
+  display: inline-block;
+  max-width: 20%;
 }/*# sourceMappingURL=style.css.map */

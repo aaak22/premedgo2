@@ -457,16 +457,140 @@ table {
     }
 }
 #patientDetail_wrapper{
+
     #patientDetail_length{
         display: inline-block;
-        max-width: 60%;
+        max-width: 65%;
+        width: 100%;
+        height: 40px;
+        padding-left: 30px;
+
+        label{
+            height: 100%;
+            &,select{
+                height: 100%;
+                font-size: 14px;
+            }
+            select{
+                padding: 7px 10px;
+                border: 1px solid #00000029;
+                border-radius: 5px;
+            }
+        }
     }
     .dt-buttons{
         display: inline-block;
-        max-width: 20%;
+        max-width: 15%;
+        width: 100%;
+        height: 40px;
+        margin-left: 10px;
+
+        button{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 0;
+            box-shadow: none;
+            background-color: $primarybtn;
+            color: $white;
+            box-shadow: 0 3px 6px #00000029;
+            font-size: 14px;
+            border-radius: 5px;
+        }
     }
     #patientDetail_filter{
         display: inline-block;
-        max-width: 20%;
+        max-width: 15%;
+        width: 100%;
+        float: unset;
+        height: 40px;
+
+        label{
+            max-width: 100%;
+            padding-right: 16px;
+
+            &,input{
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                border: 0;
+            }
+            &{
+                border: 1px solid #00000029;
+                border-radius: 5px;
+            }
+        }
     }
+    .patientDetailTable {
+        margin-top: 1rem;
+        thead{
+            background-color: $login-bg-left;
+        }
+        th,td{
+            padding: 16px 20px;
+        }
+        td{
+            border-bottom: 0;
+            border-right: 1px solid #E4E4E4;
+            font-weight: 600;
+            
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
+    #patientDetail_info,#patientDetail_paginate{
+        padding-top: 16px;
+        margin-top: 0;
+    }
+    #patientDetail_info{
+        padding-left: 20px;
+    }
+    #patientDetail_paginate{
+        padding-right: 20px;
+    }
+    .paginate_button {
+        color: $primarybtn !important;
+        background-color: #E1E7F5;
+        box-shadow: none;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        
+
+        &.previous,&.next{
+            margin: 0 10px;
+
+            &.disabled{
+                background-color: #E8E8E8;
+                border-radius: 5px;
+                color: #5D5D5D !important;
+            }
+        }
+
+        &.current{
+            background: none;
+            background-color: $primarybtn;
+            color: $white !important;
+        }
+    }
+    .completed{
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #DFFEEA;
+        color: #10A660;
+        font-size: 14px;
+    }
+    .pending{
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #FFE3E3;
+        color: #E36262;
+        font-size: 14px;
+    }
+    .dropdown{
+        .dropdown-toggle:after{
+            display: none;
+        }
+    } 
 }

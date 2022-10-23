@@ -249,7 +249,7 @@
                   </div>
                   <i class="remove ti-close"></i>
                 </li>
-                <li class="completed">
+                <li class="<span class="completed">COMPLETED</span> ">
                   <div class="form-check">
                     <label class="form-check-label">
                       <input class="checkbox" type="checkbox" checked>
@@ -258,7 +258,7 @@
                   </div>
                   <i class="remove ti-close"></i>
                 </li>
-                <li class="completed">
+                <li class="<span class="completed">COMPLETED</span> ">
                   <div class="form-check">
                     <label class="form-check-label">
                       <input class="checkbox" type="checkbox" checked>
@@ -424,246 +424,436 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-body container-fluid">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <h4 class="subHeading text-Black fw-bold">Search Patients</h4>
-                    <a href="#" type="role"><i class="fa-solid fa-ellipsis-vertical text-black-50"></i></a>
-                  </div>
-                  <div class="row">
-                    <div class="col-xl-4 col-12">
-                      <select class="form-select" aria-label="Default select example">
-                        <option disabled selected>Select Service Level</option>
-                        <option value="1">Level 1</option>
-                        <option value="2">Level 2</option>
-                        <option value="3">Level 3</option>
-                      </select>
-                    </div>
-                    <div class="col-xl-4 col-12">
-                      <select class="form-select" aria-label="Default select example">
-                        <option disabled selected>Select Status</option>
-                        <option value="1">completed</option>
-                        <option value="2">pending</option>
-                        <option value="3">closed</option>
-                      </select>
+                <div class="card-body p-0">
+                  <div class="container-fliud">
+                    <div class="d-flex align-items-center justify-content-between p-4">
+                      <h4 class="subHeading text-Black fw-bold">Search Patients</h4>
+                      <a href="#" type="role"><i class="fa-solid fa-ellipsis-vertical text-black-50"></i></a>
                     </div>
                   </div>
-                  <div class="row">
-                    <table class="table patientDetailTable" id="patientDetail">
-                      <thead>
-                        <tr>
-                          <th scope="col">NAME</th>
-                          <th scope="col">LEVEL OF SERVICE</th>
-                          <th scope="col">APPOINTMENT DATE</th>
-                          <th scope="col">QUESTIONNAIRE RECEIVED</th>
-                          <th scope="col">BILLING</th>
-                          <th scope="col">STATUS</th>
-                          <th scope="col">TEST RESULT DATE</th>
-                          <th scope="col">ACTION</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 2</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>-</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 2</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>-</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 2</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>-</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 2</td>
-                          <td>6-21-2022</td>
-                          <td>YES</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>-</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Basic</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Pending</td>
-                          <td>PENDING</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                        <tr>
-                          <td>Lorem Ipsum lorem</td>
-                          <td>Level 1</td>
-                          <td>6-21-2022</td>
-                          <td>NO</td>
-                          <td>Paid</td>
-                          <td>COMPLETED</td>
-                          <td>6-21-2022</td>
-                          <td>menu</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="container-fluid">
+                    <div class="row borderBottomGrey pb-4">
+                      <div class="col-xl-4 col-12">
+                        <select class="form-select" aria-label="Default select example">
+                          <option disabled selected>Select Service Level</option>
+                          <option value="1">Level 1</option>
+                          <option value="2">Level 2</option>
+                          <option value="3">Level 3</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 col-12">
+                        <select class="form-select" aria-label="Default select example">
+                          <option disabled selected>Select Status</option>
+                          <option value="1"><span class="completed">COMPLETED</span> </option>
+                          <option value="2">pending</option>
+                          <option value="3">closed</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid p-0">
+                    <div class="row py-4">
+                      <div class="col-12">
+                        <div class="table-responsive">
+                          <table class="table patientDetailTable" id="patientDetail">
+                            <thead>
+                              <tr>
+                                <th scope="col">NAME</th>
+                                <th scope="col">LEVEL OF SERVICE</th>
+                                <th scope="col">APPOINTMENT DATE</th>
+                                <th scope="col">QUESTIONNAIRE RECEIVED</th>
+                                <th scope="col">BILLING</th>
+                                <th scope="col">STATUS</th>
+                                <th scope="col">TEST RESULT DATE</th>
+                                <th scope="col">ACTION</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 2</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>-</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 2</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>-</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 2</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>-</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 2</td>
+                                <td>6-21-2022</td>
+                                <td>YES</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>-</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Basic</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Pending</td>
+                                <td><span class="pending">PENDING</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum lorem</td>
+                                <td>Level 1</td>
+                                <td>6-21-2022</td>
+                                <td>NO</td>
+                                <td>Paid</td>
+                                <td><span class="completed">COMPLETED</span> </td>
+                                <td>6-21-2022</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button class="dropdown-toggle border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu p-0">
+                                      <li><a class="dropdown-item" href="#">View Detail</a></li>
+                                    </ul>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -732,11 +922,10 @@
       $('#patientDetail').DataTable({
         "autoWidth": false,
         dom: 'lfrBtip',
-        scrollX: true,
-        scrollY: 200,
         language: { 
           search: "",
-          searchPlaceholder: "Search by Name"
+          searchPlaceholder: "Search by Name",
+          lengthMenu: ' _MENU_ '
         },
         buttons: [
             {

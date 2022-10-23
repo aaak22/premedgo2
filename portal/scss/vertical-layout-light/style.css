@@ -22441,13 +22441,125 @@ table.notificationTable tr:last-child {
 
 #patientDetail_wrapper #patientDetail_length {
   display: inline-block;
-  max-width: 60%;
+  max-width: 65%;
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+}
+#patientDetail_wrapper #patientDetail_length label {
+  height: 100%;
+}
+#patientDetail_wrapper #patientDetail_length label, #patientDetail_wrapper #patientDetail_length label select {
+  height: 100%;
+  font-size: 14px;
+}
+#patientDetail_wrapper #patientDetail_length label select {
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+  border-radius: 5px;
 }
 #patientDetail_wrapper .dt-buttons {
   display: inline-block;
-  max-width: 20%;
+  max-width: 15%;
+  width: 100%;
+  height: 40px;
+  margin-left: 10px;
+}
+#patientDetail_wrapper .dt-buttons button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  background-color: #4162ef;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
+  font-size: 14px;
+  border-radius: 5px;
 }
 #patientDetail_wrapper #patientDetail_filter {
   display: inline-block;
-  max-width: 20%;
+  max-width: 15%;
+  width: 100%;
+  float: unset;
+  height: 40px;
+}
+#patientDetail_wrapper #patientDetail_filter label {
+  max-width: 100%;
+  padding-right: 16px;
+}
+#patientDetail_wrapper #patientDetail_filter label, #patientDetail_wrapper #patientDetail_filter label input {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  border: 0;
+}
+#patientDetail_wrapper #patientDetail_filter label {
+  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+  border-radius: 5px;
+}
+#patientDetail_wrapper .patientDetailTable {
+  margin-top: 1rem;
+}
+#patientDetail_wrapper .patientDetailTable thead {
+  background-color: #E1E7F5;
+}
+#patientDetail_wrapper .patientDetailTable th, #patientDetail_wrapper .patientDetailTable td {
+  padding: 16px 20px;
+}
+#patientDetail_wrapper .patientDetailTable td {
+  border-bottom: 0;
+  border-right: 1px solid #E4E4E4;
+  font-weight: 600;
+}
+#patientDetail_wrapper .patientDetailTable td:last-child {
+  border-right: 0;
+}
+#patientDetail_wrapper #patientDetail_info, #patientDetail_wrapper #patientDetail_paginate {
+  padding-top: 16px;
+  margin-top: 0;
+}
+#patientDetail_wrapper #patientDetail_info {
+  padding-left: 20px;
+}
+#patientDetail_wrapper #patientDetail_paginate {
+  padding-right: 20px;
+}
+#patientDetail_wrapper .paginate_button {
+  color: #4162ef !important;
+  background-color: #E1E7F5;
+  box-shadow: none;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}
+#patientDetail_wrapper .paginate_button.previous, #patientDetail_wrapper .paginate_button.next {
+  margin: 0 10px;
+}
+#patientDetail_wrapper .paginate_button.previous.disabled, #patientDetail_wrapper .paginate_button.next.disabled {
+  background-color: #E8E8E8;
+  border-radius: 5px;
+  color: #5D5D5D !important;
+}
+#patientDetail_wrapper .paginate_button.current {
+  background: none;
+  background-color: #4162ef;
+  color: #ffffff !important;
+}
+#patientDetail_wrapper .completed {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #DFFEEA;
+  color: #10A660;
+  font-size: 14px;
+}
+#patientDetail_wrapper .pending {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FFE3E3;
+  color: #E36262;
+  font-size: 14px;
+}
+#patientDetail_wrapper .dropdown .dropdown-toggle:after {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

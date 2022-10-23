@@ -10119,17 +10119,18 @@ header .navbar .nav-item .nav-link {
   position: relative;
   margin: auto;
 }
-header .navbar .nav-item .nav-link:hover, header .navbar .nav-item .nav-link:focus {
+header .navbar .nav-item .nav-link:hover {
   background-color: #4162ef;
   border: 1px solid #4162ef;
   color: #10E4BE !important;
 }
-header .navbar .nav-item .nav-link.btn-secondary:active {
+header .navbar .nav-item .nav-link.btn-secondary:hover, header .navbar .nav-item .nav-link.btn-secondary:focus, header .navbar .nav-item .nav-link.btn-secondary:active {
   background-color: #4162ef;
   border: 1px solid #4162ef;
+  color: #10E4BE !important;
 }
-header .navbar .nav-item.active {
-  color: #10E4BE;
+header .navbar .nav-item.active .nav-link {
+  color: #10E4BE !important;
 }
 header .navbar .nav-item.active .nav-link:after {
   content: "";

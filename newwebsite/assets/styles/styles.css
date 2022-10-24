@@ -9968,25 +9968,94 @@ section {
 }
 
 .sec-banner {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
+  position: relative;
 }
-.sec-banner.homeBanner {
+@media (max-width: 600px) {
+  .sec-banner {
+    height: auto;
+  }
+}
+.sec-banner .homeBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/homepagebanner.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.sec-banner.aboutBanner {
+@media (max-width: 600px) {
+  .sec-banner .homeBanner {
+    position: relative;
+    height: 25vh;
+  }
+}
+.sec-banner .aboutBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/bannerabout.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.sec-banner.providerBanner {
+@media (max-width: 600px) {
+  .sec-banner .aboutBanner {
+    position: relative;
+    height: 25vh;
+  }
+}
+.sec-banner .providerBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/providerbanner.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.sec-banner.providerFormBanner {
+@media (max-width: 600px) {
+  .sec-banner .providerBanner {
+    position: relative;
+    height: 25vh;
+  }
+}
+.sec-banner .providerFormBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/providerbanner.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.sec-banner.providerFormBannerOne {
+@media (max-width: 600px) {
+  .sec-banner .providerFormBanner {
+    position: relative;
+    height: 25vh;
+  }
+}
+.sec-banner .providerFormBannerOne {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/providerform.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .sec-banner .providerFormBannerOne {
+    position: relative;
+    height: 25vh;
+  }
 }
 .sec-banner.faqBanner {
   background-image: url("../images/privacypolicy.png");
@@ -9994,6 +10063,13 @@ section {
 .sec-banner.privacyBanner {
   background-image: url("../images/privacypolicy.png");
   height: 70vh;
+}
+@media (max-width: 600px) {
+  .sec-banner .container {
+    background-color: #2B4791;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .text-Primary {
@@ -10120,8 +10196,6 @@ header .navbar .nav-item .nav-link {
   margin: auto;
 }
 header .navbar .nav-item .nav-link:hover {
-  background-color: #4162ef;
-  border: 1px solid #4162ef;
   color: #10E4BE !important;
 }
 header .navbar .nav-item .nav-link.btn-secondary:hover, header .navbar .nav-item .nav-link.btn-secondary:focus, header .navbar .nav-item .nav-link.btn-secondary:active {

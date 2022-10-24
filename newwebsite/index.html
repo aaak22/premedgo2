@@ -8,55 +8,58 @@
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
   <body>
+    <!--header start-->
     <header>
-        <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
-          <div class="container flex-md-row flex-column">
-            <a class="navbar-brand" href="#">
-              <img
-                class="img-fluid"
-                alt="logo"
-                src="./assets/images/logo.png"
-              />
-            </a>
-            <div class="d-flex flex-lg-row flex-column">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+      <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
+        <div class="container flex-md-row flex-column">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-fluid"
+              alt="logo"
+              src="./assets/images/logo.png"
+            />
+          </a>
+          <div class="d-flex flex-lg-row flex-column">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <i class="bi bi-list text-white"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="./about.html">About</a>
-                </li>
-                <li class="nav-item me-md-4">
-                  <a class="nav-link btn btn-secondary btn-small" href="./providerone.html">For Providers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn btn-primary btn-small" href="#">Get the app</a>
-                </li>
-              </ul>
-            </div>
-            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./about.html">About</a>
+              </li>
+              <li class="nav-item me-md-4">
+                <a class="nav-link btn btn-secondary btn-small" href="./providerone.html">For Providers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary btn-small" href="#">Get the app</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!--header end-->
     <main>
-      <section class="sec-banner homeBanner">
-        <div class="container h-100">
+      <section class="sec-banner">
+        <div class="homeBanner"></div>
+        <div class="container h-100 position-relative">
           <div class="row justify-content-center align-items-center text-white h-100">
             <div class="col-md-11 col-12 text-md-start text-center">
-              <h1 class="banHeading mb-md-5 text-md-start text-center">Welcome To PreMedGo</h1>
-              <h1 class="banHeading mb-md-5 text-md-start text-center">YOUR HEALTH, <br />OUR GOAL</h1>
+              <h1 class="banHeading mb-md-5">Welcome To PreMedGo</h1>
+              <h1 class="banHeading mb-md-5">YOUR HEALTH, <br />OUR GOAL</h1>
               <Button class="btn btn-primary btn-large">Get the app</Button>
             </div>
           </div>
@@ -66,8 +69,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 mb-5">
-              <h1 class="headingWidthBorder text-Primary text-center mx-auto">When was your last health check? <br/>
-                With the PremedGo app you can:</h1>
+              <h1 class="headingWidthBorder text-Primary text-center mx-auto">When was your last health check? With the PremedGo app you can:</h1>
             </div>
             <div class="col-md-4 col-12">
               <div class="grayBoxCont bgGray">
@@ -75,7 +77,8 @@
                   <img class="img-fluid iconblue" src="./assets/icons/calendar.svg" alt="calendar">
                 </div>
                 <h2 class="subHeading text-Black my-3 font-nunitobold">Search for your nearest health check provider </h2>
-                </div>
+                <p class="paraText text-Black font-nunitoregular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+              </div>
             </div>
             <div class="col-md-4 col-12">
               <div class="grayBoxCont bgGray">
@@ -83,15 +86,17 @@
                   <img class="img-fluid iconblue" src="./assets/icons/clock.svg" alt="calendar">
                 </div>
                 <h2 class="subHeading text-Black my-3 font-nunitobold">Book your next health check appointment</h2>
-                </div>
+                <p class="paraText text-Black font-nunitoregular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+              </div>
             </div>
             <div class="col-md-4 col-12">
               <div class="grayBoxCont bgGray">
-                <div class="iconCont">
-                  <img class="img-fluid w-auto h-auto" src="./assets/images/shield.png" alt="calendar">
+                <div class="">
+                  <img class="img-fluid" src="./assets/images/shield.png" alt="calendar">
                 </div>
                 <h2 class="subHeading text-Black my-3 font-nunitobold">Track and manage your health check historye</h2>
-                </div>
+                <p class="paraText text-Black font-nunitoregular">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+              </div>
             </div>
           </div>
         </div>
@@ -142,27 +147,27 @@
         <div class="container">
           <div class="row gx-md-5 py-5">
             <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-center align-items-center">
-              <img class="img-fluid mobImg" src="./assets/images/mobimg.png" alt="">
+              <img class="img-fluid img-350" src="./assets/images/mobimg.png" alt="">
             </div>
-            <div class="col-md-5 col-12 d-flex flex-column align-items-md-start align-items-center ps-lg-5">
+            <div class="col-md-5 col-12 d-flex flex-column align-items-md-start align-items-center ps-md-5">
               <h1 class="headingWidthBorder text-Primary text-center mx-auto my-5">Get Started</h1>
-              <h2 class="subHeading text-Black font-nunitobold my-2">Your health, our goal</h2>
-              <p class="paraText text-Black text-lg-start text-center">Book your next health check by downloading the PremedGo app today!</p>  
-              <div class="d-flex align-items-center flex-md-row flex-column mt-4">
-                <img class="img-fluid storeImg" src="./assets/images/app-store-icon.png" alt="">
-                <img class="img-fluid storeImg" src="./assets/images/google-play-badge.png" alt="">
+              <h2 class="subHeading text-Black font-nunitobold text-capitalize my-2">Your health, our goal</h2>
+              <p class="paraText text-Black my-4">Book your next health check by downloading the PremedGo app today!</p>  
+              <div class="d-flex align-items-center flex-md-row flex-column">
+                <img class="img-fluid img-200" src="./assets/images/app-store-icon.png" alt="">
+                <img class="img-fluid img-200" src="./assets/images/google-play-badge.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="faq-sec py-md-5 pb-3">
-        <!-- <div class="container py-md-3">
+        <!--- <div class="container py-md-3">
           <div class="row justify-content-center">
             <div class="col-12">
-              <div class="text-center d-flex align-items-center justify-content-md-start justify-content-between ">
-                <h2 class="headingWidthBorder text-Primary text-md-center mx-auto">FAQs</h2>
-                <div class="">
+              <div class="text-center position-relative">
+                <h2 class="headingWidthBorder text-Primary text-center mx-auto">FAQs</h2>
+                <div class="position-absolute end-0 top-0">
                   <a href="" class="defaultLink d-flex align-items-center "><span>VIEW ALL</span> <i class="fs-3 bi bi-arrow-right"></i></a>
                 </div>
               </div>
@@ -202,7 +207,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>-->
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 col-12">
@@ -210,7 +215,7 @@
                 <div class="col-md-7 col-12">
                   <h2 class="heading text-white text-center">Subscribe to our newsletter</h2>
                   <div class="input-group newsletterInputField flex-md-row flex-column mt-md-5 mt-3">
-                    <input type="text" class="form-control w-auto border-0" placeholder="Your e-mail address" aria-label="Your e-mail address" aria-describedby="button-addon2">
+                    <input type="text" class="form-control border-0 w-auto" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
                     <button class="btn btn-primary btn-small newsletterButton" type="submit" >Submit</button>
                   </div>
                 </div>
@@ -220,7 +225,7 @@
         </div>
       </section>
     </main>
-    
+
     <!--footer start-->
     <footer>
       <div class="container pt-md-5 pt-3 pb-3">
@@ -230,8 +235,8 @@
           </div>
         </div>
         <div class="row pb-md-5 pb-2">
-          <div class="col-md-3 col-12">
-            <h2 class="subHeading text-white mb-4 pb-2">Company</h2>
+          <div class="col-md-3 col-12 pb-md-0 pb-5">
+            <h2 class="subHeading text-white mb-md-4 pb-2">Company</h2>
             <ul>
               <li>
                 <a href="./about" class="footerlinks mb-3">About</a>
@@ -241,16 +246,16 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3 col-12">
-            <h2 class="subHeading text-white mb-4 pb-2">Contact Us</h2>
+          <div class="col-md-3 col-12 pb-md-0 pb-5">
+            <h2 class="subHeading text-white mb-md-4 pb-md-2">Contact Us</h2>
             <ul>
               <li>
                 <a href="mailto:info@premedgo.com" class="footerlinks">info@premedgo.com</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-3 col-12">
-            <h2 class="subHeading text-white mb-4 pb-2">Stay in Touch</h2>
+          <div class="col-md-3 col-12 pb-md-0 pb-5">
+            <h2 class="subHeading text-white mb-md-4 pb-md-2">Stay in Touch</h2>
             <ul class="d-flex align-items-center">
               <li>
                 <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/linkedin.png" alt=""></a>
@@ -263,8 +268,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3 col-12">
-            <h2 class="subHeading text-white mb-4 pb-2">Download App</h2>
+          <div class="col-md-3 col-12 pb-md-0 pb-5">
+            <h2 class="subHeading text-white mb-md-4 pb-md-2">Download App</h2>
             <ul class="d-flex justify-content-between align-items-center">
               <li>
                 <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/google-play-badge.png" alt=""></a>
@@ -275,8 +280,8 @@
             </ul>
           </div>
         </div>
-        <div class="row justify-content-between pt-md-5 pt-2">
-          <div class="col-md-4 col-12">
+        <div class="row justify-content-between pt-md-5 pt-md-2">
+          <div class="col-md-4 col-12 pb-md-0 pb-5">
             <h2 class="text-white smallText">Copyright © 2022, PremedGo</h2>
           </div>
           <div class="col-xl-3 col-md-4 col-12">
@@ -289,7 +294,7 @@
     </footer>
     <!--footer end-->
     <script src="./assets/js/bootstrap.js"></script>
-    <script src="./assets/js/flickity.js"></script>
+    <!-- <script src="./assets/js/flickity.js"></script> -->
     <script src="./assets/js/main.js"></script>
 
   </body>

@@ -89,25 +89,82 @@ section{
     }
 }
 .sec-banner{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     height: 100vh;
-
-    &.homeBanner{
+    width: 100vw;
+    position: relative;
+    
+    @media (max-width: 600px) {
+        height: auto;
+    }
+    .homeBanner{
+        z-index: 0;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-image: url('../images/homepagebanner.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px) {
+            position: relative;
+            height: 25vh;
+        }
     }
-    &.aboutBanner{
+    .aboutBanner{
+        z-index: 0;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-image: url('../images/bannerabout.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px) {
+            position: relative;
+            height: 25vh;
+        }
     }
-    &.providerBanner{
+    .providerBanner{
+        z-index: 0;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-image: url('../images/providerbanner.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px) {
+            position: relative;
+            height: 25vh;
+        }
     }
-    &.providerFormBanner{
+    .providerFormBanner{
+        z-index: 0;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-image: url('../images/providerbanner.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px) {
+            position: relative;
+            height: 25vh;
+        }
     }
-    &.providerFormBannerOne{
+    .providerFormBannerOne{
+        z-index: 0;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-image: url('../images/providerform.png');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 600px) {
+            position: relative;
+            height: 25vh;
+        }
     }
     &.faqBanner{
         background-image: url('../images/privacypolicy.png');
@@ -115,6 +172,13 @@ section{
     &.privacyBanner{
         background-image: url('../images/privacypolicy.png');
         height: 70vh;
+    }
+    @media (max-width: 600px) {
+        .container{
+            background-color: $bgfooter;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
     }
 }
 
@@ -223,8 +287,8 @@ header{
                 margin: auto;
 
                 &:hover{
-                    background-color: $primarybtn;
-                    border: 1px solid $primarybtn;
+                    // background-color: $primarybtn;
+                    // border: 1px solid $primarybtn;
                     color: $headingBorder !important;
                 }
                 &.btn-secondary{

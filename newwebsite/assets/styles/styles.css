@@ -10057,12 +10057,37 @@ section {
     height: 25vh;
   }
 }
-.sec-banner.faqBanner {
+.sec-banner .faqBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/privacypolicy.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.sec-banner.privacyBanner {
+@media (max-width: 600px) {
+  .sec-banner .faqBanner {
+    position: relative;
+    height: 25vh;
+  }
+}
+.sec-banner .privacyBanner {
+  z-index: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   background-image: url("../images/privacypolicy.png");
-  height: 70vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .sec-banner .privacyBanner {
+    position: relative;
+    height: 25vh;
+  }
 }
 @media (max-width: 600px) {
   .sec-banner .container {

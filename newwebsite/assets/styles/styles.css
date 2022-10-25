@@ -10053,7 +10053,6 @@ section {
 }
 @media (max-width: 600px) {
   .sec-banner .providerFormBannerOne {
-    position: relative;
     height: 25vh;
   }
 }
@@ -10109,10 +10108,20 @@ section {
   font-size: 2.8em;
   font-weight: 600;
 }
+@media (min-width: 1920px) {
+  .banHeading {
+    font-size: 3.2em;
+  }
+}
 
 .heading {
   font-size: 1.9em;
   font-weight: 600;
+}
+@media (min-width: 1920px) {
+  .heading {
+    font-size: 2.3em;
+  }
 }
 
 .headingWidthBorder {
@@ -10123,6 +10132,11 @@ section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (min-width: 1920px) {
+  .headingWidthBorder {
+    font-size: 2.3em;
+  }
 }
 .headingWidthBorder::after {
   content: "";
@@ -10140,34 +10154,68 @@ section {
   font-size: 1.4em;
   font-weight: 600;
 }
+@media (min-width: 1920px) {
+  .subHeading {
+    font-size: 1.8em;
+  }
+}
 
 .paraText {
   font-size: 1.1em;
-  font-family: "nunitosemibold";
+}
+@media (min-width: 1920px) {
+  .paraText {
+    font-size: 1.5em;
+  }
 }
 
 .subCTA {
   text-transform: uppercase;
   font-size: 1em;
 }
+@media (min-width: 1920px) {
+  .subCTA {
+    font-size: 1.4em;
+  }
+}
 
 .headerTextR {
   font-size: 1em;
   font-weight: 300;
+}
+@media (min-width: 1920px) {
+  .headerTextR {
+    font-size: 1.4em;
+  }
 }
 
 .headerTextM {
   font-size: 1em;
   font-weight: 600;
 }
+@media (min-width: 1920px) {
+  .headerTextM {
+    font-size: 1.4em;
+  }
+}
 
 .headerTextB {
   font-size: 1em;
   font-weight: 900;
 }
+@media (min-width: 1920px) {
+  .headerTextB {
+    font-size: 1.4em;
+  }
+}
 
 .smallText {
   font-size: 0.8em;
+}
+@media (min-width: 1920px) {
+  .smallText {
+    font-size: 1.2em;
+  }
 }
 
 .bgGray {
@@ -10207,6 +10255,9 @@ section {
   font-family: "nunitosemibold";
 }
 
+header .navbar-brand img {
+  max-width: 250px;
+}
 header .navbar {
   background: transparent linear-gradient(180deg, rgba(14, 14, 82, 0.5882352941) 0%, rgba(9, 9, 52, 0.2588235294) 51%, rgba(3, 3, 16, 0) 100%) 0% 0% no-repeat padding-box;
   transition: all linear 0.3s;
@@ -10330,7 +10381,7 @@ footer .footerlinks {
 }
 .providerList li {
   color: #323232;
-  padding-left: 3rem;
+  padding-left: 2rem;
   position: relative;
   font-size: 18px;
   font-weight: 600;
@@ -10476,4 +10527,16 @@ footer .footerlinks {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+input::-moz-placeholder {
+  color: #A0A0A0 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #A0A0A0 !important;
+}
+
+input::placeholder {
+  color: #A0A0A0 !important;
 }/*# sourceMappingURL=styles.css.map */

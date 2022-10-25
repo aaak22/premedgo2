@@ -10378,7 +10378,6 @@ footer .footerlinks {
 .form-label {
   color: #5D5D5D;
   font-size: 16px;
-  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
@@ -10453,4 +10452,28 @@ footer .footerlinks {
 .paralinkWrapper.active {
   color: #4162ef;
   font-weight: bold;
+}
+
+.inputfieldSelect {
+  height: 38px;
+  padding: 0.375rem 0.75rem;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+}
+
+.locationWrpr {
+  position: relative;
+}
+.locationWrpr::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-image: url("../icons/arrow-up-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */

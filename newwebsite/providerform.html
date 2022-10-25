@@ -11,19 +11,19 @@
 
     <!--content start-->
     <main class="main-content">
-      <section class="sec-banner pt-md-5">
+      <section class="sec-banner">
         <div class="providerFormBannerOne"></div>
         <div class="container position-relative h-100 pt-3">
-          <div class="row align-items-center text-white h-100">
-            <div class="col-md-5 col-12 text-md-start text-center">
+          <div class="row align-items-center gx-md-5 text-white h-100">
+            <div class="col-md-4 col-12 text-md-start text-center">
               <h1 class="banHeading mb-md-5">Become a PremedGo provider</h1>
               <h1 class="paraText mb-md-5">If you are interested in joining our platform, please fill in the details on the form opposite and a member of our team will be in touch. If you have any questions, or need further information, please do not hesitate to contact our team at info@premedgo.com</h1>
             </div>
-            <div class="col-md-5 col-12 bg-white rounded-3 px-xl-4 py-xl-5 px-3 py-3">
+            <div class="col-md-5 col-12 bg-white rounded-3 px-xl-4 py-xl-5 px-md-3 py-3 ms-md-3">
               <form class="container-fluid g-md-3 g-0">
                 <div class="mb-md-3 mb-2">
                   <label for="orgName" class="form-label">NAME OF ORGANIZATION</label>
-                  <input type="text" class="form-control" placeholder="abcorg">
+                  <input type="text" class="form-control" placeholder="loremipsum">
                 </div>
                 <div class="row mb-md-3 mb-2">
                   <div class="col-md-6 col-12">
@@ -31,8 +31,21 @@
                     <input type="email" class="form-control" placeholder="abc@email.com">
                   </div>
                   <div class="col-md-6 col-12">
-                    <label for="orgName" class="form-label">PHONE NO.</label>
-                    <input type="email" class="form-control" placeholder="abc@email.com">
+                    <label for="orgName" class="form-label">TEL NUMBER</label>
+                    <div class="d-flex align-items-center border rounded-2 inputfieldSelect">
+                      <select class="form-select border-0 w-auto border-end rounded-0 ps-0 py-0">
+                        <option>UK</option>
+                        <option>USA</option>
+                        <option>UAE</option>
+                      </select>
+                      <input type="email" class="form-control border-0 w-100 ps-2 p-0" placeholder="0000 0000 0000">
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-3 mb-2">
+                  <div class="col-12">
+                    <label for="orgName" class="form-label">COUNTRY</label>
+                    <input type="text" class="form-control" placeholder="California">
                   </div>
                 </div>
                 <div class="row mb-md-3 mb-2">
@@ -43,14 +56,16 @@
                 </div>
                 <div class="row mb-md-3 mb-2">
                   <div class="col-12">
-                    <label for="orgName" class="form-label">LOCATION</label>
-                    <input type="text" class="form-control" placeholder="Set location on map">
+                    <div class="locationWrpr">
+                      <label for="orgName" class="form-label">LOCATION</label>
+                      <input type="text" class="form-control" placeholder="Set location on map">
+                    </div>
                   </div>
                 </div>
                 <div class="row mb-md-3 mb-2">
                   <div class="col-12">
                     <label for="orgName" class="form-label">ADDRESS</label>
-                    <input type="text" class="form-control" placeholder="ADDRESS">
+                    <input type="text" class="form-control" placeholder="ADDRESS">  
                   </div>
                 </div>
                 <div class="row mb-md-3 mb-2">

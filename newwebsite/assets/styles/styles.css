@@ -9974,7 +9974,7 @@ section {
 }
 @media (max-width: 600px) {
   .sec-banner {
-    height: auto;
+    height: 65vh;
   }
 }
 .sec-banner .homeBanner {
@@ -9987,12 +9987,6 @@ section {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 600px) {
-  .sec-banner .homeBanner {
-    position: relative;
-    height: 25vh;
-  }
-}
 .sec-banner .aboutBanner {
   z-index: 0;
   background-size: cover;
@@ -10002,12 +9996,6 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 600px) {
-  .sec-banner .aboutBanner {
-    position: relative;
-    height: 25vh;
-  }
 }
 .sec-banner .providerBanner {
   z-index: 0;
@@ -10019,12 +10007,6 @@ section {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 600px) {
-  .sec-banner .providerBanner {
-    position: relative;
-    height: 25vh;
-  }
-}
 .sec-banner .providerFormBanner {
   z-index: 0;
   background-size: cover;
@@ -10034,12 +10016,6 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 600px) {
-  .sec-banner .providerFormBanner {
-    position: relative;
-    height: 25vh;
-  }
 }
 .sec-banner .providerFormBannerOne {
   z-index: 0;
@@ -10051,11 +10027,6 @@ section {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 600px) {
-  .sec-banner .providerFormBannerOne {
-    height: 25vh;
-  }
-}
 .sec-banner .faqBanner {
   z-index: 0;
   background-size: cover;
@@ -10065,12 +10036,6 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 600px) {
-  .sec-banner .faqBanner {
-    position: relative;
-    height: 25vh;
-  }
 }
 .sec-banner .privacyBanner {
   z-index: 0;
@@ -10082,20 +10047,6 @@ section {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 600px) {
-  .sec-banner .privacyBanner {
-    position: relative;
-    height: 25vh;
-  }
-}
-@media (max-width: 600px) {
-  .sec-banner .container {
-    background-color: #2B4791;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
 .text-Primary {
   color: #4162ef;
 }
@@ -10111,6 +10062,11 @@ section {
 @media (min-width: 1920px) {
   .banHeading {
     font-size: 3.2em;
+  }
+}
+@media (max-width: 600px) {
+  .banHeading {
+    font-size: 2.4em;
   }
 }
 
@@ -10136,6 +10092,11 @@ section {
 @media (min-width: 1920px) {
   .headingWidthBorder {
     font-size: 2.3em;
+  }
+}
+@media (max-width: 600px) {
+  .headingWidthBorder {
+    font-size: 1.5em;
   }
 }
 .headingWidthBorder::after {
@@ -10255,8 +10216,20 @@ section {
   font-family: "nunitosemibold";
 }
 
+@media (max-width: 600px) {
+  header .navbar-collapse {
+    position: absolute;
+    right: 7%;
+    top: 65%;
+  }
+}
 header .navbar-brand img {
   max-width: 250px;
+}
+@media (max-width: 600px) {
+  header .navbar-brand img {
+    max-width: 150px;
+  }
 }
 header .navbar {
   background: transparent linear-gradient(180deg, rgba(14, 14, 82, 0.5882352941) 0%, rgba(9, 9, 52, 0.2588235294) 51%, rgba(3, 3, 16, 0) 100%) 0% 0% no-repeat padding-box;
@@ -10290,12 +10263,6 @@ header .navbar .nav-item.active .nav-link:after {
   border-radius: 50%;
   background-color: #10E4BE;
   bottom: 0;
-}
-@media (max-width: 600px) {
-  header .navbar .nav-item.active .nav-link:after {
-    width: 100%;
-    border-radius: 5px;
-  }
 }
 header .navbar.sticky {
   background-color: #2B4791;

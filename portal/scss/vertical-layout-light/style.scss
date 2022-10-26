@@ -11,22 +11,30 @@
     font-family: 'nunitomedium';
     src: url('../../fonts/Nunito/Nunito-Black.ttf');
 }
+
 @font-face {
     font-family: 'nunitoregular';
     src: url('../../fonts/Nunito/Nunito-Regular.ttf');
 }
+
 @font-face {
     font-family: 'nunitosemibold';
     src: url('../../fonts/Nunito/Nunito-SemiBold.ttf');
 }
+
 @font-face {
     font-family: 'nunitobold';
     src: url('../../fonts/Nunito/Nunito-Bold.ttf');
 }
+
 body {
-    .navbar, .navbar-brand-wrapper, .navbar-menu-wrapper {
+
+    .navbar,
+    .navbar-brand-wrapper,
+    .navbar-menu-wrapper {
         background-color: $portalBackground !important;
     }
+
     .page-body-wrapper {
         .main-panel {
             .content-wrapper {
@@ -35,47 +43,72 @@ body {
         }
     }
 }
+
 .bg-login-left {
     background-color: $login-bg-left;
 }
-.fw-bold{
+
+.fw-bold {
     font-family: 'nunitobold';
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6{
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     line-height: 24px !important;
 }
-.card{
+
+.card {
     border-radius: 10px;
 }
-.btn{
+
+.btn {
     font-size: 18px;
     border-radius: 10px;
     border-radius: 5px;
     padding: 12px 24px;
     border: 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 
-    &.btn-small{
+    &.btn-small {
         min-width: 140px;
     }
-    &.btn-large{
+
+    &.btn-large {
         min-width: 260px;
     }
-    &.btn-primary{
+
+    &.btn-primary {
         background-color: $primarybtn;
         color: $white;
-    
-        &:hover{
+
+        &:hover {
             color: $white;
             background-color: $primarybtnhover;
         }
     }
-    &.btn-secondary{
+
+    &.btn-secondary {
         background-color: $imgBackgroundColor;
         border-color: $imgBackgroundColor;
         color: $privacyLink;
 
-        &:hover{
+        &:hover {
             color: $white;
             background-color: $primarybtnhover;
         }
@@ -83,19 +116,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
 }
 
 
-.btn-secondary{
+.btn-secondary {
     color: $secondarybtn;
     background-color: transparent;
     border: 1px solid $secondarybtn;
 
-    &:hover{
+    &:hover {
         color: $white;
         background-color: $primarybtn;
         border: 1px solid $primarybtn;
     }
 }
 
-.defaultLink{
+.defaultLink {
     color: $primarybtn;
     text-decoration: underline;
     text-transform: uppercase;
@@ -103,44 +136,51 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
     position: relative;
     min-width: 98px;
     width: fit-content;
-    i{
+
+    i {
         position: absolute;
         transition: ease-in-out 0.5s all;
         right: -15px;
     }
-    &:hover{
-        i{
+
+    &:hover {
+        i {
             transition: ease-in-out 0.5s all;
             right: -22px;
         }
     }
 }
 
-.text-Primary{
+.text-Primary {
     color: $primarybtn;
 }
-.text-Black{
+
+.text-Black {
     color: $textColorBlack;
 }
-.privacyLink{
+
+.privacyLink {
     color: $privacyLink;
 }
-.banHeading{
+
+.banHeading {
     font-size: 45px;
     font-weight: 600;
 }
-.heading{
+
+.heading {
     font-size: 30px;
     font-weight: 600;
 }
-.headingWidthBorder{
+
+.headingWidthBorder {
     font-size: 30px;
     font-weight: 600;
     position: relative;
     padding-bottom: 20px;
     width: fit-content;
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         background-color: $headingBorder;
@@ -152,47 +192,55 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
         transform: translateX(-50%);
     }
 }
-.subHeading{
+
+.subHeading {
     font-size: 22px;
     font-family: 'nunitosemibold';
 }
-.paraText{
+
+.paraText {
     font-size: 18px;
     font-weight: 600;
 }
-.subCTA{
+
+.subCTA {
     text-transform: uppercase;
     font-size: 16px;
 }
-.headerTextR{
+
+.headerTextR {
     font-size: 16px;
     font-weight: 300;
 }
-.headerTextM{
+
+.headerTextM {
     font-size: 16px;
     font-weight: 600;
 }
-.headerTextB{
+
+.headerTextB {
     font-size: 16px;
     font-weight: 900;
 }
-.smallText{
+
+.smallText {
     font-size: 14px;
 }
 
-.frgtpswd{
+.frgtpswd {
     margin-top: -10%;
 }
 
-.logotext{
+.logotext {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 16px;
     margin: 0;
-    color:$primarybtn;
-    .textSecondary{
+    color: $primarybtn;
+
+    .textSecondary {
         color: $headingBorder;
     }
 }
@@ -201,54 +249,63 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
 .sidebar {
     background-color: $portalBackground;
 }
-.navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right){
+
+.navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
     transform: none;
 }
+
 .sidebar-icon-only {
-    .sidebar .nav .nav-item .nav-link img.menu-icon{
+    .sidebar .nav .nav-item .nav-link img.menu-icon {
         margin-right: 0;
     }
-    
-    .sidebar .nav .nav-item .nav-link svg{
+
+    .sidebar .nav .nav-item .nav-link svg {
         display: none;
     }
-     
+
     .brand-logo {
         display: none;
     }
-    .sidebar .nav .nav-item.active .nav-link:before{
+
+    .sidebar .nav .nav-item.active .nav-link:before {
         display: none;
     }
-    .navbar .navbar-brand-wrapper .navbar-toggler img{
+
+    .navbar .navbar-brand-wrapper .navbar-toggler img {
         display: none;
     }
-    
-    .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right){
+
+    .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
         transform: none;
-        img{
+
+        img {
             display: block;
         }
-        svg{
+
+        svg {
             display: none;
         }
     }
-    .navbar{
-        .navbar-brand-wrapper{
+
+    .navbar {
+        .navbar-brand-wrapper {
             padding: 0;
             background-color: #fff;
 
-            .logotext{
+            .logotext {
                 display: none;
             }
         }
-    } 
+    }
 }
-.progressBar{
+
+.progressBar {
     color: $progressBarText;
     font-size: 18px;
     position: relative;
     display: inline-block;
-    &::before{
+
+    &::before {
         content: '';
         position: absolute;
         width: 8px;
@@ -257,24 +314,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
         left: -15px;
         top: 10px;
     }
-    &.totApp{
-        &::before{
+
+    &.totApp {
+        &::before {
             background-color: #727272;
         }
     }
-    &.outApp{
-        &::before{
+
+    &.outApp {
+        &::before {
             background-color: #ADADAD;
         }
     }
 }
 
-.account-settings{
-    &.nav-pills{
+.account-settings {
+    &.nav-pills {
         border: 0;
 
-        .nav-item{
-            .nav-link{
+        .nav-item {
+            .nav-link {
                 background-color: transparent;
                 padding: 7px 20px;
                 border: 0;
@@ -282,17 +341,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
                 display: flex;
                 align-items: center;
                 color: $privacyLink;
-                img{
+
+                img {
                     width: 14px;
                     height: 14px;
                     margin-right: 0.25rem;
                 }
 
-                &.active{
+                &.active {
                     background-color: $primarybtn;
                     color: $white;
 
-                    img{
+                    img {
                         filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(118deg) brightness(200%) contrast(101%);
                     }
                 }
@@ -300,12 +360,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
         }
     }
 }
-.set-price-tabs{
+
+.set-price-tabs {
     &.nav-tabs {
         border: 0;
 
-        .nav-item{
-            .nav-link{
+        .nav-item {
+            .nav-link {
                 background-color: transparent;
                 padding: 0;
                 padding-right: 10rem;
@@ -320,7 +381,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
                 font-weight: bold;
                 margin-right: 10rem;
 
-                &.active{
+                &.active {
                     background-color: transparent;
                     color: $primarybtn;
                     border-bottom: 1px solid $primarybtn;
@@ -330,14 +391,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
     }
 }
 
-.uploadProfilePicCont{
-    .imgCont{
+.uploadProfilePicCont {
+    .imgCont {
         background-color: $imgBackgroundColor;
         width: 150px;
         height: 130px;
         position: relative;
 
-        img{
+        img {
             position: absolute;
             object-fit: fill;
             width: 100%;
@@ -346,68 +407,85 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
     }
 }
 
-.form-group{
-    label{
+.form-group {
+    label {
         margin-bottom: 5px;
     }
-    .form-control{
+
+    .form-control {
         padding: 13px 19px;
 
-        &::placeholder{
+        &::placeholder {
             color: $placeholderColor;
         }
     }
 }
-label{
+
+label {
     font-size: 20px !important;
 }
-.borderBottomGrey{
+
+.borderBottomGrey {
     border-bottom: 1px solid $tableBorderColor;
 }
 
 table {
-    &.securityTable{
-        thead,tbody{
-            th,td{
+    &.securityTable {
+
+        thead,
+        tbody {
+
+            th,
+            td {
                 color: $privacyLink;
             }
         }
-    
-        & > :not(:last-child) > :last-child > *{
+
+        &> :not(:last-child)> :last-child>* {
             border-bottom-color: $tableBorderColor !important;
         }
-        tr{
+
+        tr {
             border-bottom: 1px solid $tableBorderColor;
         }
-        tbody{
-            tr{
-                &:last-child{
+
+        tbody {
+            tr {
+                &:last-child {
                     border: none;
                 }
             }
         }
     }
-    &.notificationTable{
-        thead,tbody{
-            th,td{
+
+    &.notificationTable {
+
+        thead,
+        tbody {
+
+            th,
+            td {
                 color: $privacyLink;
                 font-weight: bold;
                 font-size: 18px;
             }
         }
-        tr{
-            &:last-child{
+
+        tr {
+            &:last-child {
                 border-bottom: 1px solid $tableBorderColor;
             }
         }
     }
 }
-.form-select{
+
+.form-select {
     font-size: 18px;
     border-color: $selectBorderColor;
 }
-.form-switch{
-    .form-check-input{
+
+.form-switch {
+    .form-check-input {
         height: 33px;
         width: 66px;
         margin-left: 0;
@@ -415,77 +493,85 @@ table {
 }
 
 //Profile Page
-.profilDetailCont{
-    & > div{
-        &:nth-child(2){
+.profilDetailCont {
+    &>div {
+        &:nth-child(2) {
             margin-top: -5%;
             margin-left: 50px;
         }
     }
-    .banner-top{
+
+    .banner-top {
         height: 50vh;
-        background: linear-gradient(90deg, rgba(16,228,190,1) 0%, rgba(65,98,239,1) 100%);
+        background: linear-gradient(90deg, rgba(16, 228, 190, 1) 0%, rgba(65, 98, 239, 1) 100%);
         position: relative;
-        img{
+
+        img {
             position: absolute;
             object-fit: fill;
             height: 100%;
             width: 100%;
         }
     }
-    .profileImgCont{
+
+    .profileImgCont {
         position: relative;
         width: 150px;
         height: 150px;
         background-color: #ffffff;
         padding: 5px;
-        
-        .imgHolder{
+
+        .imgHolder {
             width: 100%;
             height: 100%;
             background-color: #DADADA;
             position: relative;
 
-            img{
+            img {
                 object-fit: fill;
                 position: absolute;
                 width: 100%;
                 height: 100%;
             }
         }
-        
+
     }
 }
-#patientDetail_wrapper{
 
-    #patientDetail_length{
+#patientDetail_wrapper {
+
+    #patientDetail_length {
         display: inline-block;
         max-width: 65%;
         width: 100%;
         height: 40px;
         padding-left: 30px;
 
-        label{
+        label {
             height: 100%;
-            &,select{
+
+            &,
+            select {
                 height: 100%;
                 font-size: 14px;
             }
-            select{
+
+            select {
                 padding: 7px 10px;
                 border: 1px solid #00000029;
                 border-radius: 5px;
             }
         }
     }
-    .dt-buttons{
+
+    .dt-buttons {
         display: inline-block;
         max-width: 15%;
         width: 100%;
         height: 40px;
         margin-left: 10px;
 
-        button{
+        button {
             height: 100%;
             width: 100%;
             outline: none;
@@ -498,57 +584,70 @@ table {
             border-radius: 5px;
         }
     }
-    #patientDetail_filter{
+
+    #patientDetail_filter {
         display: inline-block;
         max-width: 15%;
         width: 100%;
         float: unset;
         height: 40px;
 
-        label{
+        label {
             max-width: 100%;
             padding-right: 16px;
 
-            &,input{
+            &,
+            input {
                 width: 100%;
                 height: 100%;
                 font-size: 14px;
                 border: 0;
             }
-            &{
+
+            & {
                 border: 1px solid #00000029;
                 border-radius: 5px;
             }
         }
     }
+
     .patientDetailTable {
         margin-top: 1rem;
-        thead{
+
+        thead {
             background-color: $login-bg-left;
         }
-        th,td{
+
+        th,
+        td {
             padding: 16px 20px;
         }
-        td{
+
+        td {
             border-bottom: 0;
             border-right: 1px solid #E4E4E4;
             font-weight: 600;
-            
-            &:last-child{
+
+            &:last-child {
                 border-right: 0;
             }
         }
     }
-    #patientDetail_info,#patientDetail_paginate{
+
+    #patientDetail_info,
+    #patientDetail_paginate {
         padding-top: 16px;
         margin-top: 0;
     }
-    #patientDetail_info{
+
+    #patientDetail_info {
         padding-left: 20px;
     }
-    #patientDetail_paginate{
+
+    #patientDetail_paginate {
         padding-right: 20px;
     }
+
     .paginate_button {
         color: $primarybtn !important;
         background-color: #E1E7F5;
@@ -556,41 +655,96 @@ table {
         border: 0;
         outline: none;
         border-radius: 5px;
-        
 
-        &.previous,&.next{
+
+        &.previous,
+        &.next {
             margin: 0 10px;
 
-            &.disabled{
+            &.disabled {
                 background-color: #E8E8E8;
                 border-radius: 5px;
                 color: #5D5D5D !important;
             }
         }
 
-        &.current{
+        &.current {
             background: none;
             background-color: $primarybtn;
             color: $white !important;
         }
     }
-    .completed{
+
+    .completed {
         display: inline-block;
         padding: 5px 10px;
         background-color: #DFFEEA;
         color: #10A660;
         font-size: 14px;
     }
-    .pending{
+
+    .pending {
         display: inline-block;
         padding: 5px 10px;
         background-color: #FFE3E3;
         color: #E36262;
         font-size: 14px;
     }
-    .dropdown{
-        .dropdown-toggle:after{
+
+    .dropdown {
+        .dropdown-toggle:after {
             display: none;
         }
-    } 
+    }
+}
+
+.pg_analytics {
+    .summary-card {
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px #00000012;
+        padding: 0 16px;
+
+        .card-title {
+            font-weight: 1.375rem;
+            color: #5D5D5D;
+        }
+
+        .card-body {
+            padding: 0;
+
+            .summary {
+                padding: 40px 8px;
+                border-bottom: 1px solid #CACACA;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .summary-title {
+                font-size: 22px;
+                color: #424242;
+            }
+
+            .summary-desc {
+                font-size: 18px;
+                color: #5D5D5D;
+            }
+        }
+
+        .icon {
+            background-color: #E1E7F5;
+            border-radius: 15px;
+            margin-right: 40px;
+
+            .icon-14 {
+                width: 14px;
+                height: 14px;
+
+                &::before {
+                    color: #4162EF;
+                }
+            }
+        }
+    }
 }

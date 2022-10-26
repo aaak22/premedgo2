@@ -22036,7 +22036,9 @@ div.tagsinput span.tag a {
   font-family: "nunitobold";
   src: url("../../fonts/Nunito/Nunito-Bold.ttf");
 }
-body .navbar, body .navbar-brand-wrapper, body .navbar-menu-wrapper {
+body .navbar,
+body .navbar-brand-wrapper,
+body .navbar-menu-wrapper {
   background-color: #F3F4F4 !important;
 }
 body .page-body-wrapper .main-panel .content-wrapper {
@@ -22051,7 +22053,18 @@ body .page-body-wrapper .main-panel .content-wrapper {
   font-family: "nunitobold";
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   line-height: 24px !important;
 }
 
@@ -22370,7 +22383,10 @@ label {
   border-bottom: 1px solid #B1B1B1;
 }
 
-table.securityTable thead th, table.securityTable thead td, table.securityTable tbody th, table.securityTable tbody td {
+table.securityTable thead th,
+table.securityTable thead td,
+table.securityTable tbody th,
+table.securityTable tbody td {
   color: #5D5D5D;
 }
 table.securityTable > :not(:last-child) > :last-child > * {
@@ -22382,7 +22398,10 @@ table.securityTable tr {
 table.securityTable tbody tr:last-child {
   border: none;
 }
-table.notificationTable thead th, table.notificationTable thead td, table.notificationTable tbody th, table.notificationTable tbody td {
+table.notificationTable thead th,
+table.notificationTable thead td,
+table.notificationTable tbody th,
+table.notificationTable tbody td {
   color: #5D5D5D;
   font-weight: bold;
   font-size: 18px;
@@ -22449,7 +22468,8 @@ table.notificationTable tr:last-child {
 #patientDetail_wrapper #patientDetail_length label {
   height: 100%;
 }
-#patientDetail_wrapper #patientDetail_length label, #patientDetail_wrapper #patientDetail_length label select {
+#patientDetail_wrapper #patientDetail_length label,
+#patientDetail_wrapper #patientDetail_length label select {
   height: 100%;
   font-size: 14px;
 }
@@ -22488,7 +22508,8 @@ table.notificationTable tr:last-child {
   max-width: 100%;
   padding-right: 16px;
 }
-#patientDetail_wrapper #patientDetail_filter label, #patientDetail_wrapper #patientDetail_filter label input {
+#patientDetail_wrapper #patientDetail_filter label,
+#patientDetail_wrapper #patientDetail_filter label input {
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -22504,7 +22525,8 @@ table.notificationTable tr:last-child {
 #patientDetail_wrapper .patientDetailTable thead {
   background-color: #E1E7F5;
 }
-#patientDetail_wrapper .patientDetailTable th, #patientDetail_wrapper .patientDetailTable td {
+#patientDetail_wrapper .patientDetailTable th,
+#patientDetail_wrapper .patientDetailTable td {
   padding: 16px 20px;
 }
 #patientDetail_wrapper .patientDetailTable td {
@@ -22515,7 +22537,8 @@ table.notificationTable tr:last-child {
 #patientDetail_wrapper .patientDetailTable td:last-child {
   border-right: 0;
 }
-#patientDetail_wrapper #patientDetail_info, #patientDetail_wrapper #patientDetail_paginate {
+#patientDetail_wrapper #patientDetail_info,
+#patientDetail_wrapper #patientDetail_paginate {
   padding-top: 16px;
   margin-top: 0;
 }
@@ -22562,4 +22585,44 @@ table.notificationTable tr:last-child {
 }
 #patientDetail_wrapper .dropdown .dropdown-toggle:after {
   display: none;
+}
+
+.pg_analytics .summary-card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.0705882353);
+  padding: 0 16px;
+}
+.pg_analytics .summary-card .card-title {
+  font-weight: 1.375rem;
+  color: #5D5D5D;
+}
+.pg_analytics .summary-card .card-body {
+  padding: 0;
+}
+.pg_analytics .summary-card .card-body .summary {
+  padding: 40px 8px;
+  border-bottom: 1px solid #CACACA;
+}
+.pg_analytics .summary-card .card-body .summary:last-child {
+  border: none;
+}
+.pg_analytics .summary-card .card-body .summary-title {
+  font-size: 22px;
+  color: #424242;
+}
+.pg_analytics .summary-card .card-body .summary-desc {
+  font-size: 18px;
+  color: #5D5D5D;
+}
+.pg_analytics .summary-card .icon {
+  background-color: #E1E7F5;
+  border-radius: 15px;
+  margin-right: 40px;
+}
+.pg_analytics .summary-card .icon .icon-14 {
+  width: 14px;
+  height: 14px;
+}
+.pg_analytics .summary-card .icon .icon-14::before {
+  color: #4162EF;
 }/*# sourceMappingURL=style.css.map */

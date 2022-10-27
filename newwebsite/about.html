@@ -9,6 +9,7 @@
   </head>
   <body>
 
+    
     <!--header start-->
     <header>
       <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
@@ -34,16 +35,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item w-100 d-md-none d-flex align-items-center justify-content-between px-3">
+                <a class="navbar-brand" href="#">
+                  <img
+                    class="img-fluid"
+                    alt="logo"
+                    src="./assets/images/logo.png"
+                  />
+                </a>
+                <button class="bg-transparent border-0 text-white" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">X</button>
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link text-white" href="./about.html">About</a>
               </li>
-              <li class="nav-item me-md-4">
+              <li class="nav-item me-md-4 mt-md-0 mt-auto">
                 <a class="nav-link btn btn-secondary btn-small" href="./providerone.html">For Providers</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mb-md-0 mb-5">
                 <a class="nav-link btn btn-primary btn-small" href="#">Get the app</a>
               </li>
             </ul>
@@ -90,10 +101,10 @@
             <div class="col-md-6 col-12 px-md-3">
               <div class="bgblueShadowbox">
                 <div class="row">
-                  <div class="col-md-6 col-12 text-center">
+                  <div class="col-md-6 col-12 text-md-center">
                     <img src="./assets/images/card-1.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-md-6 col-12 text-md-start text-center  mt-md-0 mt-3">
+                  <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <h1 class="subHeading text-Black font-nunitobold">Find healthcare providers near you</h1>
                     <p class="paraText text-Black">Our app allows you to book your health check with a provider at a location of your choice.</p>
                   </div>
@@ -103,10 +114,10 @@
             <div class="col-md-6 col-12 px-md-3">
               <div class="bgblueShadowbox">
                 <div class="row">
-                  <div class="col-md-6 col-12 text-center">
+                  <div class="col-md-6 col-12 text-md-center">
                     <img src="./assets/images/card-2.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-md-6 col-12 text-md-start text-center mt-md-0 mt-3">
+                  <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <h1 class="subHeading text-Black font-nunitobold">Easy online payment method</h1>
                     <p class="paraText text-Black">Our straightforward booking system takes the hassle out of arranging your next health check.</p>
                   </div>
@@ -116,10 +127,10 @@
             <div class="col-md-6 col-12 px-md-3">
               <div class="bgblueShadowbox">
                 <div class="row align-items-center justify-content-center">
-                  <div class="col-md-6 col-12 text-center">
+                  <div class="col-md-6 col-12 text-md-center text-start">
                     <img src="./assets/images/card-3.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-md-6 col-12 text-md-start text-center mt-md-0 mt-3">
+                  <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <h1 class="subHeading text-Black font-nunitobold">Flexible appointments</h1>
                     <p class="paraText text-Black">PremedGo gives access to a range of providers offering flexible appointments so you can book your next health check at the date and time that suits you.</p>
                   </div>
@@ -128,11 +139,11 @@
             </div>
             <div class="col-md-6 col-12 px-md-3">
               <div class="bgblueShadowbox h-100">
-                <div class="row">
-                  <div class="col-md-6 col-12 text-center">
+                <div class="row h-100 align-items-stretch">
+                  <div class="col-md-6 col-12 text-md-center text-start">
                     <img src="./assets/images/card-4.png" class="img-fluid" alt="">
                   </div>
-                  <div class="col-md-6 col-12 text-md-start text-center  mt-md-0 mt-3">
+                  <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <h1 class="subHeading text-Black font-nunitobold mt-3">24 hour support</h1>
                     <p class="paraText text-Black mt-md-3">Contact us at any time if you have a question or need any support.</p>
                   </div>
@@ -145,7 +156,8 @@
           <h1 class="headingWidthBorder text-Primary text-center mx-auto">What Makes PremedGo different?</h1>
           <div class="row justify-content-center">
             <div class="col-12 text-center about-mob-img">
-              <img class="img-fluid" src="./assets/images/section-3.png" alt="">
+              <img class="img-fluid d-md-block d-none" src="./assets/images/section-3.png" alt="">
+              <img class="img-fluid d-md-none d-block" src="./assets/images/section-3-mob.png" alt="">
             </div>
           </div>
         </div>
@@ -155,8 +167,8 @@
 
     <!--footer start-->
     <footer>
-      <div class="container pt-md-5 pt-3 pb-3">
-        <div class="row mb-md-5">
+      <div class="container pt-md-5 pt-3 pb-3 px-md-0 px-4">
+        <div class="row mb-5">
           <div class="col-md-4 col-12">
             <img class="img-fluid" src="./assets/images/logo-footer.png" alt="">
           </div>
@@ -185,34 +197,34 @@
             <h2 class="subHeading text-white mb-md-4 pb-md-2">Stay in Touch</h2>
             <ul class="d-flex align-items-center">
               <li>
-                <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/linkedin.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/premedgo/" class="footerlinks"><img class="img-fluid" src="./assets/images/linkedin.png" alt=""></a>
               </li>
               <li>
-                <a href="#" class="footerlinks mx-md-5 mx-2"><img class="img-fluid" src="./assets/images/instagram.png" alt=""></a>
+                <a href="https://twitter.com/Premedgo1" class="footerlinks mx-5"><img class="img-fluid" src="./assets/images/twitter_social_icon.png" alt=""></a>
               </li>
               <li>
-                <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/facebook.png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100084194371201" class="footerlinks"><img class="img-fluid" src="./assets/images/facebook.png" alt=""></a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-12 pb-md-0 pb-5">
             <h2 class="subHeading text-white mb-md-4 pb-md-2">Download App</h2>
-            <ul class="d-flex justify-content-between align-items-center">
+            <ul class="d-flex justify-content-md-between align-items-center">
               <li>
                 <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/google-play-badge.png" alt=""></a>
               </li>
-              <li>
+              <li class="ms-3">
                 <a href="#" class="footerlinks"><img class="img-fluid" src="./assets/images/app-store-icon.png" alt=""></a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="row justify-content-between pt-md-5 pt-md-2">
-          <div class="col-md-4 col-12 pb-md-0 pb-5">
+        <div class="row justify-content-md-between justify-content-center align-items-center flex-md-row flex-column-reverse pt-md-5 pt-md-2">
+          <div class="col-md-4 col-12 pb-md-0 pb-3 text-md-start text-center">
             <h2 class="text-white smallText">Copyright © 2022, PremedGo</h2>
           </div>
           <div class="col-xl-3 col-md-4 col-12">
-            <div class="terms-privacy d-flex justify-content-md-end justify-content-start">
+            <div class="terms-privacy d-flex justify-content-md-end justify-content-center">
               <a class="text-white smallText text-decoration-none" href="./privacypolicy.html">Privacy Policy</a>
             </div>
           </div>

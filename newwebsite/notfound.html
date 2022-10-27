@@ -9,7 +9,6 @@
   </head>
   <body>
 
-
     <!--header start-->
     <header>
       <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
@@ -35,16 +34,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
+              <li class="nav-item w-100 d-md-none d-flex align-items-center justify-content-between px-3">
+                <a class="navbar-brand" href="#">
+                  <img
+                    class="img-fluid"
+                    alt="logo"
+                    src="./assets/images/logo.png"
+                  />
+                </a>
+                <button class="bg-transparent border-0 text-white" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">X</button>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="./about.html">About</a>
               </li>
-              <li class="nav-item me-md-4">
+              <li class="nav-item me-md-4 mt-md-0 mt-auto">
                 <a class="nav-link btn btn-secondary btn-small" href="./providerone.html">For Providers</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mb-md-0 mb-5">
                 <a class="nav-link btn btn-primary btn-small" href="#">Get the app</a>
               </li>
             </ul>
@@ -57,14 +66,14 @@
 
     <!--content start-->
     <main class="main-content">
-      <section class="sec-banner bgLightBlue">
+      <section class="sec-banner bgLightBlue min-vh-100">
         <div class="container h-100 position-relative">
           <div class="row justify-content-center align-items-center h-100">
-            <div class="col-12 d-flex flex-column align-items-center">
-              <img src="./assets/images/404.png" alt="" class="img-fluid">
-              <h1 class="banHeading text-Primary mb-md-5">Something is wrong</h1>
-              <h1 class="subHeading text-Black mb-md-5">The page you're looking for was moved, removed, renamed or might never existed!</h1>
-              <a href="./index.html" class="btn btn-primary btn-large">Back to homepage</a>
+            <div class="col-md-7 col-12 d-flex flex-column align-items-center">
+              <img src="./assets/images/404.png" alt="" class="img-fluid mb-md-0 mb-4">
+              <h1 class="banHeading text-Primary mb-5 text-center">Something is wrong</h1>
+              <h1 class="subHeading text-Black mb-5 text-center fw-light">The page you're looking for was moved, removed, renamed or might never existed!</h1>
+              <button onclick="window.location.href='./index.html'" class="btn btn-primary btn-large">Back to homepage</button>
             </div>
           </div>
         </div>

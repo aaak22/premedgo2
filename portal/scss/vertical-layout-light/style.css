@@ -22152,6 +22152,10 @@ h6,
   color: #A0A0A0;
 }
 
+.subText {
+  color: #707070;
+}
+
 .banHeading {
   font-size: 45px;
   font-weight: 600;
@@ -22462,6 +22466,33 @@ table.notificationTable tr:last-child {
   height: 100%;
 }
 
+.toastui-calendar-layout .toastui-calendar-weekday-grid {
+  border: 0 !important;
+}
+.toastui-calendar-layout .toastui-calendar-day-names {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 12px rgba(65, 65, 65, 0.1607843137);
+  border-radius: 6px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName {
+  font-size: 18px;
+  font-weight: 600;
+}
+.toastui-calendar-layout .toastui-calendar-daygrid-cell {
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.toastui-calendar-layout .toastui-calendar-daygrid-cell .toastui-calendar-weekday-grid-date-decorator {
+  border-radius: 20%;
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+}
+
 .dataTables_wrapper#patientDetail_wrapper #patientDetail_length, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length {
   display: inline-block;
   max-width: 65%;
@@ -22622,6 +22653,37 @@ table.notificationTable tr:last-child {
 }
 .dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons > button .dt-down-arrow {
   display: none;
+}
+
+.appointWrpr {
+  border-left: 1px solid #707070;
+  position: relative;
+  padding-left: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.appointWrpr:before {
+  position: absolute;
+  left: -7px;
+  top: 20%;
+  content: "";
+  border-radius: 20px;
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.appointWrpr.appointStart {
+  padding-top: 0;
+}
+.appointWrpr.appointStart:before {
+  top: 0;
+  background-color: #4162ef;
+}
+.appointWrpr.appointConfirm:before {
+  background-color: #10E4BE;
+}
+.appointWrpr.appointPending:before {
+  background-color: #FFC056;
 }
 
 .flex-center {

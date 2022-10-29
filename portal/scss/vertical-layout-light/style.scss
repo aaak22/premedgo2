@@ -166,7 +166,9 @@ h6,
 .textGray {
     color: $placeholderColor;
 }
-
+.subText{
+    color: $subText;
+}
 .banHeading {
     font-size: 45px;
     font-weight: 600;
@@ -541,6 +543,36 @@ table {
 
     }
 }
+.toastui-calendar-layout {
+    .toastui-calendar-weekday-grid{
+        border: 0 !important;
+    }
+    .toastui-calendar-day-names{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 12px #41414129;
+        border-radius: 6px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 0;
+
+        .toastui-calendar-template-monthDayName{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    .toastui-calendar-daygrid-cell{
+        border: 0;
+        font-size: 18px;
+        font-weight: 600;
+
+        .toastui-calendar-weekday-grid-date-decorator{
+            border-radius: 20%;
+            line-height: 34px;
+            height: 34px;
+            width: 34px;
+        }
+    }
+}
 .dataTables_wrapper{
     &#patientDetail_wrapper,&#upcomingAppoints_wrapper {
     
@@ -729,6 +761,41 @@ table {
                     display: none;
                 }
             }
+        }
+    }
+}
+
+.appointWrpr{
+    border-left: 1px solid #707070;
+    position: relative;
+    padding-left: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &:before{
+        position: absolute;
+        left: -7px;
+        top: 20%;
+        content: '';
+        border-radius: 20px;
+        display: block;
+        width: 14px;
+        height: 14px;
+    }
+    &.appointStart{
+        padding-top: 0;
+        &:before{
+            top: 0;
+            background-color: $primarybtn;
+        }
+    }
+    &.appointConfirm{
+        &:before{
+            background-color: #10E4BE;
+        }
+    }
+    &.appointPending{
+        &:before{
+            background-color: #FFC056;
         }
     }
 }

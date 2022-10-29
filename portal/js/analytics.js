@@ -56,4 +56,13 @@ $(function() {
           options: options
         });
     }
+    
+    if ($("#barChart").length) {
+      var barChartCanvas = $("#barChart").get(0).getContext("2d");
+      var barChart = new Chart(barChartCanvas, {
+        type: 'bar',
+        data: data,
+        options: options
+      });
+  }
 });

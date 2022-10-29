@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -459,96 +461,224 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <div class="row">
-                        <div class="col-md-8 col-12">
-                            <div class="card">
-                                <div class="card-body py-4">
-                                    <h4 class="card-title">Weekly Appointment Summary</h4>
+                    <div class="row mb-4">
+                        <div class="col-12 col-lg-8">
+                            <div class="custom-card p-4 h-100">
+                                <h4 class="card-title">Weekly Appointment Summary</h4>
+                                <div>
                                     <canvas id="lineChart"></canvas>
                                 </div>
                             </div>
-                            <br>
-                            <div class="card">
-                                <div class="card-body py-4">
-                                    <h4 class="card-title">Service Report</h4>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Profile</th>
-                                                    <th>VatNo.</th>
-                                                    <th>Created</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Jacob</td>
-                                                    <td>53275531</td>
-                                                    <td>12 May 2017</td>
-                                                    <td><label class="badge badge-danger">Pending</label></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Messsy</td>
-                                                    <td>53275532</td>
-                                                    <td>15 May 2017</td>
-                                                    <td><label class="badge badge-warning">In progress</label></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>John</td>
-                                                    <td>53275533</td>
-                                                    <td>14 May 2017</td>
-                                                    <td><label class="badge badge-info">Fixed</label></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Peter</td>
-                                                    <td>53275534</td>
-                                                    <td>16 May 2017</td>
-                                                    <td><label class="badge badge-success">Completed</label></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Dave</td>
-                                                    <td>53275535</td>
-                                                    <td>20 May 2017</td>
-                                                    <td><label class="badge badge-warning">In progress</label></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="custom-card summary-card py-2 px-3 h-100 mt-3 mt-lg-0">
+                                <div class="summary d-flex align-items-center px-2">
+                                    <div class="icon d-flex flex-center">
+                                        <i class="icon-16 mdi mdi-arrow-up"></i>
+                                    </div>
+                                    <div class="custom-content-wrapper ms-4">
+                                        <h3 class="summary-title">Level 1</h3>
+                                        <h5 class="summary-desc">Best Selling Service</h5>
+                                    </div>
+                                </div>
+                                <div class="summary d-flex align-items-center px-2">
+                                    <div class="icon d-flex flex-center">
+                                        <i class="icon-16 mdi mdi-arrow-up"></i>
+                                    </div>
+                                    <div class="custom-content-wrapper ms-4">
+                                        <h3 class="summary-title">Level 1</h3>
+                                        <h5 class="summary-desc">Best Selling Service</h5>
+                                    </div>
+                                </div>
+                                <div class="summary d-flex align-items-center px-2">
+                                    <div class="icon d-flex flex-center">
+                                        <i class="icon-16 mdi mdi-arrow-up"></i>
+                                    </div>
+                                    <div class="custom-content-wrapper ms-4">
+                                        <h3 class="summary-title">Level 1</h3>
+                                        <h5 class="summary-desc">Best Selling Service</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12 h-100">
-                            <div class="card summary-card">
-                                <div class="card-body">
-                                    <div class="summary d-flex align-items-center">
-                                        <div class="icon p-4 d-flex flex-center">
-                                            <i class="icon-14 mdi mdi-arrow-up"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="custom-card py-4">
+                                <div class="container-fluid">
+                                    <div class="row pb-4">
+                                        <div class="col-12">
+                                            <h4 class="card-title">Service Report</h4>
                                         </div>
-                                        <div>
-                                            <h3 class="summary-title">Level 1</h3>
-                                            <h5 class="summary-desc">Best Selling Service</h5>
-                                        </div>
-                                    </div>
-                                    <div class="summary d-flex align-items-center">
-                                        <div class="icon p-4 d-flex flex-center">
-                                            <i class="icon-14 mdi mdi-arrow-up"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="summary-title">Level 1</h3>
-                                            <h5 class="summary-desc">Best Selling Service</h5>
-                                        </div>
-                                    </div>
-                                    <div class="summary d-flex align-items-center">
-                                        <div class="icon p-4 d-flex flex-center">
-                                            <i class="icon-14 mdi mdi-arrow-up"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="summary-title">Level 1</h3>
-                                            <h5 class="summary-desc">Best Selling Service</h5>
+                                        <div class="col-xl-4 col-12">
+                                            <select class="form-select py-12 px-20" aria-label="Default select example">
+                                                <option disabled selected>Select Service Level</option>
+                                                <option value="1">Level 1</option>
+                                                <option value="2">Level 2</option>
+                                                <option value="3">Level 3</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="container-fluid p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table patientDetailTable" id="patientDetail">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">NAME</th>
+                                                            <th scope="col">LEVEL OF SERVICE</th>
+                                                            <th scope="col">APPOINTMENT DATE</th>
+                                                            <th scope="col">STATUS</th>
+                                                            <th scope="col">ACTION</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="completed">COMPLETED</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="pending">PENDING</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="completed">COMPLETED</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="pending">PENDING</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="completed">COMPLETED</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td><span class="pending">PENDING</span> </td>
+                                                            <td>
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="dropdown-toggle border-0 bg-transparent"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu p-0">
+                                                                        <li><a class="dropdown-item" href="#"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#exampleModal">View
+                                                                                Detail</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="custom-card mt-3 mt-lg-0 p-4 h-100">
+                                <h4 class="card-title">Sales</h4>
+                                <canvas id="barChart"></canvas>
                             </div>
                         </div>
                     </div>

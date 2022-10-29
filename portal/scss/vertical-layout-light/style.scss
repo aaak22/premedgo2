@@ -162,6 +162,7 @@ h6,
 .privacyLink {
     color: $privacyLink;
 }
+
 .textGray {
     color: $placeholderColor;
 }
@@ -701,32 +702,251 @@ table {
     }
 }
 
-.pg_analytics {
-    .summary-card {
-        border-radius: 5px;
-        box-shadow: 0px 0px 12px #00000012;
-        padding: 0 16px;
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
 
-        .card-title {
-            font-weight: 1.375rem;
-            color: #5D5D5D;
+// icon sizes
+.icon-14 {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-16 {
+    width: 16px;
+    height: 16px;
+}
+
+// margin added
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.ms-12 {
+    margin-inline-start: 12px;
+}
+
+.me-12 {
+    margin-inline-end: 12px;
+}
+
+.mx-12 {
+    margin-inline: 12px;
+}
+
+.my-12 {
+    margin-block: 12px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ms-20 {
+    margin-inline-start: 20px;
+}
+
+.me-20 {
+    margin-inline-end: 20px;
+}
+
+.mx-20 {
+    margin-inline: 20px;
+}
+
+.my-20 {
+    margin-block: 20px;
+}
+
+// padding added
+
+.pt-12 {
+    padding-top: 12px;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
+.ps-12 {
+    padding-inline-start: 12px;
+}
+
+.pe-12 {
+    padding-inline-end: 12px;
+}
+
+.px-12 {
+    padding-inline: 12px;
+}
+
+.py-12 {
+    padding-block: 12px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.ps-20 {
+    padding-inline-start: 20px;
+}
+
+.pe-20 {
+    padding-inline-end: 20px;
+}
+
+.px-20 {
+    padding-inline: 20px;
+}
+
+.py-20 {
+    padding-block: 20px;
+}
+
+// generic table styling
+
+.dt-buttons {
+    display: inline-block;
+    max-width: 15%;
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+
+    button {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 0;
+        box-shadow: none;
+        background-color: $primarybtn;
+        color: $white;
+        box-shadow: 0 3px 6px #00000029;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+}
+
+.paginate_button {
+    color: $primarybtn !important;
+    background-color: #E1E7F5;
+    box-shadow: none;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+
+    &.previous,
+    &.next {
+        margin: 0 10px;
+
+        &.disabled {
+            background-color: #E8E8E8;
+            border-radius: 5px;
+            color: #5D5D5D !important;
+        }
+    }
+
+    &.current {
+        background: none;
+        background-color: $primarybtn;
+        color: $white !important;
+    }
+}
+
+.dropdown {
+    .dropdown-toggle:after {
+        display: none;
+    }
+}
+
+table {
+    thead {
+        background-color: $login-bg-left;
+    }
+
+    th {
+        color: #707070;
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        padding: 16px 20px;
+    }
+
+    td {
+        border-bottom: 0;
+        border-right: 1px solid #E4E4E4;
+        font-weight: 600;
+        font-size: 14px !important;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    .completed {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #DFFEEA;
+        color: #10A660;
+        font-size: 14px;
+    }
+
+    .pending {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #FFE3E3;
+        color: #E36262;
+        font-size: 14px;
+    }
+}
+
+// seperate components 
+.custom-card {
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px #00000012;
+    background-color: #fff;
+
+    .card-title {
+        font-size: 1.375rem;
+        color: #323232;
+        margin-bottom: 14px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+}
+
+.summary-card {
+    .summary {
+        padding-block: 38px;
+        border-bottom: 1px solid #CACACA;
+
+        &:last-child {
+            border: none;
         }
 
-        .card-body {
-            padding: 0;
-
-            .summary {
-                padding: 40px 8px;
-                border-bottom: 1px solid #CACACA;
-
-                &:last-child {
-                    border: none;
-                }
-            }
-
+        .custom-content-wrapper {
             .summary-title {
                 font-size: 22px;
                 color: #424242;
+                font-weight: 600;
             }
 
             .summary-desc {
@@ -738,12 +958,10 @@ table {
         .icon {
             background-color: #E1E7F5;
             border-radius: 15px;
-            margin-right: 40px;
+            height: 60px;
+            width: 60px;
 
-            .icon-14 {
-                width: 14px;
-                height: 14px;
-
+            .icon-16 {
                 &::before {
                     color: #4162EF;
                 }

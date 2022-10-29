@@ -18,6 +18,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+
+  <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -482,10 +487,126 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 col-12"></div>
+                <div class="col-md-4 col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- <div>
+                        <canvas id="myChart"></canvas>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <div class="card rounded-1">
+                    <div class="card-body position-relative">
+                      <h1 class="subHeading">Upcoming Appointments</h1>
+                      <div class="table-responsive">
+                        <table class="table upcomingAppointsTable" id="upcomingAppoints">
+                          <thead>
+                            <tr>
+                              <th scope="col">NAME</th>
+                              <th scope="col">LEVEL OF SERVICE</th>
+                              <th scope="col">DATE</th>
+                              <th scope="col">TIMING</th>
+                              <th scope="col"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Basic</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Level 1</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Level 2</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Basic</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Level 2</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Lorem Ipsum lorem</td>
+                              <td>Level 1</td>
+                              <td>6-21-2022</td>
+                              <td>2:30 PM</td>
+                              <td>
+                                <div class="d-flex justify-content-between">
+                                  <span>View Details</span>
+                                  <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-4 col-12"></div>
+            <div class="col-md-4 col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="subHeading">Your Schedule</h1>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <button id="prevBtn" class="bg-transparent border-0 d-inline-block"><i class="fa-solid fa-chevron-left text-primary"></i> </button>
+                    <div id="monthName"></div>
+                    <button id="nextBtn" class="bg-transparent border-0 d-inline-block"><i class="fa-solid fa-chevron-right text-primary"></i> </button>
+                  </div>
+                  <div id="calendar" style="height: 600px;"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- content-wrapper ends -->
@@ -525,13 +646,23 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- <script src="js/Chart.roundedBarCharts.js"></script> -->
   <!-- End custom js for this page-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/brands.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/solid.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+
 
   <script src="./loading-bar.min.js"></script>
 
@@ -540,6 +671,117 @@
     var bar2 = document.getElementById('myItem1').ldBar;
     bar1.set(60);
   </script>
+  
+  <script>
+    $(document).ready( function () {
+      $('#upcomingAppoints').DataTable({
+        "autoWidth": false,
+        "bPaginate": false,
+        "bLengthChange": '10',
+        dom: 'Bt',
+        "bFilter": false,
+        "info": false,
+        "ordering": false, 
+        buttons: [
+            {
+                extend: 'collection',
+                text: '',
+                buttons: [
+                    'copy',
+                    'excel',
+                    'csv',
+                    'pdf',
+                    'print',
+                ]
+            }
+        ],
+      });
+    } );
+  </script>
+<!-- 
+    <script>
+      const labels = Utils.months({count: 7});
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Dataset 1',
+            data: Utils.numbers(NUMBER_CFG),
+            backgroundColor: Utils.CHART_COLORS.red,
+          },
+          {
+            label: 'Dataset 2',
+            data: Utils.numbers(NUMBER_CFG),
+            backgroundColor: Utils.CHART_COLORS.blue,
+          },
+          {
+            label: 'Dataset 3',
+            data: Utils.numbers(NUMBER_CFG),
+            backgroundColor: Utils.CHART_COLORS.green,
+          },
+        ]
+      };
+      const actions = [
+        {
+          name: 'Randomize',
+          handler(chart) {
+            chart.data.datasets.forEach(dataset => {
+              dataset.data = Utils.numbers({count: chart.data.labels.length, min: -100, max: 100});
+            });
+            chart.update();
+          }
+        },
+      ];
+      const config = {
+        type: 'bar',
+        data: data,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: 'Chart.js Bar Chart - Stacked'
+            },
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true
+            }
+          }
+        }
+      };
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script> -->
+    <script>
+      const Calendar = tui.Calendar;
+      const calendar = new Calendar('#calendar', {
+        taskView: true,
+        scheduleView: ['allday', 'time'],
+        template: {
+        monthDayname: function(dayname) {
+          return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
+        }
+        },
+        defaultView: 'month',
+      });
+    </script>
+
+    <script>
+      $("#prevBtn").click(function(){
+        calendar.prev();
+      });
+      $("#nextBtn").click(function(){
+        calendar.next();
+      });
+      console.log(calendar.changeView('month'))
+      // document.getElementById('monthName').innerHTML = calendar.changeView('month');
+    </script>
 </body>
 
 </html>

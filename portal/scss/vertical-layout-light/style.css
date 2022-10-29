@@ -22462,34 +22462,35 @@ table.notificationTable tr:last-child {
   height: 100%;
 }
 
-#patientDetail_wrapper #patientDetail_length {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_length, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length {
   display: inline-block;
   max-width: 65%;
   width: 100%;
   height: 40px;
   padding-left: 30px;
 }
-#patientDetail_wrapper #patientDetail_length label {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_length label, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length label {
   height: 100%;
 }
-#patientDetail_wrapper #patientDetail_length label,
-#patientDetail_wrapper #patientDetail_length label select {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_length label,
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_length label select, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length label,
+.dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length label select {
   height: 100%;
   font-size: 14px;
 }
-#patientDetail_wrapper #patientDetail_length label select {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_length label select, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length label select {
   padding: 7px 10px;
   border: 1px solid rgba(0, 0, 0, 0.1607843137);
   border-radius: 5px;
 }
-#patientDetail_wrapper .dt-buttons {
+.dataTables_wrapper#patientDetail_wrapper .dt-buttons, .dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons {
   display: inline-block;
   max-width: 15%;
   width: 100%;
   height: 40px;
   margin-left: 10px;
 }
-#patientDetail_wrapper .dt-buttons button {
+.dataTables_wrapper#patientDetail_wrapper .dt-buttons button, .dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons button {
   height: 100%;
   width: 100%;
   outline: none;
@@ -22501,58 +22502,63 @@ table.notificationTable tr:last-child {
   font-size: 14px;
   border-radius: 5px;
 }
-#patientDetail_wrapper #patientDetail_filter {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_filter, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_filter {
   display: inline-block;
   max-width: 15%;
   width: 100%;
   float: unset;
   height: 40px;
 }
-#patientDetail_wrapper #patientDetail_filter label {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_filter label, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_filter label {
   max-width: 100%;
   padding-right: 16px;
 }
-#patientDetail_wrapper #patientDetail_filter label,
-#patientDetail_wrapper #patientDetail_filter label input {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_filter label,
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_filter label input, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_filter label,
+.dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_filter label input {
   width: 100%;
   height: 100%;
   font-size: 14px;
   border: 0;
 }
-#patientDetail_wrapper #patientDetail_filter label {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_filter label, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_filter label {
   border: 1px solid rgba(0, 0, 0, 0.1607843137);
   border-radius: 5px;
 }
-#patientDetail_wrapper .patientDetailTable {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable {
   margin-top: 1rem;
 }
-#patientDetail_wrapper .patientDetailTable thead {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable thead, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable thead, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable thead, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable thead {
   background-color: #E1E7F5;
 }
-#patientDetail_wrapper .patientDetailTable th,
-#patientDetail_wrapper .patientDetailTable td {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable th,
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable th,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable th,
+.dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable th,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td {
   padding: 16px 20px;
 }
-#patientDetail_wrapper .patientDetailTable td {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td {
   border-bottom: 0;
   border-right: 1px solid #E4E4E4;
   font-weight: 600;
 }
-#patientDetail_wrapper .patientDetailTable td:last-child {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td:last-child, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td:last-child, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td:last-child, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td:last-child {
   border-right: 0;
 }
-#patientDetail_wrapper #patientDetail_info,
-#patientDetail_wrapper #patientDetail_paginate {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_info,
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_paginate, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_info,
+.dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_paginate {
   padding-top: 16px;
   margin-top: 0;
 }
-#patientDetail_wrapper #patientDetail_info {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_info, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_info {
   padding-left: 20px;
 }
-#patientDetail_wrapper #patientDetail_paginate {
+.dataTables_wrapper#patientDetail_wrapper #patientDetail_paginate, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_paginate {
   padding-right: 20px;
 }
-#patientDetail_wrapper .paginate_button {
+.dataTables_wrapper#patientDetail_wrapper .paginate_button, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button {
   color: #4162ef !important;
   background-color: #E1E7F5;
   box-shadow: none;
@@ -22560,34 +22566,61 @@ table.notificationTable tr:last-child {
   outline: none;
   border-radius: 5px;
 }
-#patientDetail_wrapper .paginate_button.previous, #patientDetail_wrapper .paginate_button.next {
+.dataTables_wrapper#patientDetail_wrapper .paginate_button.previous, .dataTables_wrapper#patientDetail_wrapper .paginate_button.next, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.previous, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.next {
   margin: 0 10px;
 }
-#patientDetail_wrapper .paginate_button.previous.disabled, #patientDetail_wrapper .paginate_button.next.disabled {
+.dataTables_wrapper#patientDetail_wrapper .paginate_button.previous.disabled, .dataTables_wrapper#patientDetail_wrapper .paginate_button.next.disabled, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.previous.disabled, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.next.disabled {
   background-color: #E8E8E8;
   border-radius: 5px;
   color: #5D5D5D !important;
 }
-#patientDetail_wrapper .paginate_button.current {
+.dataTables_wrapper#patientDetail_wrapper .paginate_button.current, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.current {
   background: none;
   background-color: #4162ef;
   color: #ffffff !important;
 }
-#patientDetail_wrapper .completed {
+.dataTables_wrapper#patientDetail_wrapper .completed, .dataTables_wrapper#upcomingAppoints_wrapper .completed {
   display: inline-block;
   padding: 5px 10px;
   background-color: #DFFEEA;
   color: #10A660;
   font-size: 14px;
 }
-#patientDetail_wrapper .pending {
+.dataTables_wrapper#patientDetail_wrapper .pending, .dataTables_wrapper#upcomingAppoints_wrapper .pending {
   display: inline-block;
   padding: 5px 10px;
   background-color: #FFE3E3;
   color: #E36262;
   font-size: 14px;
 }
-#patientDetail_wrapper .dropdown .dropdown-toggle:after {
+.dataTables_wrapper#patientDetail_wrapper .dropdown .dropdown-toggle:after, .dataTables_wrapper#upcomingAppoints_wrapper .dropdown .dropdown-toggle:after {
+  display: none;
+}
+.dataTables_wrapper#upcomingAppoints_wrapper {
+  position: initial;
+}
+.dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  text-align: right;
+}
+.dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons > button {
+  background-color: transparent;
+  height: 10px;
+  width: 10px;
+  box-shadow: none;
+}
+.dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons > button::before {
+  display: block;
+  content: "\f142";
+  font: var(--fa-font-solid);
+  width: 10px;
+  height: 10px;
+  font-size: 18px !important;
+  color: #9B9B9B;
+}
+.dataTables_wrapper#upcomingAppoints_wrapper .dt-buttons > button .dt-down-arrow {
   display: none;
 }
 

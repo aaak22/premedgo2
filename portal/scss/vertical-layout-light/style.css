@@ -22686,6 +22686,10 @@ table.notificationTable tr:last-child {
   background-color: #FFC056;
 }
 
+.profitText {
+  color: #06D186;
+}
+
 .flex-center {
   align-items: center;
   justify-content: center;

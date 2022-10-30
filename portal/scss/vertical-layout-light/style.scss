@@ -171,20 +171,47 @@ h6,
 }
 .banHeading {
     font-size: 45px;
+
     font-weight: 600;
 }
 
 .heading {
     font-size: 30px;
     font-weight: 600;
+    
+    @media (min-width: 1920px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 22px;
+    }
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
+
 }
 
 .headingWidthBorder {
-    font-size: 30px;
     font-weight: 600;
     position: relative;
     padding-bottom: 20px;
     width: fit-content;
+    
+    @media (min-width: 1920px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 22px;
+    }
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
 
     &::after {
         content: '';
@@ -200,37 +227,119 @@ h6,
 }
 
 .subHeading {
-    font-size: 22px;
+    @media (min-width: 1920px) {
+        font-size: 22px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
     font-family: 'nunitosemibold';
 }
 
 .paraText {
-    font-size: 18px;
+    @media (min-width: 1920px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        font-size: 12px;
+    }
+
     font-weight: 600;
 }
 
 .subCTA {
+    @media (min-width: 1920px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
     text-transform: uppercase;
-    font-size: 16px;
+    
 }
 
 .headerTextR {
-    font-size: 16px;
+    
+    @media (min-width: 1920px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
     font-weight: 300;
 }
 
 .headerTextM {
-    font-size: 16px;
+    
+    @media (min-width: 1920px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
     font-weight: 600;
 }
 
 .headerTextB {
-    font-size: 16px;
+    
+    @media (min-width: 1920px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
     font-weight: 900;
 }
 
 .smallText {
-    font-size: 14px;
+    @media (min-width: 1920px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 12px;
+    }
+    @media (min-width: 768px) {
+        font-size: 10px;
+    }
+    @media (max-width: 600px) {
+        font-size: 8px;
+    }
 }
 
 .frgtpswd {
@@ -307,9 +416,20 @@ h6,
 
 .progressBar {
     color: $progressBarText;
-    font-size: 18px;
     position: relative;
     display: inline-block;
+    @media (min-width: 1920px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        font-size: 12px;
+    }
 
     &::before {
         content: '';
@@ -555,8 +675,19 @@ table {
         margin-bottom: 1em;
         padding-left: 0;
 
-        .toastui-calendar-template-monthDayName{
-            font-size: 18px;
+        .toastui-calendar-template-monthDayName, .toastui-calendar-daygrid-cell{
+            @media (min-width: 1920px) {
+                font-size: 18px;
+            }
+            @media (min-width: 1440px) {
+                font-size: 16px;
+            }
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+            @media (max-width: 600px) {
+                font-size: 12px;
+            }
             font-weight: 600;
         }
     }
@@ -802,7 +933,19 @@ table {
 .profitText{
     color: #06D186;
 }
-
+.loadingBar{
+    width: 100% !important;
+    path.mainline {
+        stroke-width: 2;
+        stroke: #10E4BE;
+        stroke-linecap: round;
+    }
+    path.baseline  {
+        stroke-width: 4;
+        stroke: #E5E9F2;
+        stroke-linecap: round;
+    }
+}
 
 
 .flex-center {

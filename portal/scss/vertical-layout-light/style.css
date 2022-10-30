@@ -22165,15 +22165,54 @@ h6,
   font-size: 30px;
   font-weight: 600;
 }
+@media (min-width: 1920px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .heading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    font-size: 18px;
+  }
+}
 
 .headingWidthBorder {
-  font-size: 30px;
   font-weight: 600;
   position: relative;
   padding-bottom: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (min-width: 1920px) {
+  .headingWidthBorder {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .headingWidthBorder {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .headingWidthBorder {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .headingWidthBorder {
+    font-size: 18px;
+  }
 }
 .headingWidthBorder::after {
   content: "";
@@ -22188,37 +22227,168 @@ h6,
 }
 
 .subHeading {
-  font-size: 22px;
   font-family: "nunitosemibold";
+}
+@media (min-width: 1920px) {
+  .subHeading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1440px) {
+  .subHeading {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .subHeading {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .subHeading {
+    font-size: 14px;
+  }
 }
 
 .paraText {
-  font-size: 18px;
   font-weight: 600;
+}
+@media (min-width: 1920px) {
+  .paraText {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .paraText {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .paraText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .paraText {
+    font-size: 12px;
+  }
 }
 
 .subCTA {
   text-transform: uppercase;
-  font-size: 16px;
+}
+@media (min-width: 1920px) {
+  .subCTA {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .subCTA {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .subCTA {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .subCTA {
+    font-size: 10px;
+  }
 }
 
 .headerTextR {
-  font-size: 16px;
   font-weight: 300;
+}
+@media (min-width: 1920px) {
+  .headerTextR {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .headerTextR {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .headerTextR {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .headerTextR {
+    font-size: 10px;
+  }
 }
 
 .headerTextM {
-  font-size: 16px;
   font-weight: 600;
+}
+@media (min-width: 1920px) {
+  .headerTextM {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .headerTextM {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .headerTextM {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .headerTextM {
+    font-size: 10px;
+  }
 }
 
 .headerTextB {
-  font-size: 16px;
   font-weight: 900;
 }
+@media (min-width: 1920px) {
+  .headerTextB {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .headerTextB {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .headerTextB {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .headerTextB {
+    font-size: 10px;
+  }
+}
 
-.smallText {
-  font-size: 14px;
+@media (min-width: 1920px) {
+  .smallText {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .smallText {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .smallText {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .smallText {
+    font-size: 8px;
+  }
 }
 
 .frgtpswd {
@@ -22280,9 +22450,28 @@ h6,
 
 .progressBar {
   color: #001737;
-  font-size: 18px;
   position: relative;
   display: inline-block;
+}
+@media (min-width: 1920px) {
+  .progressBar {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .progressBar {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .progressBar {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .progressBar {
+    font-size: 12px;
+  }
 }
 .progressBar::before {
   content: "";
@@ -22477,9 +22666,28 @@ table.notificationTable tr:last-child {
   margin-bottom: 1em;
   padding-left: 0;
 }
-.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName {
-  font-size: 18px;
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
   font-weight: 600;
+}
+@media (min-width: 1920px) {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+    font-size: 12px;
+  }
 }
 .toastui-calendar-layout .toastui-calendar-daygrid-cell {
   border: 0;
@@ -22688,6 +22896,20 @@ table.notificationTable tr:last-child {
 
 .profitText {
   color: #06D186;
+}
+
+.loadingBar {
+  width: 100% !important;
+}
+.loadingBar path.mainline {
+  stroke-width: 2;
+  stroke: #10E4BE;
+  stroke-linecap: round;
+}
+.loadingBar path.baseline {
+  stroke-width: 4;
+  stroke: #E5E9F2;
+  stroke-linecap: round;
 }
 
 .flex-center {

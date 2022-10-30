@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="earnings_this_month" data-name="earnings this month" transform="translate(-1506 -445)">
+    <rect id="Rectangle_866" data-name="Rectangle 866" width="63" height="63" rx="15" transform="translate(1506 445)" fill="#e1e7f5" opacity="0.67"/>
+    <g id="dollar-sign" transform="translate(1525 464)">
+      <line id="Line_253" data-name="Line 253" y2="22" transform="translate(12 1)" fill="none" stroke="#4162ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"/>
+      <path id="Path_11524" data-name="Path 11524" d="M17,5H9.5a3.5,3.5,0,0,0,0,7h5a3.5,3.5,0,1,1,0,7H6" fill="none" stroke="#4162ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"/>
+    </g>
+  </g>
+</svg>

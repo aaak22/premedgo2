@@ -178,23 +178,19 @@ h6,
 }
 
 .heading {
-    font-size: 30px;
     font-weight: 600;
-
-    @media (min-width: 1920px) {
-        font-size: 30px;
-    }
-
-    @media (min-width: 1440px) {
-        font-size: 22px;
-    }
-
-    @media (min-width: 768px) {
-        font-size: 20px;
-    }
 
     @media (max-width: 600px) {
         font-size: 18px;
+    }
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 22px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 30px;
     }
 
 }
@@ -205,20 +201,17 @@ h6,
     padding-bottom: 20px;
     width: fit-content;
 
-    @media (min-width: 1920px) {
-        font-size: 30px;
+    @media (max-width: 600px) {
+        font-size: 18px;
     }
-
-    @media (min-width: 1440px) {
-        font-size: 22px;
-    }
-
     @media (min-width: 768px) {
         font-size: 20px;
     }
-
-    @media (max-width: 600px) {
-        font-size: 18px;
+    @media (min-width: 1440px) {
+        font-size: 22px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 30px;
     }
 
     &::after {
@@ -235,60 +228,52 @@ h6,
 }
 
 .subHeading {
-    @media (min-width: 1920px) {
-        font-size: 22px;
+    @media (max-width: 600px) {
+        font-size: 14px;
     }
-
-    @media (min-width: 1440px) {
-        font-size: 16px;
-    }
-
     @media (min-width: 768px) {
         font-size: 14px;
     }
-
-    @media (max-width: 600px) {
-        font-size: 14px;
+    @media (min-width: 1440px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 22px;
     }
 
     font-family: 'nunitosemibold';
 }
 
 .paraText {
-    @media (min-width: 1920px) {
-        font-size: 18px;
-    }
-
-    @media (min-width: 1440px) {
-        font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 12px;
     }
 
     @media (min-width: 768px) {
         font-size: 14px;
     }
-
-    @media (max-width: 600px) {
-        font-size: 12px;
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 18px;
     }
 
     font-weight: 600;
 }
 
 .subCTA {
-    @media (min-width: 1920px) {
-        font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 10px;
     }
-
-    @media (min-width: 1440px) {
-        font-size: 14px;
-    }
-
     @media (min-width: 768px) {
         font-size: 12px;
     }
-
-    @media (max-width: 600px) {
-        font-size: 10px;
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 16px;
     }
 
     text-transform: uppercase;
@@ -296,42 +281,35 @@ h6,
 }
 
 .headerTextR {
-
-    @media (min-width: 1920px) {
-        font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 10px;
     }
-
-    @media (min-width: 1440px) {
-        font-size: 14px;
-    }
-
     @media (min-width: 768px) {
         font-size: 12px;
     }
-
-    @media (max-width: 600px) {
-        font-size: 10px;
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 16px;
     }
 
     font-weight: 300;
 }
 
 .headerTextM {
-
-    @media (min-width: 1920px) {
-        font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
     }
 
     @media (min-width: 1440px) {
         font-size: 14px;
     }
-
-    @media (min-width: 768px) {
-        font-size: 12px;
-    }
-
-    @media (max-width: 600px) {
-        font-size: 10px;
+    @media (min-width: 1920px) {
+        font-size: 16px;
     }
 
     font-weight: 600;
@@ -339,41 +317,40 @@ h6,
 
 .headerTextB {
 
-    @media (min-width: 1920px) {
-        font-size: 16px;
+    @media (max-width: 600px) {
+        font-size: 10px;
     }
-
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
     @media (min-width: 1440px) {
         font-size: 14px;
     }
 
-    @media (min-width: 768px) {
-        font-size: 12px;
-    }
-
-    @media (max-width: 600px) {
-        font-size: 10px;
+    @media (min-width: 1920px) {
+        font-size: 16px;
     }
 
     font-weight: 900;
 }
 
 .smallText {
-    @media (min-width: 1920px) {
-        font-size: 14px;
+    
+    @media (max-width: 600px) {
+        font-size: 8px;
+    }
+    @media (min-width: 768px) {
+        font-size: 10px;
     }
 
     @media (min-width: 1440px) {
         font-size: 12px;
     }
 
-    @media (min-width: 768px) {
-        font-size: 10px;
+    @media (min-width: 1920px) {
+        font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-        font-size: 8px;
-    }
 }
 
 .frgtpswd {
@@ -454,21 +431,20 @@ h6,
     display: flex;
     align-items: center;
 
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+    @media (min-width: 768px) {
+        font-size: 12px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 14px;
+    }
     @media (min-width: 1920px) {
         font-size: 18px;
     }
 
-    @media (min-width: 1440px) {
-        font-size: 14px;
-    }
 
-    @media (min-width: 768px) {
-        font-size: 12px;
-    }
-
-    @media (max-width: 600px) {
-        font-size: 10px;
-    }
 
     &::before {
         content: '';
@@ -531,11 +507,19 @@ h6,
         border: 0;
 
         .nav-item {
+            flex: 1 1 auto;
             .nav-link {
                 background-color: transparent;
                 padding: 0;
-                padding-right: 10rem;
-                font-size: 20px;
+                @media (max-width: 600px) {
+                    font-size: 14px;
+                }
+                @media (min-width: 1440px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 1920px) {
+                    font-size: 22px;
+                }
                 border: 0;
                 border-radius: 0;
                 display: flex;
@@ -544,7 +528,6 @@ h6,
                 color: $privacyLink;
                 text-transform: uppercase;
                 font-weight: bold;
-                margin-right: 10rem;
 
                 &.active {
                     background-color: transparent;
@@ -587,7 +570,19 @@ h6,
 }
 
 label {
-    font-size: 20px !important;
+    @media (max-width: 600px) {
+        font-size: 12px !important;
+    }
+    @media (min-width: 768px) {
+        font-size: 14px !important;
+    }
+    @media (min-width: 1440px) {
+        font-size: 16px !important;
+    }
+    @media (min-width: 1920px) {
+        font-size: 18px !important;
+    }
+
 }
 
 .borderBottomGrey {
@@ -632,7 +627,20 @@ table {
             td {
                 color: $privacyLink;
                 font-weight: bold;
-                font-size: 18px;
+                
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                }
+                @media (min-width: 1440px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 1920px) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -645,14 +653,27 @@ table {
 }
 
 .form-select {
-    font-size: 18px;
+    
+    @media (max-width: 600px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 18px;
+    }
     border-color: $selectBorderColor;
 }
 
 .form-switch {
     .form-check-input {
-        height: 33px;
-        width: 66px;
+        height: 24px;
+        width: 64px;
         margin-left: 0;
     }
 }
@@ -735,15 +756,40 @@ table {
             }
 
             .toastui-calendar-template-monthDayName {
-                font-size: 18px;
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                }
+                @media (min-width: 1440px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 1920px) {
+                    font-size: 18px;
+                }
                 font-weight: 600;
             }
         }
 
         .toastui-calendar-daygrid-cell {
             border: 0;
-            font-size: 18px;
             font-weight: 600;
+            
+            @media (max-width: 600px) {
+                font-size: 12px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1440px) {
+                font-size: 16px;
+            }
+            @media (min-width: 1920px) {
+                font-size: 18px;
+            }
 
             .toastui-calendar-weekday-grid-date-decorator {
                 border-radius: 20%;
@@ -802,6 +848,24 @@ table {
                 box-shadow: 0 3px 6px #00000029;
                 font-size: 14px;
                 border-radius: 5px;
+
+            }
+            
+            .dt-button-collection{
+                background-color: $white;
+                box-shadow: 0 3px 6px #00000029;
+                
+                .dt-button{
+                    color: $progressBarText;
+                    background-color: transparent;
+                    box-shadow: none;
+                    margin: 10px 0;
+
+                    &:hover{
+                        color: $white;
+                        background-color: $primarybtn;
+                    }
+                }
             }
         }
 
@@ -918,7 +982,13 @@ table {
             }
         }
     }
-
+    &#patientDetail_wrapper{
+        .dt-button-collection{
+            margin-top: 0 !important;
+            position: absolute;
+            right: 5%;
+        }
+    }
     &#upcomingAppoints_wrapper {
         position: initial;
 
@@ -947,6 +1017,23 @@ table {
 
                 .dt-down-arrow {
                     display: none;
+                }
+            }
+            .dt-button-collection{
+                background-color: $white;
+                box-shadow: 0 3px 6px #00000029;
+                margin-top: 0 !important;
+                
+                .dt-button{
+                    color: $progressBarText;
+                    background-color: transparent;
+                    box-shadow: none;
+                    margin: 10px 0;
+
+                    &:hover{
+                        color: $white;
+                        background-color: $primarybtn;
+                    }
                 }
             }
         }
@@ -997,20 +1084,6 @@ table {
     color: #06D186;
 }
 
-// .loadingBar{
-//     width: 100% !important;
-//     path.mainline {
-//         stroke-width: 2;
-//         stroke: #10E4BE;
-//         stroke-linecap: round;
-//     }
-//     path.baseline  {
-//         width: 100%;
-//         stroke-width: 4;
-//         stroke: #E5E9F2;
-//         stroke-linecap: round;
-//     }
-// }
 #container {
     margin: 20px 0px;
     height: 8px;

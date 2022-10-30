@@ -29,6 +29,35 @@ $(function() {
         fill: true
       }]
     };
+    
+    var data2 = {
+      labels: ["S", "M", "T", "W", "T", "F", "S"],
+      datasets: [{
+        label: '# of Votes',
+        data: [10, 19, 3, 5, 2, 3, 20],
+        backgroundColor: [
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+        ],
+        borderColor: [
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+          '#91A4F6',
+        ],
+        borderWidth: 1,
+        fill: true
+      }]
+    };
+    
     var options = {
       scales: {
         yAxes: [{
@@ -36,7 +65,10 @@ $(function() {
             beginAtZero: true
           },
           
-        }]
+        }],
+        x: {
+          maxBarThickness: 10
+        },
       },
       legend: {
         display: false
@@ -61,7 +93,7 @@ $(function() {
       var barChartCanvas = $("#barChart").get(0).getContext("2d");
       var barChart = new Chart(barChartCanvas, {
         type: 'bar',
-        data: data,
+        data: data2,
         options: options
       });
   }

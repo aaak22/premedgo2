@@ -166,9 +166,11 @@ h6,
 .textGray {
     color: $placeholderColor;
 }
-.subText{
+
+.subText {
     color: $subText;
 }
+
 .banHeading {
     font-size: 45px;
 
@@ -178,16 +180,19 @@ h6,
 .heading {
     font-size: 30px;
     font-weight: 600;
-    
+
     @media (min-width: 1920px) {
         font-size: 30px;
     }
+
     @media (min-width: 1440px) {
         font-size: 22px;
     }
+
     @media (min-width: 768px) {
         font-size: 20px;
     }
+
     @media (max-width: 600px) {
         font-size: 18px;
     }
@@ -199,16 +204,19 @@ h6,
     position: relative;
     padding-bottom: 20px;
     width: fit-content;
-    
+
     @media (min-width: 1920px) {
         font-size: 30px;
     }
+
     @media (min-width: 1440px) {
         font-size: 22px;
     }
+
     @media (min-width: 768px) {
         font-size: 20px;
     }
+
     @media (max-width: 600px) {
         font-size: 18px;
     }
@@ -230,15 +238,19 @@ h6,
     @media (min-width: 1920px) {
         font-size: 22px;
     }
+
     @media (min-width: 1440px) {
         font-size: 16px;
     }
+
     @media (min-width: 768px) {
         font-size: 14px;
     }
+
     @media (max-width: 600px) {
         font-size: 14px;
     }
+
     font-family: 'nunitosemibold';
 }
 
@@ -246,12 +258,15 @@ h6,
     @media (min-width: 1920px) {
         font-size: 18px;
     }
+
     @media (min-width: 1440px) {
         font-size: 16px;
     }
+
     @media (min-width: 768px) {
         font-size: 14px;
     }
+
     @media (max-width: 600px) {
         font-size: 12px;
     }
@@ -263,67 +278,83 @@ h6,
     @media (min-width: 1920px) {
         font-size: 16px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     text-transform: uppercase;
-    
+
 }
 
 .headerTextR {
-    
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     font-weight: 300;
 }
 
 .headerTextM {
-    
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     font-weight: 600;
 }
 
 .headerTextB {
-    
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     font-weight: 900;
 }
 
@@ -331,12 +362,15 @@ h6,
     @media (min-width: 1920px) {
         font-size: 14px;
     }
+
     @media (min-width: 1440px) {
         font-size: 12px;
     }
+
     @media (min-width: 768px) {
         font-size: 10px;
     }
+
     @media (max-width: 600px) {
         font-size: 8px;
     }
@@ -423,12 +457,15 @@ h6,
     @media (min-width: 1920px) {
         font-size: 18px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (max-width: 600px) {
         font-size: 10px;
     }
@@ -665,11 +702,13 @@ table {
 
     }
 }
+
 .toastui-calendar-layout {
-    .toastui-calendar-weekday-grid{
+    .toastui-calendar-weekday-grid {
         border: 0 !important;
     }
-    .toastui-calendar-day-names{
+
+    .toastui-calendar-day-names {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 3px 12px #41414129;
         border-radius: 6px;
@@ -677,54 +716,66 @@ table {
         margin-bottom: 1em;
         padding-left: 0;
 
-        .toastui-calendar-template-monthDayName, .toastui-calendar-daygrid-cell{
+        .toastui-calendar-template-monthDayName,
+        .toastui-calendar-daygrid-cell {
             @media (min-width: 1920px) {
                 font-size: 18px;
             }
+
             @media (min-width: 1440px) {
                 font-size: 16px;
             }
+
             @media (min-width: 768px) {
                 font-size: 14px;
             }
+
             @media (max-width: 600px) {
                 font-size: 12px;
             }
-            font-weight: 600;
-        }
-    }
-    .toastui-calendar-daygrid-cell{
-        border: 0;
-        font-size: 18px;
-        font-weight: 600;
 
-        .toastui-calendar-weekday-grid-date-decorator{
-            border-radius: 20%;
-            line-height: 34px;
-            height: 34px;
-            width: 34px;
+            .toastui-calendar-template-monthDayName {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .toastui-calendar-daygrid-cell {
+            border: 0;
+            font-size: 18px;
+            font-weight: 600;
+
+            .toastui-calendar-weekday-grid-date-decorator {
+                border-radius: 20%;
+                line-height: 34px;
+                height: 34px;
+                width: 34px;
+            }
         }
     }
 }
-.dataTables_wrapper{
-    &#patientDetail_wrapper,&#upcomingAppoints_wrapper {
-    
+
+.dataTables_wrapper {
+
+    &#patientDetail_wrapper,
+    &#upcomingAppoints_wrapper {
+
         #patientDetail_length {
             display: inline-block;
             max-width: 65%;
             width: 100%;
             height: 40px;
             padding-left: 30px;
-    
+
             label {
                 height: 100%;
-    
+
                 &,
                 select {
                     height: 100%;
                     font-size: 14px;
                 }
-    
+
                 select {
                     padding: 7px 10px;
                     border: 1px solid #00000029;
@@ -732,14 +783,14 @@ table {
                 }
             }
         }
-    
+
         .dt-buttons {
             display: inline-block;
             max-width: 15%;
             width: 100%;
             height: 40px;
             margin-left: 10px;
-    
+
             button {
                 height: 100%;
                 width: 100%;
@@ -753,18 +804,18 @@ table {
                 border-radius: 5px;
             }
         }
-    
+
         #patientDetail_filter {
             display: inline-block;
             max-width: 15%;
             width: 100%;
             float: unset;
             height: 40px;
-    
+
             label {
                 max-width: 100%;
                 padding-right: 16px;
-    
+
                 &,
                 input {
                     width: 100%;
@@ -772,51 +823,52 @@ table {
                     font-size: 14px;
                     border: 0;
                 }
-    
+
                 & {
                     border: 1px solid #00000029;
                     border-radius: 5px;
                 }
             }
         }
-    
-        .patientDetailTable,.upcomingAppointsTable  {
+
+        .patientDetailTable,
+        .upcomingAppointsTable {
             margin-top: 1rem;
-    
+
             thead {
                 background-color: $login-bg-left;
             }
-    
+
             th,
             td {
                 padding: 16px 20px;
             }
-    
+
             td {
                 border-bottom: 0;
                 border-right: 1px solid #E4E4E4;
                 font-weight: 600;
-    
+
                 &:last-child {
                     border-right: 0;
                 }
             }
         }
-    
+
         #patientDetail_info,
         #patientDetail_paginate {
             padding-top: 16px;
             margin-top: 0;
         }
-    
+
         #patientDetail_info {
             padding-left: 20px;
         }
-    
+
         #patientDetail_paginate {
             padding-right: 20px;
         }
-    
+
         .paginate_button {
             color: $primarybtn !important;
             background-color: #E1E7F5;
@@ -824,26 +876,26 @@ table {
             border: 0;
             outline: none;
             border-radius: 5px;
-    
-    
+
+
             &.previous,
             &.next {
                 margin: 0 10px;
-    
+
                 &.disabled {
                     background-color: #E8E8E8;
                     border-radius: 5px;
                     color: #5D5D5D !important;
                 }
             }
-    
+
             &.current {
                 background: none;
                 background-color: $primarybtn;
                 color: $white !important;
             }
         }
-    
+
         .completed {
             display: inline-block;
             padding: 5px 10px;
@@ -851,7 +903,7 @@ table {
             color: #10A660;
             font-size: 14px;
         }
-    
+
         .pending {
             display: inline-block;
             padding: 5px 10px;
@@ -859,28 +911,30 @@ table {
             color: #E36262;
             font-size: 14px;
         }
-    
+
         .dropdown {
             .dropdown-toggle:after {
                 display: none;
             }
         }
     }
-    &#upcomingAppoints_wrapper{
+
+    &#upcomingAppoints_wrapper {
         position: initial;
-        .dt-buttons{
+
+        .dt-buttons {
             position: absolute;
             right: 3%;
             top: 5%;
             text-align: right;
 
-            & > button{
+            &>button {
                 background-color: transparent;
                 height: 10px;
                 width: 10px;
                 box-shadow: none;
 
-                &::before{
+                &::before {
                     display: block;
                     content: '\f142';
                     font: var(--fa-font-solid);
@@ -890,7 +944,8 @@ table {
                     color: #9B9B9B;
 
                 }
-                .dt-down-arrow{
+
+                .dt-down-arrow {
                     display: none;
                 }
             }
@@ -898,13 +953,14 @@ table {
     }
 }
 
-.appointWrpr{
+.appointWrpr {
     border-left: 1px solid #707070;
     position: relative;
     padding-left: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
-    &:before{
+
+    &:before {
         position: absolute;
         left: -7px;
         top: 20%;
@@ -914,27 +970,33 @@ table {
         width: 14px;
         height: 14px;
     }
-    &.appointStart{
+
+    &.appointStart {
         padding-top: 0;
-        &:before{
+
+        &:before {
             top: 0;
             background-color: $primarybtn;
         }
     }
-    &.appointConfirm{
-        &:before{
+
+    &.appointConfirm {
+        &:before {
             background-color: #10E4BE;
         }
     }
-    &.appointPending{
-        &:before{
+
+    &.appointPending {
+        &:before {
             background-color: #FFC056;
         }
     }
 }
-.profitText{
+
+.profitText {
     color: #06D186;
 }
+
 // .loadingBar{
 //     width: 100% !important;
 //     path.mainline {
@@ -953,7 +1015,8 @@ table {
     margin: 20px 0px;
     height: 8px;
     position: relative;
-    path{
+
+    path {
         stroke-linecap: round;
     }
 }
@@ -1178,7 +1241,7 @@ table {
 .custom-card {
     border-radius: 5px;
     box-shadow: 0px 0px 12px #00000012;
-    background-color: #fff;
+    background-color: #fff !important;
 
     .card-title {
         font-size: 1.375rem;
@@ -1222,6 +1285,106 @@ table {
                 &::before {
                     color: #4162EF;
                 }
+            }
+        }
+    }
+}
+
+// calender page 
+
+.pg_calendar {
+    .main-panel {
+        .calender-view {
+
+            .calender-header {
+                padding-block: 30px;
+
+                .btn-wrapper {
+                    button {
+                        font-size: 18px;
+                        color: #fff;
+                        background-color: $primarybtn;
+                        border-radius: 5px;
+                        min-width: 260px;
+                        border: none;
+                    }
+                }
+
+                .calender-view-options {
+
+                    .prevBtn,
+                    .nextBtn {
+                        i {
+                            color: red;
+                        }
+                    }
+
+                    .month-name {
+                        color: $textColorBlack;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .calendar-detailed-view {
+                border-inline-start: 2px solid #707070;
+
+                .toastui-calendar-layout {
+                    .toastui-calendar-day-names {
+                        box-shadow: none;
+                        background-color: none;
+                        margin: 0;
+                        height: 60px;
+                        padding: 0;
+
+                        .toastui-calendar-day-name-container {
+                            height: 100%;
+
+                            .toastui-calendar-day-name-item {
+                                height: 100%;
+                                padding: 0;
+
+                                .toastui-calendar-template-monthDayName {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 100%;
+                                    font-size: 22px;
+                                    // padding-block: 12px;
+                                    color: $subText;
+                                    text-transform: capitalize;
+                                    border-top: 2px solid #707070;
+                                    border-right: 1px solid #B8B8B8;
+                                    border-bottom: 1px solid #B8B8B8;
+                                }
+
+                                &:last-child {
+                                    .toastui-calendar-template-monthDayName {
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .toastui-calendar-month-daygrid {
+                        .toastui-calendar-month-week-item {
+                            .toastui-calendar-weekday {
+                                .toastui-calendar-weekday-grid {
+                                    .toastui-calendar-daygrid-cell {
+                                        padding: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .calender-month-view {
+                border-top: 2px solid #707070;
+                padding: 28px 20px;
             }
         }
     }

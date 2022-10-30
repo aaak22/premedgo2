@@ -22667,35 +22667,41 @@ table.notificationTable tr:last-child {
   margin-bottom: 1em;
   padding-left: 0;
 }
-.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
-  font-weight: 600;
-}
 @media (min-width: 1920px) {
-  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
     font-size: 18px;
   }
 }
 @media (min-width: 1440px) {
-  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) {
-  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
     font-size: 14px;
   }
 }
 @media (max-width: 600px) {
-  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName, .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+  .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
     font-size: 12px;
   }
 }
-.toastui-calendar-layout .toastui-calendar-daygrid-cell {
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell .toastui-calendar-template-monthDayName {
+  font-size: 18px;
+  font-weight: 600;
+}
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
   border: 0;
   font-size: 18px;
   font-weight: 600;
 }
-.toastui-calendar-layout .toastui-calendar-daygrid-cell .toastui-calendar-weekday-grid-date-decorator {
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell .toastui-calendar-weekday-grid-date-decorator {
   border-radius: 20%;
   line-height: 34px;
   height: 34px;
@@ -22765,25 +22771,35 @@ table.notificationTable tr:last-child {
   border: 1px solid rgba(0, 0, 0, 0.1607843137);
   border-radius: 5px;
 }
-.dataTables_wrapper#patientDetail_wrapper .patientDetailTable, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable {
   margin-top: 1rem;
 }
-.dataTables_wrapper#patientDetail_wrapper .patientDetailTable thead, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable thead, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable thead, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable thead {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable thead,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable thead, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable thead,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable thead {
   background-color: #E1E7F5;
 }
 .dataTables_wrapper#patientDetail_wrapper .patientDetailTable th,
-.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable th,
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable th,
 .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable th,
-.dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable th,
+.dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable th,
 .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td {
   padding: 16px 20px;
 }
-.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td {
   border-bottom: 0;
   border-right: 1px solid #E4E4E4;
   font-weight: 600;
 }
-.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td:last-child, .dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td:last-child, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td:last-child, .dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td:last-child {
+.dataTables_wrapper#patientDetail_wrapper .patientDetailTable td:last-child,
+.dataTables_wrapper#patientDetail_wrapper .upcomingAppointsTable td:last-child, .dataTables_wrapper#upcomingAppoints_wrapper .patientDetailTable td:last-child,
+.dataTables_wrapper#upcomingAppoints_wrapper .upcomingAppointsTable td:last-child {
   border-right: 0;
 }
 .dataTables_wrapper#patientDetail_wrapper #patientDetail_info,
@@ -23111,7 +23127,7 @@ table .pending {
 .custom-card {
   border-radius: 5px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.0705882353);
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .custom-card .card-title {
   font-size: 1.375rem;
@@ -23145,4 +23161,65 @@ table .pending {
 }
 .summary-card .summary .icon .icon-16::before {
   color: #4162EF;
+}
+
+.pg_calendar .main-panel .calender-view .calender-header {
+  padding-block: 30px;
+}
+.pg_calendar .main-panel .calender-view .calender-header .btn-wrapper button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #4162ef;
+  border-radius: 5px;
+  min-width: 260px;
+  border: none;
+}
+.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .prevBtn i,
+.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .nextBtn i {
+  color: red;
+}
+.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .month-name {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 600;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view {
+  -webkit-border-start: 2px solid #707070;
+          border-inline-start: 2px solid #707070;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names {
+  box-shadow: none;
+  background-color: none;
+  margin: 0;
+  height: 60px;
+  padding: 0;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container {
+  height: 100%;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item {
+  height: 100%;
+  padding: 0;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 22px;
+  color: #707070;
+  text-transform: capitalize;
+  border-top: 2px solid #707070;
+  border-right: 1px solid #B8B8B8;
+  border-bottom: 1px solid #B8B8B8;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item:last-child .toastui-calendar-template-monthDayName {
+  border-right: none;
+}
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-month-daygrid .toastui-calendar-month-week-item .toastui-calendar-weekday .toastui-calendar-weekday-grid .toastui-calendar-daygrid-cell {
+  padding: 12px;
+}
+.pg_calendar .main-panel .calender-view .calender-month-view {
+  border-top: 2px solid #707070;
+  padding: 28px 20px;
 }/*# sourceMappingURL=style.css.map */

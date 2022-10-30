@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" />
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
-
   <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
 
   <!-- endinject -->
@@ -440,9 +439,9 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-8 col-12">
-              <div class="row">
-                <div class="col-md-6 col-12">
-                  <div class="row align-items-stretch">
+              <div class="row ">
+                <div class="col-md-7 col-12">
+                  <div class="row align-items-stretch h-100">
                     <div class="col-md-6 col-12 grid-margin">
                       <div class="card rounded-0 h-100">
                         <div class="card-body text-center">
@@ -461,29 +460,29 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
                     <div class="col-12">
-                      <div class="card rounded-0">
+                      <div class="card rounded-0 h-100">
                         <div class="card-body text-center">
-                          <div class="row">
+                          <div class="row align-items-center h-100">
                             <div class="col-md-6 col-12">
-                              <div class="progressBar totApp">Total Appointments Due</div>
-                                <div id="myItem1" class="loadingBar Appointments" data-preset="line" data-type="stroke" data-path="M10 10L90 10" class="w-100">
-                                </div>
+                              <div class="progressBar totApp mb-4">Total Appointments Due</div>
+                              <div id="totAppoint" class="position-relative"></div>
                             </div>
                             <div class="col-md-6 col-12">
-                              <div class="progressBar outApp">Total Appointments Due</div>
+                              <div class="progressBar outApp mb-4">Outstanding Appointments</div>
+                              <div id="outAppoint" class="position-relative"></div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                  </div>
                 </div>
-                <div class="col-md-6 col-12">
-                  <div class="card">
-                    <div class="card-body">
+                <div class="col-md-5 col-12">
+                  <div class="card h-100 p-0">
+                    <div class="card-body p-0">
                       <h1 class="subHeading fw-bold">Weekly Order Summary</h1>
                       <div class="d-flex align-items-center">
                         <span class="subHeading fw-bold">$36,2531.00</span>
@@ -491,7 +490,7 @@
                         <span class="paraText profitText">(+1.37%)</span>
                       </div>
                       <div class="mt-3">
-                        <canvas id="ctx" height="280"></canvas>
+                        <canvas id="ctx" class="h-100"></canvas>
                       </div>
                     </div>
                   </div>
@@ -691,12 +690,76 @@
   <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./loading-bar.min.js"></script>
+  <script src="./loadingbar2.min.js"></script>
 
+  <!--Total Appointment-->
   <script>
-    var bar1 = new ldBar("#myItem1");
-    var bar2 = document.getElementById('myItem1').ldBar;
-    bar1.set(60);
+    var bar = new ProgressBar.Line('#totAppoint', {
+      strokeWidth: 4,
+      easing: 'easeInOut',
+      duration: 1400,
+      color: '#10E4BE',
+      trailColor: '#eee',
+      trailWidth: 5,
+      strokeLinecap: 'round',
+      svgStyle: {width: '100%'},
+      text: {
+        style: {
+          position: 'absolute',
+          top: '-100%',
+          transform: 'translateY(100%)',
+          color: '#000000',
+          fontSize: '18px',
+          fontWeight: 'bold',
+          padding: 0,
+          margin: 0,
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      strokeLinecap: 'round',
+      from: {color: '#10E4BE'},
+      to: {color: '#10E4BE'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100));
+      }
+    });
+    bar.animate(0.2);
+  </script>
+
+  <!--Outstanding Appointment-->
+  <script>
+    var bar = new ProgressBar.Line('#outAppoint', {
+      strokeWidth: 4,
+      easing: 'easeInOut',
+      duration: 1400,
+      color: '#EFD241',
+      trailColor: '#eee',
+      trailWidth: 5,
+      strokeLinecap: 'round',
+      svgStyle: {width: '100%'},
+      text: {
+        style: {
+          position: 'absolute',
+          top: '-100%',
+          transform: 'translateY(100%)',
+          color: '#000000',
+          fontSize: '18px',
+          fontWeight: 'bold',
+          padding: 0,
+          margin: 0,
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      strokeLinecap: 'round',
+      from: {color: '#10E4BE'},
+      to: {color: '#10E4BE'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100));
+      }
+    });
+    bar.animate(0.2);
   </script>
   
   <!--datatable code-->

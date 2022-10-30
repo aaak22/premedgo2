@@ -22451,7 +22451,8 @@ h6,
 .progressBar {
   color: #001737;
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 1920px) {
   .progressBar {
@@ -22460,27 +22461,27 @@ h6,
 }
 @media (min-width: 1440px) {
   .progressBar {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) {
   .progressBar {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .progressBar {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .progressBar::before {
   content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  left: -15px;
-  top: 10px;
+  margin-right: 7px;
+  margin-top: 4px;
 }
 .progressBar.totApp::before {
   background-color: #727272;
@@ -22898,17 +22899,12 @@ table.notificationTable tr:last-child {
   color: #06D186;
 }
 
-.loadingBar {
-  width: 100% !important;
+#container {
+  margin: 20px 0px;
+  height: 8px;
+  position: relative;
 }
-.loadingBar path.mainline {
-  stroke-width: 2;
-  stroke: #10E4BE;
-  stroke-linecap: round;
-}
-.loadingBar path.baseline {
-  stroke-width: 4;
-  stroke: #E5E9F2;
+#container path {
   stroke-linecap: round;
 }
 

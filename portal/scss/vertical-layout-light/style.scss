@@ -417,28 +417,30 @@ h6,
 .progressBar {
     color: $progressBarText;
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+
     @media (min-width: 1920px) {
         font-size: 18px;
     }
     @media (min-width: 1440px) {
-        font-size: 16px;
-    }
-    @media (min-width: 768px) {
         font-size: 14px;
     }
-    @media (max-width: 600px) {
+    @media (min-width: 768px) {
         font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        font-size: 10px;
     }
 
     &::before {
         content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
-        left: -15px;
-        top: 10px;
+        margin-right: 7px;
+        margin-top: 4px;
     }
 
     &.totApp {
@@ -933,16 +935,25 @@ table {
 .profitText{
     color: #06D186;
 }
-.loadingBar{
-    width: 100% !important;
-    path.mainline {
-        stroke-width: 2;
-        stroke: #10E4BE;
-        stroke-linecap: round;
-    }
-    path.baseline  {
-        stroke-width: 4;
-        stroke: #E5E9F2;
+// .loadingBar{
+//     width: 100% !important;
+//     path.mainline {
+//         stroke-width: 2;
+//         stroke: #10E4BE;
+//         stroke-linecap: round;
+//     }
+//     path.baseline  {
+//         width: 100%;
+//         stroke-width: 4;
+//         stroke: #E5E9F2;
+//         stroke-linecap: round;
+//     }
+// }
+#container {
+    margin: 20px 0px;
+    height: 8px;
+    position: relative;
+    path{
         stroke-linecap: round;
     }
 }

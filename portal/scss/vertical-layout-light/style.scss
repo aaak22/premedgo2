@@ -728,6 +728,16 @@ table {
     .toastui-calendar-weekday-grid {
         border: 0 !important;
     }
+    .toastui-calendar-daygrid-cell{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &+.toastui-calendar-daygrid-cell{
+            border: 0;
+        }
+    }
 
     .toastui-calendar-day-names {
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -754,6 +764,7 @@ table {
             @media (max-width: 600px) {
                 font-size: 12px;
             }
+            font-weight: 700;
 
             .toastui-calendar-template-monthDayName {
                 @media (max-width: 600px) {
@@ -790,14 +801,15 @@ table {
             @media (min-width: 1920px) {
                 font-size: 18px;
             }
-
-            .toastui-calendar-weekday-grid-date-decorator {
-                border-radius: 20%;
-                line-height: 34px;
-                height: 34px;
-                width: 34px;
-            }
         }
+
+    }
+            
+    .toastui-calendar-weekday-grid-date-decorator {
+        border-radius: 20% !important;
+    }
+    .toastui-calendar-grid-cell-date{
+        font-weight: 700;
     }
 }
 
@@ -1461,4 +1473,7 @@ table {
             }
         }
     }
+}
+.main-panel{
+    overflow-y: auto;
 }

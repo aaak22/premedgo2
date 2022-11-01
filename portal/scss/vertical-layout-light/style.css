@@ -22740,6 +22740,14 @@ table.notificationTable tr:last-child {
 .toastui-calendar-layout .toastui-calendar-weekday-grid {
   border: 0 !important;
 }
+.toastui-calendar-layout .toastui-calendar-daygrid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toastui-calendar-layout .toastui-calendar-daygrid-cell + .toastui-calendar-daygrid-cell {
+  border: 0;
+}
 .toastui-calendar-layout .toastui-calendar-day-names {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 12px rgba(65, 65, 65, 0.1607843137);
@@ -22747,6 +22755,10 @@ table.notificationTable tr:last-child {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-left: 0;
+}
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
+.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell {
+  font-weight: 700;
 }
 @media (min-width: 1920px) {
   .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-template-monthDayName,
@@ -22824,11 +22836,11 @@ table.notificationTable tr:last-child {
     font-size: 18px;
   }
 }
-.toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-daygrid-cell .toastui-calendar-weekday-grid-date-decorator {
-  border-radius: 20%;
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
+.toastui-calendar-layout .toastui-calendar-weekday-grid-date-decorator {
+  border-radius: 20% !important;
+}
+.toastui-calendar-layout .toastui-calendar-grid-cell-date {
+  font-weight: 700;
 }
 
 .dataTables_wrapper#patientDetail_wrapper #patientDetail_length, .dataTables_wrapper#upcomingAppoints_wrapper #patientDetail_length {
@@ -23379,4 +23391,8 @@ table .pending {
 .pg_calendar .main-panel .calender-view .calender-month-view {
   border-top: 2px solid #707070;
   padding: 28px 20px;
+}
+
+.main-panel {
+  overflow-y: auto;
 }/*# sourceMappingURL=style.css.map */

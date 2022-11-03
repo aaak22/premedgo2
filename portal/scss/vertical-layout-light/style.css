@@ -22022,19 +22022,23 @@ div.tagsinput span.tag a {
 
 @font-face {
   font-family: "nunitomedium";
-  src: url("../../fonts/Nunito/Nunito-Black.ttf");
+  src: url("../fonts/Nunito-Black.ttf");
 }
 @font-face {
   font-family: "nunitoregular";
-  src: url("../../fonts/Nunito/Nunito-Regular.ttf");
+  src: url("../fonts/Nunito-Regular.ttf");
 }
 @font-face {
   font-family: "nunitosemibold";
-  src: url("../../fonts/Nunito/Nunito-SemiBold.ttf");
+  src: url("../fonts/Nunito-SemiBold.ttf");
 }
 @font-face {
   font-family: "nunitobold";
-  src: url("../../fonts/Nunito/Nunito-Bold.ttf");
+  src: url("../fonts/Nunito-Bold.ttf");
+}
+body {
+  font-family: "nunitoregular";
+  font-size: 16px;
 }
 body .navbar,
 body .navbar-brand-wrapper,
@@ -22150,6 +22154,10 @@ h6,
 
 .textGray {
   color: #A0A0A0;
+}
+
+.smallTextColor {
+  color: #919191;
 }
 
 .subText {
@@ -22410,9 +22418,16 @@ h6,
 .sidebar {
   background-color: #F3F4F4;
 }
+.sidebar .nav .nav-item .nav-link {
+  border-radius: 0;
+}
 
 .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
   transform: none;
+}
+
+.navbar .navbar-menu-wrapper .navbar-dropdown {
+  top: 40px !important;
 }
 
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link img.menu-icon {
@@ -22441,10 +22456,13 @@ h6,
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper {
   padding: 0;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .sidebar-icon-only .navbar .navbar-brand-wrapper .logotext {
   display: none;
+}
+.sidebar-icon-only .navbar .navbar-brand-wrapper > div {
+  justify-content: center;
 }
 
 .progressBar {
@@ -22550,7 +22568,7 @@ h6,
 .set-price-tabs.nav-tabs .nav-item .nav-link.active {
   background-color: transparent;
   color: #4162ef;
-  border-bottom: 1px solid #4162ef;
+  border-bottom: 3px solid #4162ef;
 }
 
 .uploadProfilePicCont .imgCont {
@@ -22695,8 +22713,8 @@ table.notificationTable tr:last-child {
 }
 
 .form-switch .form-check-input {
-  height: 24px;
-  width: 64px;
+  height: 24px !important;
+  width: 64px !important;
   margin-left: 0;
 }
 
@@ -22705,9 +22723,11 @@ table.notificationTable tr:last-child {
   margin-left: 50px;
 }
 .profilDetailCont .banner-top {
-  height: 50vh;
+  height: 100%;
   background: linear-gradient(90deg, rgb(16, 228, 190) 0%, rgb(65, 98, 239) 100%);
   position: relative;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
 }
 .profilDetailCont .banner-top img {
   position: absolute;
@@ -23281,6 +23301,7 @@ table td:last-child {
 table .completed {
   display: inline-block;
   padding: 5px 10px;
+  border-radius: 5px;
   background-color: #DFFEEA;
   color: #10A660;
   font-size: 14px;
@@ -23288,15 +23309,24 @@ table .completed {
 table .pending {
   display: inline-block;
   padding: 5px 10px;
+  border-radius: 5px;
   background-color: #FFE3E3;
   color: #E36262;
+  font-size: 14px;
+}
+table .missed {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #E1E7F5;
+  color: #4162EF;
   font-size: 14px;
 }
 
 .custom-card {
   border-radius: 5px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.0705882353);
-  background-color: #fff !important;
+  background-color: #ffffff !important;
 }
 .custom-card .card-title {
   font-size: 1.375rem;
@@ -23337,7 +23367,7 @@ table .pending {
 }
 .pg_calendar .main-panel .calender-view .calender-header .btn-wrapper button {
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: #4162ef;
   border-radius: 5px;
   min-width: 260px;
@@ -23395,4 +23425,27 @@ table .pending {
 
 .main-panel {
   overflow-y: auto;
+}
+
+.form-control, .asColorPicker-input, .dataTables_wrapper select, .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead,
+.tt-query,
+.tt-hint {
+  border: 1px solid #707070;
+  border-radius: 5px !important;
+  padding: 10px 22px !important;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.form-check .form-check-input {
+  border: 1px solid #707070;
+  opacity: 1 !important;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .full-page-wrapper.login-page .bg-login-left {
+    height: auto !important;
+  }
 }/*# sourceMappingURL=style.css.map */

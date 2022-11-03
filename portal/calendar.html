@@ -61,7 +61,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-                <div class="d-flex justify-content-center w-100">
+                <div class="d-flex w-100">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button"
                         data-bs-toggle="minimize">
                         <div class="navbar-brand brand-logo d-flex align-items-center">
@@ -161,14 +161,16 @@
                             </a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
-                        <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
-                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
-                                <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
-                                <a class="dropdown-item border-0" href="./settings.html">Settings</a>
-                                <a class="dropdown-item border-0" href="./login.html">Logout</a>
-                            </div>
+                    <li class="nav-item dropdown d-none d-lg-block user-dropdown position-relative">
+                        <img class="img-xs rounded-circle d-inline-block" src="images/faces/face8.jpg" alt="Profile image"> 
+                        <a class="nav-link d-inline-block ms-2" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
+                          <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
+                          <a class="dropdown-item border-0" href="./settings.html">Settings</a>
+                          <a class="dropdown-item border-0" href="./login.html">Logout</a>
+                        </div>
                     </li>
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"

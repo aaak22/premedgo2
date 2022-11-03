@@ -54,7 +54,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-        <div class="d-flex justify-content-center w-100">
+        <div class="d-flex w-100">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
             <div class="navbar-brand brand-logo d-flex align-items-center">
               <img src="./images/logo.png" class="img-fluid" alt="logo" />
@@ -63,7 +63,7 @@
           </button>
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+      <div class="navbar-menu-wrapper d-flex align-items-top pb-0"> 
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <form class="search-form" action="#">
@@ -149,14 +149,16 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
-            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
-                <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
-                <a class="dropdown-item border-0" href="./settings.html">Settings</a>
-                <a class="dropdown-item border-0" href="./login.html">Logout</a>
-              </div>
+          <li class="nav-item dropdown d-none d-lg-block user-dropdown position-relative">
+            <img class="img-xs rounded-circle d-inline-block" src="images/faces/face8.jpg" alt="Profile image"> 
+            <a class="nav-link d-inline-block ms-2" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
+              <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
+              <a class="dropdown-item border-0" href="./settings.html">Settings</a>
+              <a class="dropdown-item border-0" href="./login.html">Logout</a>
+            </div>
           </li>
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
@@ -405,11 +407,11 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
+        <div class="content-wrapper pt-0 overflow-hidden">
+          <div class="row h-50">
             <div class="col-12">
-              <div class="card rounded-2 profilDetailCont pb-3">
-                <div class="banner-top">
+              <div class="card rounded-2 profilDetailCont pb-3 h-100">
+                <div class="banner-top ">
                   <img src="" />
                 </div>
                 <div class="d-flex align-items-end mt-n1">
@@ -426,7 +428,7 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-stretch mt-3">
+          <div class="row align-items-stretch mt-3 h-50 overflow-auto">
             <div class="col-md-6 col-12">
               <div class="card h-100">
                 <div class="card-body">
@@ -462,7 +464,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -475,7 +477,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -488,7 +490,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -501,7 +503,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -514,7 +516,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -527,7 +529,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>
@@ -540,7 +542,7 @@
                       </div>
                       <div class="col-xl-6 col-md-3 col-12 d-flex align-items-center justify-content-between">
                         <div>9:00 AM</div>
-                          <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                          <i class="fa-solid fa-arrow-right-long fa-1x"></i>
                         <div>6:00 PM</div>
                       </div>
                     </div>

@@ -30,29 +30,6 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
 
-    <style>
-        .ldBar {
-            position: relative;
-        }
-
-        .ldBar.label-center>.ldBar-label {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-shadow: 0 0 3px #fff;
-        }
-
-        .ldBar-label:after {
-            content: "%";
-            display: inline;
-        }
-
-        .ldBar.no-percent .ldBar-label:after {
-            content: "";
-        }
-    </style>
 </head>
 
 <body>
@@ -60,7 +37,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-                <div class="d-flex justify-content-center w-100">
+                <div class="d-flex w-100">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button"
                         data-bs-toggle="minimize">
                         <div class="navbar-brand brand-logo d-flex align-items-center">
@@ -160,14 +137,16 @@
                             </a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
-                        <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
-                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
-                                <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
-                                <a class="dropdown-item border-0" href="./settings.html">Settings</a>
-                                <a class="dropdown-item border-0" href="./login.html">Logout</a>
-                            </div>
+                    <li class="nav-item dropdown d-none d-lg-block user-dropdown position-relative">
+                        <img class="img-xs rounded-circle d-inline-block" src="images/faces/face8.jpg" alt="Profile image"> 
+                        <a class="nav-link d-inline-block ms-2" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
+                          <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
+                          <a class="dropdown-item border-0" href="./settings.html">Settings</a>
+                          <a class="dropdown-item border-0" href="./login.html">Logout</a>
+                        </div>
                     </li>
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
@@ -506,7 +485,8 @@
                                                         <tr>
                                                             <th scope="col">NAME</th>
                                                             <th scope="col">LEVEL OF SERVICE</th>
-                                                            <th scope="col">APPOINTMENT DATE</th>
+                                                            <th scope="col">DATE</th>
+                                                            <th scope="col">TIMING</th>
                                                             <th scope="col">STATUS</th>
                                                             <th scope="col">ACTION</th>
                                                         </tr>
@@ -516,6 +496,7 @@
                                                             <td>Lorem Ipsum lorem</td>
                                                             <td>Basic</td>
                                                             <td>6-21-2022</td>
+                                                            <td>2:30 PM</td>
                                                             <td><span class="completed">COMPLETED</span> </td>
                                                             <td>
                                                                 <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
@@ -525,6 +506,7 @@
                                                             <td>Lorem Ipsum lorem</td>
                                                             <td>Basic</td>
                                                             <td>6-21-2022</td>
+                                                            <td>2:30 PM</td>
                                                             <td><span class="pending">PENDING</span> </td>
                                                             <td>
                                                                 <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
@@ -534,6 +516,27 @@
                                                             <td>Lorem Ipsum lorem</td>
                                                             <td>Basic</td>
                                                             <td>6-21-2022</td>
+                                                            <td>2:30 PM</td>
+                                                            <td><span class="missed">MISSED</span> </td>
+                                                            <td>
+                                                                <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td>2:30 PM</td>
+                                                            <td><span class="pending">PENDING</span> </td>
+                                                            <td>
+                                                                <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum lorem</td>
+                                                            <td>Basic</td>
+                                                            <td>6-21-2022</td>
+                                                            <td>2:30 PM</td>
                                                             <td><span class="completed">COMPLETED</span> </td>
                                                             <td>
                                                                 <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
@@ -543,25 +546,8 @@
                                                             <td>Lorem Ipsum lorem</td>
                                                             <td>Basic</td>
                                                             <td>6-21-2022</td>
-                                                            <td><span class="pending">PENDING</span> </td>
-                                                            <td>
-                                                                <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Lorem Ipsum lorem</td>
-                                                            <td>Basic</td>
-                                                            <td>6-21-2022</td>
-                                                            <td><span class="completed">COMPLETED</span> </td>
-                                                            <td>
-                                                                <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Lorem Ipsum lorem</td>
-                                                            <td>Basic</td>
-                                                            <td>6-21-2022</td>
-                                                            <td><span class="pending">PENDING</span> </td>
+                                                            <td>2:30 PM</td>
+                                                            <td><span class="missed">MISSED</span> </td>
                                                             <td>
                                                                 <a href="#" class="privacyLink text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal">VIEW DETAILS</a>
                                                             </td>
@@ -686,14 +672,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/solid.min.js"></script>
 
-    <script src="./loading-bar.min.js"></script>
     <script src="./js/analytics.js"></script>
 
-    <script>
-        var bar1 = new ldBar("#myItem1");
-        var bar2 = document.getElementById('myItem1').ldBar;
-        bar1.set(60);
-    </script>
 </body>
 
 </html>

@@ -9,26 +9,24 @@
 
 @font-face {
     font-family: 'nunitomedium';
-    src: url('../../fonts/Nunito/Nunito-Black.ttf');
+    src: url('../fonts/Nunito-Black.ttf');
 }
-
 @font-face {
     font-family: 'nunitoregular';
-    src: url('../../fonts/Nunito/Nunito-Regular.ttf');
+    src: url('../fonts/Nunito-Regular.ttf');
 }
-
 @font-face {
     font-family: 'nunitosemibold';
-    src: url('../../fonts/Nunito/Nunito-SemiBold.ttf');
+    src: url('../fonts/Nunito-SemiBold.ttf');
 }
-
 @font-face {
     font-family: 'nunitobold';
-    src: url('../../fonts/Nunito/Nunito-Bold.ttf');
+    src: url('../fonts/Nunito-Bold.ttf');
 }
 
 body {
-
+    font-family: 'nunitoregular';
+    font-size: 16px;
     .navbar,
     .navbar-brand-wrapper,
     .navbar-menu-wrapper {
@@ -165,6 +163,9 @@ h6,
 
 .textGray {
     color: $placeholderColor;
+}
+.smallTextColor{
+    color: $smallTextColor;
 }
 
 .subText {
@@ -374,10 +375,25 @@ h6,
 
 .sidebar {
     background-color: $portalBackground;
+    
+    .nav{
+        .nav-item{
+            .nav-link{
+                border-radius: 0;
+            } 
+        }
+    } 
 }
 
 .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
     transform: none;
+}
+.navbar {
+    .navbar-menu-wrapper{
+        .navbar-dropdown{
+            top: 40px !important;
+        }
+    } 
 }
 
 .sidebar-icon-only {
@@ -416,10 +432,13 @@ h6,
     .navbar {
         .navbar-brand-wrapper {
             padding: 0;
-            background-color: #fff;
+            background-color: $white;
 
             .logotext {
                 display: none;
+            }
+            & > div{
+                justify-content: center;
             }
         }
     }
@@ -532,7 +551,7 @@ h6,
                 &.active {
                     background-color: transparent;
                     color: $primarybtn;
-                    border-bottom: 1px solid $primarybtn;
+                    border-bottom: 3px solid $primarybtn;
                 }
             }
         }
@@ -672,8 +691,8 @@ table {
 
 .form-switch {
     .form-check-input {
-        height: 24px;
-        width: 64px;
+        height: 24px !important;
+        width: 64px !important;
         margin-left: 0;
     }
 }
@@ -688,9 +707,11 @@ table {
     }
 
     .banner-top {
-        height: 50vh;
+        height: 100%;
         background: linear-gradient(90deg, rgba(16, 228, 190, 1) 0%, rgba(65, 98, 239, 1) 100%);
         position: relative;
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
 
         img {
             position: absolute;
@@ -704,7 +725,7 @@ table {
         position: relative;
         width: 150px;
         height: 150px;
-        background-color: #ffffff;
+        background-color: $white;
         padding: 5px;
 
         .imgHolder {
@@ -961,7 +982,7 @@ table {
                 &.disabled {
                     background-color: #E8E8E8;
                     border-radius: 5px;
-                    color: #5D5D5D !important;
+                    color: $checkboxText !important;
                 }
             }
 
@@ -1262,7 +1283,7 @@ table {
         &.disabled {
             background-color: #E8E8E8;
             border-radius: 5px;
-            color: #5D5D5D !important;
+            color: $checkboxText !important;
         }
     }
 
@@ -1308,6 +1329,7 @@ table {
     .completed {
         display: inline-block;
         padding: 5px 10px;
+        border-radius: 5px;
         background-color: #DFFEEA;
         color: #10A660;
         font-size: 14px;
@@ -1316,8 +1338,17 @@ table {
     .pending {
         display: inline-block;
         padding: 5px 10px;
+        border-radius: 5px;
         background-color: #FFE3E3;
         color: #E36262;
+        font-size: 14px;
+    }
+    .missed {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: #E1E7F5;
+        color: #4162EF;
         font-size: 14px;
     }
 }
@@ -1326,7 +1357,7 @@ table {
 .custom-card {
     border-radius: 5px;
     box-shadow: 0px 0px 12px #00000012;
-    background-color: #fff !important;
+    background-color: $white !important;
 
     .card-title {
         font-size: 1.375rem;
@@ -1356,7 +1387,7 @@ table {
 
             .summary-desc {
                 font-size: 18px;
-                color: #5D5D5D;
+                color: $checkboxText;
             }
         }
 
@@ -1387,7 +1418,7 @@ table {
                 .btn-wrapper {
                     button {
                         font-size: 18px;
-                        color: #fff;
+                        color: $white;
                         background-color: $primarybtn;
                         border-radius: 5px;
                         min-width: 260px;
@@ -1476,4 +1507,29 @@ table {
 }
 .main-panel{
     overflow-y: auto;
+}
+
+.form-control{
+    border: 1px solid #707070;
+    border-radius: 5px !important;
+    padding: 10px 22px !important;
+    height: 50px;
+    box-sizing: border-box;
+}
+.form-check{
+    .form-check-input{
+        border: 1px solid #707070;
+        opacity: 1 !important;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+.full-page-wrapper{
+    &.login-page{
+        .bg-login-left{
+            @media (max-width: 600px) {   
+                height: auto !important;
+            }
+        }
+    }
 }

@@ -22107,6 +22107,15 @@ h6,
   color: #ffffff;
   background-color: #2848CE;
 }
+.btn.btn-delete, .ajax-upload-dragdrop .btn-delete.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-delete.swal2-styled {
+  background-color: #F25E5E;
+  border-color: #F25E5E;
+  color: #ffffff;
+}
+.btn.btn-delete:hover, .ajax-upload-dragdrop .btn-delete.ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .btn-delete.swal2-styled:hover {
+  color: #ffffff;
+  background-color: #F25E5E;
+}
 
 .btn-secondary {
   color: #ffffff;
@@ -23512,6 +23521,12 @@ table .missed {
   height: 50px;
   box-sizing: border-box;
 }
+.form-control:focus, .asColorPicker-input:focus, .dataTables_wrapper select:focus, .select2-container--default .select2-selection--single:focus, .select2-container--default .select2-selection--single .select2-search__field:focus, .typeahead:focus,
+.tt-query:focus,
+.tt-hint:focus {
+  border: 1px solid #4162ef;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
 
 .form-check .form-check-input {
   border: 1px solid #707070;
@@ -23524,4 +23539,9 @@ table .missed {
   .full-page-wrapper.login-page .bg-login-left {
     height: auto !important;
   }
+}
+
+.delAccount {
+  background-color: #FFEEE3;
+  color: #CB9E5B;
 }/*# sourceMappingURL=style.css.map */

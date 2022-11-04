@@ -11,14 +11,17 @@
     font-family: 'nunitomedium';
     src: url('../fonts/Nunito-Black.ttf');
 }
+
 @font-face {
     font-family: 'nunitoregular';
     src: url('../fonts/Nunito-Regular.ttf');
 }
+
 @font-face {
     font-family: 'nunitosemibold';
     src: url('../fonts/Nunito-SemiBold.ttf');
 }
+
 @font-face {
     font-family: 'nunitobold';
     src: url('../fonts/Nunito-Bold.ttf');
@@ -27,6 +30,7 @@
 body {
     font-family: 'nunitoregular';
     font-size: 16px;
+
     .navbar,
     .navbar-brand-wrapper,
     .navbar-menu-wrapper {
@@ -111,7 +115,8 @@ h6,
             background-color: $primarybtnhover;
         }
     }
-    &.btn-delete{
+
+    &.btn-delete {
         background-color: $delbtn;
         border-color: $delbtn;
         color: $white;
@@ -174,7 +179,8 @@ h6,
 .textGray {
     color: $placeholderColor;
 }
-.smallTextColor{
+
+.smallTextColor {
     color: $smallTextColor;
 }
 
@@ -194,12 +200,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 18px;
     }
+
     @media (min-width: 768px) {
         font-size: 20px;
     }
+
     @media (min-width: 1440px) {
         font-size: 22px;
     }
+
     @media (min-width: 1920px) {
         font-size: 30px;
     }
@@ -215,12 +224,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 18px;
     }
+
     @media (min-width: 768px) {
         font-size: 20px;
     }
+
     @media (min-width: 1440px) {
         font-size: 22px;
     }
+
     @media (min-width: 1920px) {
         font-size: 30px;
     }
@@ -242,12 +254,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 14px;
     }
+
     @media (min-width: 768px) {
         font-size: 14px;
     }
+
     @media (min-width: 1440px) {
         font-size: 18px;
     }
+
     @media (min-width: 1920px) {
         font-size: 22px;
     }
@@ -263,9 +278,11 @@ h6,
     @media (min-width: 768px) {
         font-size: 14px;
     }
+
     @media (min-width: 1440px) {
         font-size: 16px;
     }
+
     @media (min-width: 1920px) {
         font-size: 18px;
     }
@@ -277,12 +294,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
@@ -295,12 +315,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
@@ -312,6 +335,7 @@ h6,
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
@@ -319,6 +343,7 @@ h6,
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
@@ -331,12 +356,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 1920px) {
         font-size: 16px;
     }
@@ -345,10 +373,11 @@ h6,
 }
 
 .smallText {
-    
+
     @media (max-width: 600px) {
         font-size: 8px;
     }
+
     @media (min-width: 768px) {
         font-size: 10px;
     }
@@ -384,25 +413,26 @@ h6,
 
 .sidebar {
     background-color: $portalBackground;
-    
-    .nav{
-        .nav-item{
-            .nav-link{
+
+    .nav {
+        .nav-item {
+            .nav-link {
                 border-radius: 0;
-            } 
+            }
         }
-    } 
+    }
 }
 
 .navbar .navbar-brand-wrapper .navbar-toggler:not(.navbar-toggler-right) {
     transform: none;
 }
+
 .navbar {
-    .navbar-menu-wrapper{
-        .navbar-dropdown{
+    .navbar-menu-wrapper {
+        .navbar-dropdown {
             top: 40px !important;
         }
-    } 
+    }
 }
 
 .sidebar-icon-only {
@@ -446,7 +476,8 @@ h6,
             .logotext {
                 display: none;
             }
-            & > div{
+
+            &>div {
                 justify-content: center;
             }
         }
@@ -462,12 +493,15 @@ h6,
     @media (max-width: 600px) {
         font-size: 10px;
     }
+
     @media (min-width: 768px) {
         font-size: 12px;
     }
+
     @media (min-width: 1440px) {
         font-size: 14px;
     }
+
     @media (min-width: 1920px) {
         font-size: 18px;
     }
@@ -536,18 +570,23 @@ h6,
 
         .nav-item {
             flex: 1 1 auto;
+
             .nav-link {
                 background-color: transparent;
                 padding: 0;
+
                 @media (max-width: 600px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 1440px) {
                     font-size: 18px;
                 }
+
                 @media (min-width: 1920px) {
                     font-size: 22px;
                 }
+
                 border: 0;
                 border-radius: 0;
                 display: flex;
@@ -601,12 +640,15 @@ label {
     @media (max-width: 600px) {
         font-size: 12px !important;
     }
+
     @media (min-width: 768px) {
         font-size: 14px !important;
     }
+
     @media (min-width: 1440px) {
         font-size: 16px !important;
     }
+
     @media (min-width: 1920px) {
         font-size: 18px !important;
     }
@@ -655,7 +697,7 @@ table {
             td {
                 color: $privacyLink;
                 font-weight: bold;
-                
+
                 @media (max-width: 600px) {
                     font-size: 12px;
                 }
@@ -663,9 +705,11 @@ table {
                 @media (min-width: 768px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 1440px) {
                     font-size: 16px;
                 }
+
                 @media (min-width: 1920px) {
                     font-size: 18px;
                 }
@@ -681,7 +725,7 @@ table {
 }
 
 .form-select {
-    
+
     @media (max-width: 600px) {
         font-size: 12px;
     }
@@ -689,12 +733,15 @@ table {
     @media (min-width: 768px) {
         font-size: 14px;
     }
+
     @media (min-width: 1440px) {
         font-size: 16px;
     }
+
     @media (min-width: 1920px) {
         font-size: 18px;
     }
+
     border-color: $selectBorderColor;
 }
 
@@ -758,13 +805,14 @@ table {
     .toastui-calendar-weekday-grid {
         border: 0 !important;
     }
-    .toastui-calendar-daygrid-cell{
-        
+
+    .toastui-calendar-daygrid-cell {
+
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        &+.toastui-calendar-daygrid-cell{
+
+        &+.toastui-calendar-daygrid-cell {
             border: 0;
         }
     }
@@ -794,6 +842,7 @@ table {
             @media (max-width: 600px) {
                 font-size: 12px;
             }
+
             font-weight: 700;
 
             .toastui-calendar-template-monthDayName {
@@ -804,12 +853,15 @@ table {
                 @media (min-width: 768px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 1440px) {
                     font-size: 16px;
                 }
+
                 @media (min-width: 1920px) {
                     font-size: 18px;
                 }
+
                 font-weight: 600;
             }
         }
@@ -817,7 +869,7 @@ table {
         .toastui-calendar-daygrid-cell {
             border: 0;
             font-weight: 600;
-            
+
             @media (max-width: 600px) {
                 font-size: 12px;
             }
@@ -825,20 +877,23 @@ table {
             @media (min-width: 768px) {
                 font-size: 14px;
             }
+
             @media (min-width: 1440px) {
                 font-size: 16px;
             }
+
             @media (min-width: 1920px) {
                 font-size: 18px;
             }
         }
 
     }
-            
+
     .toastui-calendar-weekday-grid-date-decorator {
         border-radius: 20% !important;
     }
-    .toastui-calendar-grid-cell-date{
+
+    .toastui-calendar-grid-cell-date {
         font-weight: 700;
     }
 }
@@ -892,18 +947,18 @@ table {
                 border-radius: 5px;
 
             }
-            
-            .dt-button-collection{
+
+            .dt-button-collection {
                 background-color: $white;
                 box-shadow: 0 3px 6px #00000029;
-                
-                .dt-button{
+
+                .dt-button {
                     color: $progressBarText;
                     background-color: transparent;
                     box-shadow: none;
                     margin: 10px 0;
 
-                    &:hover{
+                    &:hover {
                         color: $white;
                         background-color: $primarybtn;
                     }
@@ -1024,13 +1079,15 @@ table {
             }
         }
     }
-    &#patientDetail_wrapper{
-        .dt-button-collection{
+
+    &#patientDetail_wrapper {
+        .dt-button-collection {
             margin-top: 0 !important;
             position: absolute;
             right: 5%;
         }
     }
+
     &#upcomingAppoints_wrapper {
         position: initial;
 
@@ -1061,18 +1118,19 @@ table {
                     display: none;
                 }
             }
-            .dt-button-collection{
+
+            .dt-button-collection {
                 background-color: $white;
                 box-shadow: 0 3px 6px #00000029;
                 margin-top: 0 !important;
-                
-                .dt-button{
+
+                .dt-button {
                     color: $progressBarText;
                     background-color: transparent;
                     box-shadow: none;
                     margin: 10px 0;
 
-                    &:hover{
+                    &:hover {
                         color: $white;
                         background-color: $primarybtn;
                     }
@@ -1154,6 +1212,9 @@ table {
 }
 
 // margin added
+.m-12 {
+    margin: 12px;
+}
 
 .mt-12 {
     margin-top: 12px;
@@ -1177,6 +1238,10 @@ table {
 
 .my-12 {
     margin-block: 12px;
+}
+
+.m-20 {
+    margin: 20px;
 }
 
 .mt-20 {
@@ -1203,7 +1268,38 @@ table {
     margin-block: 20px;
 }
 
+.m-30 {
+    margin: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.ms-30 {
+    margin-inline-start: 30px;
+}
+
+.me-30 {
+    margin-inline-end: 30px;
+}
+
+.mx-30 {
+    margin-inline: 30px;
+}
+
+.my-30 {
+    margin-block: 30px;
+}
+
 // padding added
+.p-12 {
+    padding: 12px;
+}
 
 .pt-12 {
     padding-top: 12px;
@@ -1227,6 +1323,10 @@ table {
 
 .py-12 {
     padding-block: 12px;
+}
+
+.p-20 {
+    padding: 20px;
 }
 
 .pt-20 {
@@ -1253,6 +1353,31 @@ table {
     padding-block: 20px;
 }
 
+.p-30 {
+    padding: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.ps-30 {
+    padding-inline-start: 30px;
+}
+
+.pe-30 {
+    padding-inline-end: 30px;
+}
+
+.px-30 {
+    padding-inline: 30px;
+}
+
+.py-30 {
+    padding-block: 30px;
+}
+
+/////\
 // generic table styling
 
 .dt-buttons {
@@ -1352,6 +1477,7 @@ table {
         color: #E36262;
         font-size: 14px;
     }
+
     .missed {
         display: inline-block;
         border-radius: 5px;
@@ -1372,15 +1498,19 @@ table {
         @media (max-width: 600px) {
             font-size: 14px;
         }
+
         @media (min-width: 768px) {
             font-size: 14px;
         }
+
         @media (min-width: 1440px) {
             font-size: 18px;
         }
+
         @media (min-width: 1920px) {
             font-size: 22px;
         }
+
         color: #323232;
         margin-bottom: 14px;
         font-weight: 600;
@@ -1403,15 +1533,19 @@ table {
                 @media (max-width: 600px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 768px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 1440px) {
                     font-size: 18px;
                 }
+
                 @media (min-width: 1920px) {
                     font-size: 22px;
                 }
+
                 color: #424242;
                 font-weight: 600;
             }
@@ -1420,15 +1554,19 @@ table {
                 @media (max-width: 600px) {
                     font-size: 12px;
                 }
+
                 @media (min-width: 768px) {
                     font-size: 14px;
                 }
+
                 @media (min-width: 1440px) {
                     font-size: 16px;
                 }
+
                 @media (min-width: 1920px) {
                     font-size: 18px;
                 }
+
                 color: $checkboxText;
             }
         }
@@ -1453,40 +1591,59 @@ table {
 .pg_calendar {
     .main-panel {
         .calender-view {
+            overflow-y: scroll;
 
             .calender-header {
-                padding-block: 30px;
+                border-bottom: 1px solid #B8B8B8;
+                height: 108px;
 
-                .btn-wrapper {
-                    button {
-                        font-size: 18px;
-                        color: $white;
-                        background-color: $primarybtn;
-                        border-radius: 5px;
-                        min-width: 260px;
-                        border: none;
+                .btn-wrapper-container {
+                    .btn-wrapper {
+                        button {
+                            font-size: 18px;
+                            color: $white;
+                            background-color: $primarybtn;
+                            border-radius: 5px;
+                            min-width: 180px;
+                            border: none;
+
+                            @include media-breakpoint-up(lg) {
+                                min-width: 230px;
+                            }
+                        }
                     }
                 }
 
                 .calender-view-options {
-
-                    .prevBtn,
-                    .nextBtn {
-                        i {
-                            color: red;
-                        }
+                    .month-name {
+                        margin-inline-start: 24px;
                     }
 
-                    .month-name {
-                        color: $textColorBlack;
-                        font-size: 24px;
-                        font-weight: 600;
+                    .fa-chevron-right,
+                    .fa-chevron-left {
+                        color: #A1A1A1;
                     }
                 }
             }
 
+            .custom-calender-body {
+                height: calc(100% - 15%) !important;
+            }
+
+            .calender-header-view-switch {
+                border: none;
+
+                @include media-breakpoint-up(lg) {
+                    border-inline-start: 2px solid #707070;
+                }
+            }
+
             .calendar-detailed-view {
-                border-inline-start: 2px solid $subText;
+                border: none;
+
+                @include media-breakpoint-up(lg) {
+                    border-inline-start: 2px solid #707070;
+                }
 
                 .toastui-calendar-layout {
                     .toastui-calendar-day-names {
@@ -1502,30 +1659,36 @@ table {
                             .toastui-calendar-day-name-item {
                                 height: 100%;
                                 padding: 0;
+                                border: 1px solid #B8B8B8 !important;
 
                                 .toastui-calendar-template-monthDayName {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
                                     height: 100%;
+
                                     @media (max-width: 600px) {
                                         font-size: 14px;
                                     }
+
                                     @media (min-width: 768px) {
                                         font-size: 14px;
                                     }
+
                                     @media (min-width: 1440px) {
                                         font-size: 18px;
                                     }
+
                                     @media (min-width: 1920px) {
                                         font-size: 22px;
                                     }
+
                                     // padding-block: 12px;
                                     color: $subText;
                                     text-transform: capitalize;
-                                    border-top: 2px solid $subText;
-                                    border-right: 1px solid #B8B8B8;
-                                    border-bottom: 1px solid #B8B8B8;
+                                    font-size: 22px;
+                                    color: $subText;
+                                    text-transform: capitalize;
                                 }
 
                                 &:last-child {
@@ -1538,11 +1701,20 @@ table {
                     }
 
                     .toastui-calendar-month-daygrid {
+                        height: 500px;
+
+                        @include media-breakpoint-up(lg) {
+                            height: calc(100% - 60px);
+                        }
+
                         .toastui-calendar-month-week-item {
                             .toastui-calendar-weekday {
                                 .toastui-calendar-weekday-grid {
                                     .toastui-calendar-daygrid-cell {
+                                        border: 1px solid #B8B8B8;
                                         padding: 12px;
+                                        justify-content: start;
+                                        align-items: flex-start;
                                     }
                                 }
                             }
@@ -1552,45 +1724,59 @@ table {
             }
 
             .calender-month-view {
-                border-top: 2px solid $subText;
                 padding: 28px 20px;
+
+                .small-calender-view {
+                    margin-top: 36px;
+                }
+            }
+
+            .month-name {
+                color: $textColorBlack;
+                font-size: 24px;
+                font-weight: 600;
             }
         }
     }
 }
-.main-panel{
+
+.main-panel {
     overflow-y: auto;
 }
 
-.form-control{
+.form-control {
     border: 1px solid $subText;
     border-radius: 5px !important;
     padding: 10px 22px !important;
     height: 50px;
     box-sizing: border-box;
-    &:focus{
+
+    &:focus {
         border: 1px solid $primarybtn;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
 }
-.form-check{
-    .form-check-input{
+
+.form-check {
+    .form-check-input {
         border: 1px solid $subText;
         opacity: 1 !important;
         width: 1.5em;
         height: 1.5em;
     }
 }
-.full-page-wrapper{
-    &.login-page{
-        .bg-login-left{
-            @media (max-width: 600px) {   
+
+.full-page-wrapper {
+    &.login-page {
+        .bg-login-left {
+            @media (max-width: 600px) {
                 height: auto !important;
             }
         }
     }
 }
-.delAccount{
+
+.delAccount {
     background-color: #FFEEE3;
     color: #CB9E5B;
 }

@@ -162,14 +162,17 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown d-none d-lg-block user-dropdown position-relative">
-                        <img class="img-xs rounded-circle d-inline-block" src="images/faces/face8.jpg" alt="Profile image"> 
-                        <a class="nav-link d-inline-block ms-2" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                          <i class="fa-solid fa-chevron-down"></i>
+                        <img class="img-xs rounded-circle d-inline-block" src="images/faces/face8.jpg"
+                            alt="Profile image">
+                        <a class="nav-link d-inline-block ms-2" id="UserDropdown" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-chevron-down"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2" aria-labelledby="UserDropdown">
-                          <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
-                          <a class="dropdown-item border-0" href="./settings.html">Settings</a>
-                          <a class="dropdown-item border-0" href="./login.html">Logout</a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown p-2"
+                            aria-labelledby="UserDropdown">
+                            <a class="dropdown-item border-0" href="./settings.html#workhours">Work Hours</a>
+                            <a class="dropdown-item border-0" href="./settings.html">Settings</a>
+                            <a class="dropdown-item border-0" href="./login.html">Logout</a>
                         </div>
                     </li>
                 </ul>
@@ -439,43 +442,52 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12 calender-view content-wrapper custom-card p-0">
-                                <div class="container-fluid">
-                                    <div class="row calender-header">
-                                        <div class="col-md-4">
-                                            <div class="btn-wrapper d-flex flex-center">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100 calender-view custom-card">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="row">
+                                    <div class="calender-header">
+                                        <div class="btn-wrapper-container">
+                                            <div class="btn-wrapper d-flex flex-center py-30">
                                                 <button class="py-12">+ Add Event</button>
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="row">
-                                                <div class="col-md-4 calender-view-options">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <button id="prevBtn" class="bg-transparent border-0 d-inline-block"><i
-                                                                class="fa-solid fa-chevron-left"></i> </button>
-                                                        <button id="nextBtn" class="bg-transparent border-0 d-inline-block"><i
-                                                                class="fa-solid fa-chevron-right"></i> </button>
-                                                        <div id="monthName" class="month-name"><span class="navbar--range"></span></div>
-                                                    </div>
+                                    </div>
+                                    <div class="calender-month-view">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <button id="prevBtn2" class="bg-transparent border-0 d-inline-block"><i
+                                                    class="fa-solid fa-chevron-left text-primary"></i>
+                                            </button>
+                                            <div id="monthName2" class="month-name"><span class="navbar--range"></span>
+                                            </div>
+                                            <button id="nextBtn2" class="bg-transparent border-0 d-inline-block"><i
+                                                    class="fa-solid fa-chevron-right text-primary"></i>
+                                            </button>
+                                        </div>
+                                        <div id="calendar" style="height: 300px;" class="small-calender-view"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="row h-100">
+                                    <div class="col-sm-12 p-0">
+                                        <div class="calender-header calender-header-view-switch">
+                                            <div
+                                                class="col-md-4 calender-view-options p-30 d-flex align-items-center h-100">
+                                                <div class="d-flex align-items-center">
+                                                    <button id="prevBtn"
+                                                        class="bg-transparent border-0 d-inline-block me-4"><i
+                                                            class="fa-solid fa-chevron-left"></i> </button>
+                                                    <button id="nextBtn"
+                                                        class="bg-transparent border-0 d-inline-block"><i
+                                                            class="fa-solid fa-chevron-right"></i> </button>
+                                                    <div id="monthName" class="month-name"><span
+                                                            class="navbar--range"></span></div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row h-100">
-                                        <div class="calender-month-view col-md-4">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <button id="prevBtn2" class="bg-transparent border-0 d-inline-block"><i
-                                                        class="fa-solid fa-chevron-left text-primary"></i> </button>
-                                                <div id="monthName2"><span class="navbar--range"></span></div>
-                                                <button id="nextBtn2" class="bg-transparent border-0 d-inline-block"><i
-                                                        class="fa-solid fa-chevron-right text-primary"></i> </button>
-                                            </div>
-                                            <div id="calendar" style="height: 300px;"></div>
-                                        </div>
-                                        <div class="col-md-8 p-0">
-                                            <div id="calendar2" class="h-100 calendar-detailed-view"></div>
+                                        <div class="p-0 custom-calender-body">
+                                            <div id="calendar2" class="calendar-detailed-view h-100"></div>
                                         </div>
                                     </div>
                                 </div>

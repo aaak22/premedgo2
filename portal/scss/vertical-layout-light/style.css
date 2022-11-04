@@ -23137,6 +23137,10 @@ table.notificationTable tr:last-child {
   height: 16px;
 }
 
+.m-12 {
+  margin: 12px;
+}
+
 .mt-12 {
   margin-top: 12px;
 }
@@ -23161,6 +23165,10 @@ table.notificationTable tr:last-child {
 
 .my-12 {
   margin-block: 12px;
+}
+
+.m-20 {
+  margin: 20px;
 }
 
 .mt-20 {
@@ -23189,6 +23197,40 @@ table.notificationTable tr:last-child {
   margin-block: 20px;
 }
 
+.m-30 {
+  margin: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ms-30 {
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+}
+
+.me-30 {
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
+}
+
+.mx-30 {
+  margin-inline: 30px;
+}
+
+.my-30 {
+  margin-block: 30px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
 .pt-12 {
   padding-top: 12px;
 }
@@ -23215,6 +23257,10 @@ table.notificationTable tr:last-child {
   padding-block: 12px;
 }
 
+.p-20 {
+  padding: 20px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -23239,6 +23285,32 @@ table.notificationTable tr:last-child {
 
 .py-20 {
   padding-block: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.ps-30 {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+}
+
+.pe-30 {
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
+
+.px-30 {
+  padding-inline: 30px;
+}
+
+.py-30 {
+  padding-block: 30px;
 }
 
 .dt-buttons {
@@ -23428,29 +23500,54 @@ table .missed {
   color: #4162EF;
 }
 
-.pg_calendar .main-panel .calender-view .calender-header {
-  padding-block: 30px;
+.pg_calendar .main-panel .calender-view {
+  overflow-y: scroll;
 }
-.pg_calendar .main-panel .calender-view .calender-header .btn-wrapper button {
+.pg_calendar .main-panel .calender-view .calender-header {
+  border-bottom: 1px solid #B8B8B8;
+  height: 108px;
+}
+.pg_calendar .main-panel .calender-view .calender-header .btn-wrapper-container .btn-wrapper button {
   font-size: 18px;
   color: #ffffff;
   background-color: #4162ef;
   border-radius: 5px;
-  min-width: 260px;
+  min-width: 180px;
   border: none;
 }
-.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .prevBtn i,
-.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .nextBtn i {
-  color: red;
+@media (min-width: 992px) {
+  .pg_calendar .main-panel .calender-view .calender-header .btn-wrapper-container .btn-wrapper button {
+    min-width: 230px;
+  }
 }
 .pg_calendar .main-panel .calender-view .calender-header .calender-view-options .month-name {
-  color: #323232;
-  font-size: 24px;
-  font-weight: 600;
+  -webkit-margin-start: 24px;
+          margin-inline-start: 24px;
+}
+.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .fa-chevron-right,
+.pg_calendar .main-panel .calender-view .calender-header .calender-view-options .fa-chevron-left {
+  color: #A1A1A1;
+}
+.pg_calendar .main-panel .calender-view .custom-calender-body {
+  height: 85% !important;
+}
+.pg_calendar .main-panel .calender-view .calender-header-view-switch {
+  border: none;
+}
+@media (min-width: 992px) {
+  .pg_calendar .main-panel .calender-view .calender-header-view-switch {
+    -webkit-border-start: 2px solid #707070;
+            border-inline-start: 2px solid #707070;
+  }
 }
 .pg_calendar .main-panel .calender-view .calendar-detailed-view {
-  -webkit-border-start: 2px solid #707070;
-          border-inline-start: 2px solid #707070;
+  border: none;
+}
+@media (min-width: 992px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view {
+    -webkit-border-start: 2px solid #707070;
+            border-inline-start: 2px solid #707070;
+  }
 }
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names {
   box-shadow: none;
@@ -23465,6 +23562,7 @@ table .missed {
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item {
   height: 100%;
   padding: 0;
+  border: 1px solid #B8B8B8 !important;
 }
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
   display: flex;
@@ -23473,9 +23571,9 @@ table .missed {
   height: 100%;
   color: #707070;
   text-transform: capitalize;
-  border-top: 2px solid #707070;
-  border-right: 1px solid #B8B8B8;
-  border-bottom: 1px solid #B8B8B8;
+  font-size: 22px;
+  color: #707070;
+  text-transform: capitalize;
 }
 @media (max-width: 600px) {
   .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
@@ -23500,12 +23598,30 @@ table .missed {
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item:last-child .toastui-calendar-template-monthDayName {
   border-right: none;
 }
+.pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-month-daygrid {
+  height: 500px;
+}
+@media (min-width: 992px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-month-daygrid {
+    height: calc(100% - 60px);
+  }
+}
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-month-daygrid .toastui-calendar-month-week-item .toastui-calendar-weekday .toastui-calendar-weekday-grid .toastui-calendar-daygrid-cell {
+  border: 1px solid #B8B8B8;
   padding: 12px;
+  justify-content: start;
+  align-items: flex-start;
 }
 .pg_calendar .main-panel .calender-view .calender-month-view {
-  border-top: 2px solid #707070;
   padding: 28px 20px;
+}
+.pg_calendar .main-panel .calender-view .calender-month-view .small-calender-view {
+  margin-top: 36px;
+}
+.pg_calendar .main-panel .calender-view .month-name {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .main-panel {

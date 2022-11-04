@@ -11,25 +11,8 @@ $(function() {
       datasets: [{
         label: '# of Votes',
         data: [10, 19, 3, 5, 2, 3, 20],
-        backgroundColor: [
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-        ],
-        borderColor: [
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-          '#91A4F6',
-        ],
-        borderWidth: 1,
+        backgroundColor:'#91A4F6',
+        barRoundness: 20,
         fill: true
       }]
     };
@@ -41,11 +24,16 @@ $(function() {
           ticks: {
             beginAtZero: true
           },
-          
+          gridLines: {
+            display:false
+          }          
         }],
-        x: {
-          maxBarThickness: 10
-        },
+        xAxes: [{
+          maxBarThickness: 10,
+          gridLines: {
+            display:false
+          }
+        }],
       },
       legend: {
         display: false
@@ -56,22 +44,20 @@ $(function() {
         }
       },
       fill: true,
-  
     };
     if ($("#lineChart").length) {
         var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
-
         
-        const gradientBg =  lineChartCanvas.createLinearGradient(0,0,0,400);
+        const gradientBg =  lineChartCanvas.createLinearGradient(0,0,0,200);
         gradientBg.addColorStop(0,'#4162EF');
-        gradientBg.addColorStop(0.5,'#7F95F4AC');
+        gradientBg.addColorStop(0.3,'#7F95F4AC');
         gradientBg.addColorStop(1,'#FFFFFF00');
 
         var data = {
           labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
           datasets: [{
             label: '# of Votes',
-            data: [10, 19, 3, 5, 2, 3, 20, 12, 32, 15, 25, 30],
+            data: [35, 28, 45, 15, 20, 43, 20, 12, 32, 15, 32, 40],
             backgroundColor: gradientBg,
             borderWidth: 3,
             borderColor: '#4162EF',
@@ -79,12 +65,38 @@ $(function() {
           }]
         };
 
-
-
         var lineChart = new Chart(lineChartCanvas, {
           type: 'line',
           data: data,
-          options: options
+          options: {
+            responsive: true,
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true
+                },
+                gridLines: {
+                  display:false
+                }          
+              }],
+              xAxes: [{
+                maxBarThickness: 10,
+                gridLines: {
+                  display:false
+                }
+              }],
+            },
+            legend: {
+              display: false
+            },
+            elements: {
+              point: {
+                radius: 0
+              }
+            },
+            fill: true,
+        
+          }
         });
     }
     
@@ -93,7 +105,36 @@ $(function() {
       var barChart = new Chart(barChartCanvas, {
         type: 'bar',
         data: data2,
-        options: options
+        options: {
+          responsive: true,
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              },
+              gridLines: {
+                display:false
+              },
+              display: false,    
+            }],
+            xAxes: [{
+              maxBarThickness: 10,
+              gridLines: {
+                display:false
+              }
+            }],
+          },
+          legend: {
+            display: false
+          },
+          elements: {
+            point: {
+              radius: 0
+            }
+          },
+          fill: true,
+      
+        }
       });
   }
 });

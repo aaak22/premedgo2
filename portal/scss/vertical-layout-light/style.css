@@ -23329,28 +23329,85 @@ table .missed {
   background-color: #ffffff !important;
 }
 .custom-card .card-title {
-  font-size: 1.375rem;
   color: #323232;
   margin-bottom: 14px;
   font-weight: 600;
   margin-bottom: 16px;
 }
+@media (max-width: 600px) {
+  .custom-card .card-title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-card .card-title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .custom-card .card-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .custom-card .card-title {
+    font-size: 22px;
+  }
+}
 
 .summary-card .summary {
-  padding-block: 38px;
+  padding-block: 1em;
   border-bottom: 1px solid #CACACA;
 }
 .summary-card .summary:last-child {
   border: none;
 }
 .summary-card .summary .custom-content-wrapper .summary-title {
-  font-size: 22px;
   color: #424242;
   font-weight: 600;
 }
+@media (max-width: 600px) {
+  .summary-card .summary .custom-content-wrapper .summary-title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .summary-card .summary .custom-content-wrapper .summary-title {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .summary-card .summary .custom-content-wrapper .summary-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .summary-card .summary .custom-content-wrapper .summary-title {
+    font-size: 22px;
+  }
+}
 .summary-card .summary .custom-content-wrapper .summary-desc {
-  font-size: 18px;
   color: #5D5D5D;
+}
+@media (max-width: 600px) {
+  .summary-card .summary .custom-content-wrapper .summary-desc {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .summary-card .summary .custom-content-wrapper .summary-desc {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .summary-card .summary .custom-content-wrapper .summary-desc {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .summary-card .summary .custom-content-wrapper .summary-desc {
+    font-size: 18px;
+  }
 }
 .summary-card .summary .icon {
   background-color: #E1E7F5;
@@ -23405,12 +23462,31 @@ table .missed {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 22px;
   color: #707070;
   text-transform: capitalize;
   border-top: 2px solid #707070;
   border-right: 1px solid #B8B8B8;
   border-bottom: 1px solid #B8B8B8;
+}
+@media (max-width: 600px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1440px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item .toastui-calendar-template-monthDayName {
+    font-size: 22px;
+  }
 }
 .pg_calendar .main-panel .calender-view .calendar-detailed-view .toastui-calendar-layout .toastui-calendar-day-names .toastui-calendar-day-name-container .toastui-calendar-day-name-item:last-child .toastui-calendar-template-monthDayName {
   border-right: none;

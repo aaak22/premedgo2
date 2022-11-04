@@ -1780,3 +1780,16 @@ table {
     background-color: #FFEEE3;
     color: #CB9E5B;
 }
+
+.custom-offcanvas {
+    padding: 0 33px;
+
+    .offcanvas-header {
+        padding: 42px 0;
+
+        #offcanvasRightLabel {
+            font-size: 22px;
+            color: $subText;
+        }
+    }
+}

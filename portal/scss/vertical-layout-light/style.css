@@ -23660,4 +23660,15 @@ table .missed {
 .delAccount {
   background-color: #FFEEE3;
   color: #CB9E5B;
+}
+
+.custom-offcanvas {
+  padding: 0 33px;
+}
+.custom-offcanvas .offcanvas-header {
+  padding: 42px 0;
+}
+.custom-offcanvas .offcanvas-header #offcanvasRightLabel {
+  font-size: 22px;
+  color: #707070;
 }/*# sourceMappingURL=style.css.map */

@@ -444,6 +444,7 @@
                 <div class="content-wrapper">
                     <div class="container-fluid h-100">
                         <div class="row h-100 calender-view custom-card">
+
                             <div class="col-lg-4 col-md-12">
                                 <div class="row">
                                     <div class="calender-header">
@@ -497,11 +498,35 @@
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header mb-4">
+                        <h4 id="offcanvasRightLabel">Details</h4>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- <div class="details-item">
+                            <div>
+
+                            </div>
+                            <div>
+                                <div>PATIENT'S INFO</div>
+                                <div><span>John Doe</span><span>view more</span></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
             </div>
+
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
     </div>
+
     <!-- container-scroller -->
 
     <!-- plugins:js -->

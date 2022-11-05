@@ -563,7 +563,9 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">CURRENT PASSWORD</label>
-                                  <input type="password" class="form-control" placeholder="NAME OF ORGANIZATION">
+                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
                                 </div>
                               </div>
                             </div>
@@ -571,13 +573,17 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">NEW PASSWORD</label>
-                                  <input type="password" class="form-control" value="asdasdasdasdasds">
+                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">CONFIRM NEW PASSWORD</label>
-                                  <input type="password" class="form-control" c>
+                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
                                 </div>
                               </div>
                             </div>
@@ -1162,6 +1168,21 @@
     var bar1 = new ldBar("#myItem1");
     var bar2 = document.getElementById('myItem1').ldBar;
     bar1.set(60);
+  </script>
+  
+  <script>
+    function showPassword() {
+      var x = document.getElementById("inputPassword");
+      if (x.type === "password") {
+        x.type = "text";
+      }
+    }
+    function hidePassword() {
+      var x = document.getElementById("inputPassword");
+      if (x.type === "text") {
+        x.type = "password";
+      }
+    }
   </script>
 </body>
 

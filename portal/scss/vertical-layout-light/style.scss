@@ -438,6 +438,7 @@ h6,
 .sidebar-icon-only {
     .sidebar .nav .nav-item .nav-link img.menu-icon {
         margin-right: 0;
+        width: 16px;
     }
 
     .sidebar .nav .nav-item .nav-link svg {
@@ -664,11 +665,20 @@ table {
 
         thead,
         tbody {
-
             th,
             td {
                 color: $privacyLink;
             }
+            th{
+                font-weight: bold;
+            }
+            td{
+                font-weight: 300;
+                border-right: 0;
+            }
+        }
+        thead{
+            background-color: transparent;
         }
 
         &> :not(:last-child)> :last-child>* {
@@ -714,6 +724,9 @@ table {
                     font-size: 18px;
                 }
             }
+        }
+        thead{
+            background-color: transparent;
         }
 
         tr {
@@ -1792,4 +1805,7 @@ table {
             color: $subText;
         }
     }
+}
+#detailParent{
+    overflow-x: hidden;
 }

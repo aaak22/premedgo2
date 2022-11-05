@@ -22441,6 +22441,7 @@ h6,
 
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link img.menu-icon {
   margin-right: 0;
+  width: 16px;
 }
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link svg {
   display: none;
@@ -22645,6 +22646,18 @@ table.securityTable tbody th,
 table.securityTable tbody td {
   color: #5D5D5D;
 }
+table.securityTable thead th,
+table.securityTable tbody th {
+  font-weight: bold;
+}
+table.securityTable thead td,
+table.securityTable tbody td {
+  font-weight: 300;
+  border-right: 0;
+}
+table.securityTable thead {
+  background-color: transparent;
+}
 table.securityTable > :not(:last-child) > :last-child > * {
   border-bottom-color: #B1B1B1 !important;
 }
@@ -22692,6 +22705,9 @@ table.notificationTable tbody th,
 table.notificationTable tbody td {
     font-size: 18px;
   }
+}
+table.notificationTable thead {
+  background-color: transparent;
 }
 table.notificationTable tr:last-child {
   border-bottom: 1px solid #B1B1B1;
@@ -23671,4 +23687,8 @@ table .missed {
 .custom-offcanvas .offcanvas-header #offcanvasRightLabel {
   font-size: 22px;
   color: #707070;
+}
+
+#detailParent {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */

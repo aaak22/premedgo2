@@ -31,29 +31,6 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
 
-    <style>
-        .ldBar {
-            position: relative;
-        }
-
-        .ldBar.label-center>.ldBar-label {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-shadow: 0 0 3px #fff;
-        }
-
-        .ldBar-label:after {
-            content: "%";
-            display: inline;
-        }
-
-        .ldBar.no-percent .ldBar-label:after {
-            content: "";
-        }
-    </style>
 </head>
 
 <body>
@@ -501,23 +478,140 @@
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
-                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasRight"
+                <div class="offcanvas offcanvas-end custom-offcanvas px-3" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header mb-4">
+                    <div class="offcanvas-header">
+                        <button type="button" aria-label="back" class="bg-transparent border-0" id="backbtn"><i class="fa-solid fa-arrow-left-long fa-2x"></i></button>
                         <h4 id="offcanvasRightLabel">Details</h4>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <!-- <div class="details-item">
-                            <div>
-
-                            </div>
-                            <div>
-                                <div>PATIENT'S INFO</div>
-                                <div><span>John Doe</span><span>view more</span></div>
-                            </div>
-                        </div> -->
+                    <div class="offcanvas-body px-0">
+                        <div class="container-fluid" id="detailParent">
+                            <div class="row mb-4">
+                                <div class="col-2">
+                                  <img class="img-fluid" src="./images/user.svg" alt="">
+                                </div>
+                                <div class="col">
+                                  <h2 class="headerTextM text-uppercase">PATIENT'S INFO</h2>
+                                  <div class="d-flex justify-content-between">
+                                      <h4 class="textGray paraText">John Doe</h4>
+                                      <a href="#" class="viewPatientDetail">view more ></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row mb-4">
+                                <div class="col-2">
+                                  <img class="img-fluid" src="./images/phone.svg" alt="">
+                                </div>
+                                <div class="col">
+                                  <h2 class="headerTextM text-uppercase">LEVEL OF SERIVCE</h2>
+                                  <h4 class="textGray paraText">000-1111111</h4>
+                                </div>
+                              </div>
+                              <div class="row mb-4">
+                                <div class="col-2">
+                                  <img class="img-fluid" src="./images/mail.svg" alt="">
+                                </div>
+                                <div class="col">
+                                  <h2 class="headerTextM text-uppercase">DATE</h2>
+                                  <h4 class="textGray paraText">2022-6-22 10:30AM</h4>
+                                </div>
+                              </div>
+                              <div class="row mb-4">
+                                <div class="col-2">
+                                  <img src="./images/birthday.svg" alt="">
+                                </div>
+                                <div class="col">
+                                    <h2 class="headerTextM text-uppercase">PATIENT'S MEDICAL HISTORY</h2>
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="textGray paraText">John Doe</h4>
+                                        <a href="#">view more ></a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="row mb-4">
+                                <div class="col-2">
+                                  <img class="img-fluid" src="./images/birthday.svg" alt="">
+                                </div>
+                                <div class="col">
+                                    <h2 class="headerTextM text-uppercase">PATIENT'S MEDICAL HISTORY</h2>
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="textGray paraText">Payment Completed</h4>
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="row mb-4">
+                                <div class="col-2">
+                                  <img class="img-fluid" src="./images/edit-dark.svg" alt="">
+                                </div>
+                                <div class="col">
+                                  <h2 class="headerTextM text-uppercase">ADD NOTE</h2>
+                                  <textarea class="w-100"></textarea>
+                                </div>
+                              </div>
+                              <div class="btngroup d-flex">
+                                <button class="btn btn-primary me-3">Done</button>
+                                <button class="btn btn-secondary">Cancel</button>
+                              </div>
+                        </div>
+                        <div class="container-fluid" id="detailChild">
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img class="img-fluid" src="./images/user.svg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                    <h2 class="headerTextM text-uppercase">Name</h2>
+                                    <h4 class="textGray paraText">John Doe</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img class="img-fluid" src="./images/phone.svg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                    <h2 class="headerTextM text-uppercase">Contact No.</h2>
+                                    <h4 class="textGray paraText">000-1111111</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img class="img-fluid" src="./images/mail.svg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                    <h2 class="headerTextM text-uppercase">Email Address</h2>
+                                    <h4 class="textGray paraText">abc@gmail.com</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img src="./images/birthday.svg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                    <h2 class="headerTextM text-uppercase">Age</h2>
+                                    <h4 class="textGray">22 years</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img class="img-fluid" src="./images/birthday.svg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                    <h2 class="headerTextM text-uppercase">Gender</h2>
+                                    <h4 class="textGray paraText">Female</h4>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-2">
+                                    <img class="img-fluid" src="./images/file.svg" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                    <h2 class="headerTextM text-uppercase">Health QUESTIONNAIRE</h2>
+                                    <h4 class="textGray paraText"><a href="#">View here</a></h4>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -526,6 +620,7 @@
         </div>
         <!-- page-body-wrapper ends -->
     </div>
+  
 
     <!-- container-scroller -->
 
@@ -560,11 +655,6 @@
     <script src="./js/analytics.js"></script>
 
     <script>
-        var bar1 = new ldBar("#myItem1");
-        var bar2 = document.getElementById('myItem1').ldBar;
-        bar1.set(60);
-    </script>
-    <script>
         const Calendar = tui.Calendar;
         const calendar = new Calendar('#calendar', {
             taskView: true,
@@ -588,6 +678,26 @@
             },
             defaultView: 'month',
         });
+        calendar2.createEvents([
+            {
+                id: '1',
+                calendarId: '1',
+                title: 'my event',
+                category: 'time',
+                dueDateClass: '',
+                start: '2022-11-21T22:30:00+09:00',
+                end: '2022-11-23T02:30:00+09:00',
+            },
+            {
+                id: '2',
+                calendarId: '1',
+                title: 'second event',
+                category: 'time',
+                dueDateClass: '',
+                start: '2022-11-18T17:30:00+09:00',
+                end: '2022-11-19T17:31:00+09:00',
+            },
+        ]);
     </script>
 
     <script>
@@ -607,6 +717,22 @@
         console.log(calendar.getDate().getMonth());
         document.getElementById('monthName').innerHTML = calendar.changeView('month');
         document.getElementById('monthName2').innerHTML = calendar2.changeView('month');
+    </script>
+
+    <script>
+        $('#detailChild').css('display','none');
+        $('#backbtn').css('display','none');
+
+        $('.viewPatientDetail').click(function(){
+            $('#detailParent').css('display','none')
+            $('#detailChild').css('display','block')
+            $('#backbtn').css('display','block')
+        });
+        $('#backbtn').click(function(){
+            $('#detailParent').css('display','block')
+            $('#detailChild').css('display','none')
+            $('#backbtn').css('display','none')
+        });
     </script>
 </body>
 

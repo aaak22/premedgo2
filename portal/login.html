@@ -49,7 +49,9 @@
                     <label for="">Password</label>
                     <a href="./forgotpassword.html" class="auth-link textGray">forgot password?</a>
                   </div>
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="........">
+                  <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="........">
+                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
@@ -88,6 +90,21 @@
   <script src="../../js/settings.js"></script>
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
+
+  <script>
+    function showPassword() {
+      var x = document.getElementById("inputPassword");
+      if (x.type === "password") {
+        x.type = "text";
+      }
+    }
+    function hidePassword() {
+      var x = document.getElementById("inputPassword");
+      if (x.type === "text") {
+        x.type = "password";
+      }
+    }
+  </script>
 </body>
 
 </html>

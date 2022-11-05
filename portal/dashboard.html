@@ -856,6 +856,9 @@
       taskView: true,
       readOnly: true,
       scheduleView: ['allday', 'time'],
+      month: {
+        dayNames: ['Sun','Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat']
+      },
       template: {
       monthDayname: function(dayname) {
         return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
@@ -869,12 +872,15 @@
     });
     $("#nextBtn").click(function(){
       calendar.next();
+      var calendarMonth = calendar.getDate().getMonth();
+
     });
   </script>
 
   <script>
     console.log(calendar.getDate().getFullYear());
-    console.log(calendar.getDate().getMonth());
+    
+    
   </script>
 
   <!--Stacked bar chart-->

@@ -267,7 +267,7 @@ h6,
         font-size: 22px;
     }
 
-    font-family: 'nunitosemibold';
+    @extend .fw-bold;
 }
 
 .paraText {
@@ -1051,6 +1051,10 @@ table {
             outline: none;
             border-radius: 5px;
 
+            &:hover{
+                background: $primarybtn !important;
+                color: #E1E7F5 !important;
+            }
 
             &.previous,
             &.next {
@@ -1416,11 +1420,17 @@ table {
 
 .paginate_button {
     color: $primarybtn !important;
+    background-image: none;
     background-color: #E1E7F5;
     box-shadow: none;
     border: 0;
     outline: none;
     border-radius: 5px;
+
+    &:hover{
+        background: $primarybtn !important;
+        color: #E1E7F5 !important;
+    }
 
 
     &.previous,
@@ -1808,4 +1818,41 @@ table {
 }
 #detailParent{
     overflow-x: hidden;
+}
+.hidePassword{
+    display: none;
+}
+.showHidePassword{
+    top: 20%;
+    right: 2%;
+}
+.viewmore{
+    color: $placeholderColor;
+    text-decoration: none;
+    span{
+        margin-left: 0;
+        transition: all linear 0.2s;
+    }
+    &:hover{
+        color: $primarybtn;
+        
+        span{
+            margin-left: 5px;
+        }
+    }
+}
+#outAppoint,#totAppoint{
+    svg{
+        border-radius: 50px;
+    }
+}
+.invalid-msg{
+    color: $delbtn;
+    font-size: 12px;
+    &.show{
+        display: block;
+    }
+    &.hide{
+        display: none;
+    }
 }

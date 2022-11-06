@@ -12,7 +12,10 @@ $(function() {
         label: '# of Votes',
         data: [10, 19, 3, 5, 2, 3, 20],
         backgroundColor:'#91A4F6',
-        barRoundness: 20,
+        borderColor:'#91A4F6',
+        borderWidth: 2,
+        borderRadius: Number.MAX_VALUE,
+        borderRadiusTop: 20,
         fill: true
       }]
     };
@@ -60,6 +63,7 @@ $(function() {
             data: [35, 28, 45, 15, 20, 43, 20, 12, 32, 15, 32, 40],
             backgroundColor: gradientBg,
             borderWidth: 3,
+            borderRadius: 50,
             borderColor: '#4162EF',
             pointStyle: 'circle',
           }]

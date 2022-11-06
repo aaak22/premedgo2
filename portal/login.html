@@ -43,16 +43,21 @@
                 <div class="form-group">
                   <label for="">Email or Username</label>
                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Enter email address">
+                  <span class="invalid-msg hide">invalid charaters</span>
                 </div>
                 <div class="form-group">
                   <div class="d-flex justify-content-between">
                     <label for="">Password</label>
                     <a href="./forgotpassword.html" class="auth-link textGray">forgot password?</a>
                   </div>
-                  <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="........">
-                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
-                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
-                </div>
+                  <div class="position-relative">
+                    <input type="password" class="form-control" placeholder="" id="inputPassword">
+                    <span class="invalid-msg hide">invalid charaters</span>
+                    <div class="position-absolute showHidePassword">
+                      <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                      <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                    </div>
+                  </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">
                     <label class="form-check-label">
@@ -96,12 +101,16 @@
       var x = document.getElementById("inputPassword");
       if (x.type === "password") {
         x.type = "text";
+        $('.hidePassword').css('display','block');
+        $('.showPassword').css('display','none');
       }
     }
     function hidePassword() {
       var x = document.getElementById("inputPassword");
       if (x.type === "text") {
         x.type = "password";
+        $('.showPassword').css('display','block');
+        $('.hidePassword').css('display','none');
       }
     }
   </script>

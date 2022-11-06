@@ -9036,7 +9036,7 @@ textarea.is-invalid.tt-hint, .select2-container--default .select2-selection--sin
   font-weight: 400 !important;
 }
 
-.fw-bold {
+.fw-bold, .subHeading {
   font-weight: 700 !important;
 }
 
@@ -22053,7 +22053,7 @@ body .page-body-wrapper .main-panel .content-wrapper {
   background-color: #E1E7F5;
 }
 
-.fw-bold {
+.fw-bold, .subHeading {
   font-family: "nunitobold";
 }
 
@@ -22242,9 +22242,6 @@ h6,
   transform: translateX(-50%);
 }
 
-.subHeading {
-  font-family: "nunitosemibold";
-}
 @media (max-width: 600px) {
   .subHeading {
     font-size: 14px;
@@ -23016,6 +23013,10 @@ table.notificationTable tr:last-child {
   outline: none;
   border-radius: 5px;
 }
+.dataTables_wrapper#patientDetail_wrapper .paginate_button:hover, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button:hover {
+  background: #4162ef !important;
+  color: #E1E7F5 !important;
+}
 .dataTables_wrapper#patientDetail_wrapper .paginate_button.previous, .dataTables_wrapper#patientDetail_wrapper .paginate_button.next, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.previous, .dataTables_wrapper#upcomingAppoints_wrapper .paginate_button.next {
   margin: 0 10px;
 }
@@ -23351,11 +23352,16 @@ table.notificationTable tr:last-child {
 
 .paginate_button {
   color: #4162ef !important;
+  background-image: none;
   background-color: #E1E7F5;
   box-shadow: none;
   border: 0;
   outline: none;
   border-radius: 5px;
+}
+.paginate_button:hover {
+  background: #4162ef !important;
+  color: #E1E7F5 !important;
 }
 .paginate_button.previous, .paginate_button.next {
   margin: 0 10px;
@@ -23691,4 +23697,43 @@ table .missed {
 
 #detailParent {
   overflow-x: hidden;
+}
+
+.hidePassword {
+  display: none;
+}
+
+.showHidePassword {
+  top: 20%;
+  right: 2%;
+}
+
+.viewmore {
+  color: #A0A0A0;
+  text-decoration: none;
+}
+.viewmore span {
+  margin-left: 0;
+  transition: all linear 0.2s;
+}
+.viewmore:hover {
+  color: #4162ef;
+}
+.viewmore:hover span {
+  margin-left: 5px;
+}
+
+#outAppoint svg, #totAppoint svg {
+  border-radius: 50px;
+}
+
+.invalid-msg {
+  color: #F25E5E;
+  font-size: 12px;
+}
+.invalid-msg.show {
+  display: block;
+}
+.invalid-msg.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" />
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+   
   <link rel="stylesheet" href="js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
@@ -169,7 +169,7 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
-      <div class="theme-setting-wrapper">
+      <!-- <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
@@ -186,7 +186,7 @@
             <div class="tiles default"></div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="right-sidebar" class="settings-panel">
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -437,13 +437,13 @@
                         <div class="row">
                           <h1 class="subHeading text-Black fw-bold">Profile Details</h1>
                           <div class="col-md-6 col-12">
-                            <div class="uploadProfilePicCont d-flex justify-content-start align-items-center">
-                              <div class="imgCont me-4">
+                            <div class="uploadProfilePicCont d-flex flex-md-row flex-column justify-content-start align-items-center">
+                              <div class="imgCont me-md-4">
                                 <img src="" alt="">
                               </div>
                               <div class="btnContainer">
-                                <div class="btngroup d-flex">
-                                  <button class="btn btn-primary me-3 flex-grow-1">Upload new photo</button>
+                                <div class="btngroup d-flex flex-md-row flex-column">
+                                  <button class="btn btn-primary me-md-3 flex-grow-1 my-md-0 my-3">Upload new photo</button>
                                   <button class="btn btn-secondary flex-grow-1">Reset</button>
                                 </div>
                                 <p class="privacyLink paraText mt-3">Allowed JPG, GIF or PNG. Max size of 800K</p>
@@ -456,12 +456,14 @@
                                 <div class="form-group">
                                   <label for="">NAME OF ORGANIZATION</label>
                                   <input type="text" class="form-control" placeholder="NAME OF ORGANIZATION">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">EMAIL</label>
                                   <input type="text" class="form-control" placeholder="abc@gmail.com">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                             </div>
@@ -476,6 +478,7 @@
                                 <div class="form-group">
                                   <label for="">Country</label>
                                   <input type="text" class="form-control" placeholder="country">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                             </div>
@@ -484,12 +487,14 @@
                                 <div class="form-group">
                                   <label for="">STATE</label>
                                   <input type="text" class="form-control" placeholder="California">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">ZIP CODE</label>
                                   <input type="number" class="form-control" placeholder="231000">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                             </div>
@@ -497,21 +502,27 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group position-relative">
                                   <label for="">LOCATION</label>
-                                  <input type="text" class="form-control" placeholder="Set location">
-                                  <span class="bg-transparent position-absolute bottom-25 end-0" id="basic-addon1"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                  <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Set location">
+                                    <span class="invalid-msg hide">invalid charaters</span>
+                                    <div class="position-absolute showHidePassword">
+                                      <img src="./images/arrow-up-right.svg" alt="" style="height:14px;">
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">Address</label>
                                   <input type="address" class="form-control" placeholder="address">
+                                  <span class="invalid-msg hide">invalid charaters</span>
                                 </div>
                               </div>
                             </div>
                             <div class="row mt-5">
                               <div class="col-md-4 col-12">
-                                <div class="btngroup d-flex">
-                                  <button class="btn btn-primary me-3 flex-grow-1">Save changes</button>
+                                <div class="btngroup d-flex flex-md-row flex-column">
+                                  <button class="btn btn-primary me-md-3 my-md-0 my-2 flex-grow-1">Save changes</button>
                                   <button class="btn btn-secondary flex-grow-1">Cancel</button>
                                 </div>
                               </div>
@@ -540,7 +551,7 @@
                                 </label>
                               </div>
                             </div>
-                            <div class="mt-3 ms-md-3">
+                            <div class="mt-3 ms-md-3 d-flex justify-content-md-start justify-content-center">
                               <button class="btn btn-block btn-delete">Deactivate Account</button>
                             </div>
                           </div>
@@ -563,9 +574,13 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">CURRENT PASSWORD</label>
-                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
-                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
-                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                  <div class="position-relative">
+                                    <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                    <div class="position-absolute showHidePassword">
+                                      <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                      <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -573,17 +588,25 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">NEW PASSWORD</label>
-                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
-                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
-                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                  <div class="position-relative">
+                                    <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                    <div class="position-absolute showHidePassword">
+                                      <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                      <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="">CONFIRM NEW PASSWORD</label>
-                                  <input type="password" class="form-control" placeholder="" id="inputPassword">
-                                  <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
-                                  <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                  <div class="position-relative">
+                                    <input type="password" class="form-control" placeholder="" id="inputPassword">
+                                    <div class="position-absolute showHidePassword">
+                                      <button class="showPassword bg-transparent border-0" onclick="showPassword()"><img class="img-fluid" src="./images/eye.svg"/></button>
+                                      <button class="hidePassword bg-transparent border-0" onclick="hidePassword()"><img class="img-fluid" src="./images/eye-off.svg"/></i></button>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -597,10 +620,10 @@
                                 </ul>
                               </div>
                             </div>
-                            <div class="row mt-5">
+                            <div class="row mt-md-5 mt-2">
                               <div class="col-md-4 col-12">
-                                <div class="btngroup d-flex">
-                                  <button class="btn btn-primary me-3 flex-grow-1">Save changes</button>
+                                <div class="btngroup d-flex flex-md-row flex-column">
+                                  <button class="btn btn-primary me-md-3 me-0 flex-grow-1 my-md-0 my-2">Save changes</button>
                                   <button class="btn btn-secondary flex-grow-1">Cancel</button>
                                 </div>
                               </div>
@@ -634,48 +657,50 @@
                   <div class="card rounded-2 mt-4">
                     <div class="card-body p-0">
                       <h4 class="subHeading text-Black p-3 borderBottomGrey fw-bold">Recent Devices</h4>
-                      <table class="table securityTable">
-                        <thead>
-                          <tr>
-                            <th scope="col">BROWSER</th>
-                            <th scope="col">DEVICE</th>
-                            <th scope="col">LOCATION</th>
-                            <th scope="col">RECENT ACTIVITIES</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Chrome on Windows</td>
-                            <td>Lorem Ipsum</td>
-                            <td>Lorem Ipsum</td>
-                            <td>22, July 2022 20:00</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome on iPhone</td>
-                            <td>Lorem Ipsum</td>
-                            <td>Lorem Ipsum</td>
-                            <td>22, July 2022 20:00</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome on Android</td>
-                            <td>Lorem Ipsum</td>
-                            <td>Lorem Ipsum</td>
-                            <td>22, July 2022 20:00</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome on MacOS</td>
-                            <td>Lorem Ipsum</td>
-                            <td>Lorem Ipsum</td>
-                            <td>22, July 2022 20:00</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome on Windows</td>
-                            <td>Lorem Ipsum</td>
-                            <td>Lorem Ipsum</td>
-                            <td>22, July 2022 20:00</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table-responsive">
+                        <table class="table securityTable">
+                          <thead>
+                            <tr>
+                              <th scope="col">BROWSER</th>
+                              <th scope="col">DEVICE</th>
+                              <th scope="col">LOCATION</th>
+                              <th scope="col">RECENT ACTIVITIES</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Chrome on Windows</td>
+                              <td>Lorem Ipsum</td>
+                              <td>Lorem Ipsum</td>
+                              <td>22, July 2022 20:00</td>
+                            </tr>
+                            <tr>
+                              <td>Chrome on iPhone</td>
+                              <td>Lorem Ipsum</td>
+                              <td>Lorem Ipsum</td>
+                              <td>22, July 2022 20:00</td>
+                            </tr>
+                            <tr>
+                              <td>Chrome on Android</td>
+                              <td>Lorem Ipsum</td>
+                              <td>Lorem Ipsum</td>
+                              <td>22, July 2022 20:00</td>
+                            </tr>
+                            <tr>
+                              <td>Chrome on MacOS</td>
+                              <td>Lorem Ipsum</td>
+                              <td>Lorem Ipsum</td>
+                              <td>22, July 2022 20:00</td>
+                            </tr>
+                            <tr>
+                              <td>Chrome on Windows</td>
+                              <td>Lorem Ipsum</td>
+                              <td>Lorem Ipsum</td>
+                              <td>22, July 2022 20:00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -686,90 +711,92 @@
                     <div class="card-body p-0">
                       <h4 class="subHeading text-Black fw-bold p-3 pb-0 mb-0">Recent Devices</h4>
                       <p class="paraText privacyLink p-3">We need permission from your browser to show notifications. Request Permission</p>
-                      <table class="table table-striped notificationTable">
-                        <thead>
-                          <tr>
-                            <th scope="col">BROWSER</th>
-                            <th scope="col">EMAIL</th>
-                            <th scope="col">BROWSER</th>
-                            <th scope="col">APP</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>News for you</td>
-                            <td>
+                      <div class="table-responsive">
+                        <table class="table table-striped notificationTable">
+                          <thead>
+                            <tr>
+                              <th scope="col">BROWSER</th>
+                              <th scope="col">EMAIL</th>
+                              <th scope="col">BROWSER</th>
+                              <th scope="col">APP</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>News for you</td>
+                              <td>
+                                  <div class="input-group mb-3">
+                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                  </div>
+                              </td>
+                              <td>
                                 <div class="input-group mb-3">
                                   <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
                                 </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Account activity</td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>A new browser used to sign in</td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>A new device is linked</td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                            <td>
-                              <div class="input-group mb-3">
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Account activity</td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>A new browser used to sign in</td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>A new device is linked</td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <p class="paraText privacyLink p-3">When should we send you notifications?</p>
                       <div class="row">
                         <div class="col-md-6 col-12">
@@ -804,7 +831,7 @@
                         <h4 class="subHeading text-Black p-3 fw-bold mb-0">Opening Hours</h4>
                         <div class="row justify-content-start align-items-center px-md-5">
                           <div class="col-md-3 col-12">
-                            <div class="form-check d-flex align-items-center">
+                            <div class="form-check d-flex align-items-center ms-md-0 ms-5">
                               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                               <label class="form-check-label ms-md-2" for="flexRadioDefault1">
                                 Set Custom hours
@@ -812,7 +839,7 @@
                             </div>
                           </div>
                           <div class="col-md-3 col-12">
-                            <div class="form-check d-flex align-items-center">
+                            <div class="form-check d-flex align-items-center ms-md-0 ms-5">
                               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                               <label class="form-check-label ms-md-2" for="flexRadioDefault2">
                                 Temporarily Closed
@@ -820,7 +847,7 @@
                             </div>
                           </div>
                           <div class="col-md-3 col-12">
-                            <div class="form-check d-flex align-items-center">
+                            <div class="form-check d-flex align-items-center ms-md-0 ms-5">
                               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                               <label class="form-check-label ms-md-2" for="flexRadioDefault3">
                                 Opened 24/7
@@ -829,7 +856,7 @@
                           </div>
                         </div>
                         <h4 class="subHeading text-Black p-3 fw-bold mb-0">Set Custom Hours</h4>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>SUNDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -854,7 +881,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>MONDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -879,7 +906,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>TUESDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -904,7 +931,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>WEDNESDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -929,7 +956,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>THURSDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -954,7 +981,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>FRIDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -979,7 +1006,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="row px-3">
+                        <div class="row px-3 my-md-0 my-3">
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center fw-bold"> <label>SATURDAY</label></div>
                           <div class="col-xl-2 col-md-3 col-12 d-flex align-items-center">
                             <div class="form-check form-switch d-flex align-items-center">
@@ -1049,7 +1076,13 @@
                                     <div class="col-md-6 col-12">
                                       <div class="form-group">
                                         <label for="">SET YOUR PRICE</label>
-                                        <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                        <div class="position-relative">
+                                          <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                          <span class="invalid-msg hide">invalid charaters</span>
+                                          <div class="position-absolute showHidePassword">
+                                            <img src="./images/pound-sign.svg" alt="" style="height:28px;">
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="col-12">
@@ -1060,7 +1093,7 @@
                                   <div class="row mt-5">
                                     <div class="offset-md-8 col-md-4 col-12">
                                       <div class="btngroup d-flex">
-                                        <button class="btn btn-secondary  me-3 flex-grow-1">Cancel</button>
+                                        <button class="btn btn-secondary me-3 flex-grow-1">Cancel</button>
                                         <button class="btn btn-primary flex-grow-1">Save and Continue</button>
                                       </div>
                                     </div>
@@ -1073,7 +1106,13 @@
                                     <div class="col-md-6 col-12">
                                       <div class="form-group">
                                         <label for="">SET YOUR PRICE</label>
-                                        <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                        <div class="position-relative">
+                                          <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                          <span class="invalid-msg hide">invalid charaters</span>
+                                          <div class="position-absolute showHidePassword">
+                                            <img src="./images/pound-sign.svg" alt="" style="height:28px;">
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="col-12">
@@ -1097,7 +1136,13 @@
                                     <div class="col-md-6 col-12">
                                       <div class="form-group">
                                         <label for="">SET YOUR PRICE</label>
-                                        <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                        <div class="position-relative">
+                                          <input type="text" class="form-control" placeholder="Enter Amount in GBP">
+                                          <span class="invalid-msg hide">invalid charaters</span>
+                                          <div class="position-absolute showHidePassword">
+                                            <img src="./images/pound-sign.svg" alt="" style="height:28px;">
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="col-12">
@@ -1175,12 +1220,16 @@
       var x = document.getElementById("inputPassword");
       if (x.type === "password") {
         x.type = "text";
+        $('.hidePassword').css('display','block');
+        $('.showPassword').css('display','none');
       }
     }
     function hidePassword() {
       var x = document.getElementById("inputPassword");
       if (x.type === "text") {
         x.type = "password";
+        $('.showPassword').css('display','block');
+        $('.hidePassword').css('display','none');
       }
     }
   </script>

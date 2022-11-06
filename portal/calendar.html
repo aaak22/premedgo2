@@ -22,7 +22,7 @@
 
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+     
     <link rel="stylesheet" href="js/select.dataTables.min.css">
     <link rel="stylesheet" href="./vendors/toastui-calendar/toastui-calendar.min.css">
     <!-- End plugin css for this page -->
@@ -161,7 +161,7 @@
         </nav>
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
-            <!-- partial:partials/_settings-panel.html -->
+            partial:partials/_settings-panel.html
             <div class="theme-setting-wrapper">
                 <div id="settings-trigger"><i class="ti-settings"></i></div>
                 <div id="theme-settings" class="settings-panel">
@@ -459,8 +459,7 @@
                                                     <button id="nextBtn2"
                                                         class="bg-transparent border-0 d-inline-block"><i
                                                             class="fa-solid fa-chevron-right"></i> </button>
-                                                    <div id="monthName2" class="month-name"><span
-                                                            class="navbar--range"></span></div>
+                                                    <div id="monthName2" class="month-name"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -475,7 +474,7 @@
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                <button class="invisible" type="button" data-bs-toggle="offcanvas" id="toggleCanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
                 <div class="offcanvas offcanvas-end custom-offcanvas px-3" tabindex="-1" id="offcanvasRight"
@@ -493,9 +492,9 @@
                                 </div>
                                 <div class="col">
                                   <h2 class="headerTextM text-uppercase">PATIENT'S INFO</h2>
-                                  <div class="d-flex justify-content-between">
+                                  <div class="d-flex">
                                       <h4 class="textGray paraText">John Doe</h4>
-                                      <a href="#" class="viewPatientDetail">view more ></a>
+                                      <a href="#" class="viewPatientDetail viewmore ms-2">view more <span> > </span></a>
                                   </div>
                                 </div>
                               </div>
@@ -523,9 +522,9 @@
                                 </div>
                                 <div class="col">
                                     <h2 class="headerTextM text-uppercase">PATIENT'S MEDICAL HISTORY</h2>
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
                                         <h4 class="textGray paraText">John Doe</h4>
-                                        <a href="#">view more ></a>
+                                        <a href="#" class="viewmore ms-2">Open Report <span> > </span></a>
                                     </div>
                                 </div>
                               </div>
@@ -657,8 +656,8 @@
     <script>
         const Calendar = tui.Calendar;
         const calendar = new Calendar('#calendar', {
-            taskView: true,
-            readOnly: true,
+            taskView: false,
+            readOnly: false,
             scheduleView: ['allday', 'time'],
             template: {
                 monthDayname: function (dayname) {
@@ -668,9 +667,10 @@
             defaultView: 'month',
         });
         const calendar2 = new Calendar('#calendar2', {
-            taskView: true,
-            readOnly: true,
+            taskView: false,
+            readOnly: false,
             scheduleView: ['allday', 'time'],
+            useDetailPopup: true,
             template: {
                 monthDayname: function (dayname) {
                     return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
@@ -682,22 +682,62 @@
             {
                 id: '1',
                 calendarId: '1',
-                title: 'my event',
                 category: 'time',
                 dueDateClass: '',
+                color: '#D3AA27',
+                backgroundColor: '#FCF2D7',
+                borderColor: '#D3AA27',
                 start: '2022-11-21T22:30:00+09:00',
-                end: '2022-11-23T02:30:00+09:00',
+                end: '2022-11-23T02:30:00+10:00',
             },
             {
                 id: '2',
                 calendarId: '1',
-                title: 'second event',
                 category: 'time',
                 dueDateClass: '',
+                color: '#4162EF',
+                backgroundColor: '#E1E7F5',
+                borderColor: '#4162EF',
                 start: '2022-11-18T17:30:00+09:00',
-                end: '2022-11-19T17:31:00+09:00',
+                end: '2022-11-19T17:31:00+10:00',
+            },
+            {
+                id: '3',
+                calendarId: '1',
+                category: 'time',
+                dueDateClass: '',
+                color: '#12AD91',
+                backgroundColor: '#B1F3E7',
+                borderColor: '#12AD91',
+                start: '2022-11-27T17:30:00+09:00',
+                end: '2022-11-28T17:31:00+10:00',
+            },
+            {
+                id: '4',
+                calendarId: '1',
+                category: 'time',
+                dueDateClass: '',
+                color: '#E05E5E',
+                backgroundColor: '#FFD9D9',
+                borderColor: '#E05E5E',
+                start: '2022-11-27T17:30:00+12:00',
+                end: '2022-11-28T17:31:00+13:00',
+            },
+            {
+                id: '5',
+                calendarId: '1',
+                category: 'time',
+                dueDateClass: '',
+                color: '#E05E5E',
+                backgroundColor: '#FFD9D9',
+                borderColor: '#E05E5E',
+                start: '2022-11-29T17:30:00+12:00',
+                end: '2022-11-30T17:31:00+13:00',
             },
         ]);
+        window.addEventListener('resize', () => {
+            calendar2.render();
+        });
     </script>
 
     <script>
@@ -715,8 +755,8 @@
         });
         console.log(calendar.getDate().getFullYear());
         console.log(calendar.getDate().getMonth());
-        document.getElementById('monthName').innerHTML = calendar.changeView('month');
-        document.getElementById('monthName2').innerHTML = calendar2.changeView('month');
+        document.getElementById('monthName').innerHTML = calendar.getDate().getMonth()+' '+calendar.getDate().getFullYear();
+        document.getElementById('monthName2').innerHTML = calendar2.getDate().getMonth()+' '+calendar.getDate().getFullYear();
     </script>
 
     <script>
@@ -733,6 +773,14 @@
             $('#detailChild').css('display','none')
             $('#backbtn').css('display','none')
         });
+    </script>
+
+    <script>
+        $('.toastui-calendar-weekday-event').click(function(){
+            $('#toggleCanvas').click();
+        });
+        // console.log(calendar.getViewName('month'));
+        // console.log(calendar2.getViewName('month'));
     </script>
 </body>
 

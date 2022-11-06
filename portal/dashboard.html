@@ -24,7 +24,7 @@
 
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+   
   <link rel="stylesheet" href="js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
@@ -181,7 +181,7 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
-      <div class="theme-setting-wrapper">
+      <!-- <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
@@ -202,7 +202,7 @@
             <div class="tiles default"></div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="right-sidebar" class="settings-panel">
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -749,7 +749,7 @@
   <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./loadingbar2.min.js"></script>
+  <script src="./js/loadingbar.min.js"></script>
 
   <!--Total Appointment-->
   <script>
@@ -761,7 +761,7 @@
       trailColor: '#eee',
       trailWidth: 5,
       strokeLinecap: 'round',
-      svgStyle: {width: '100%'},
+      svgStyle: {width: '100%',strokeLinecap: 'round'},
       text: {
         style: {
           position: 'absolute',
@@ -795,8 +795,7 @@
       color: '#EFD241',
       trailColor: '#eee',
       trailWidth: 5,
-      strokeLinecap: 'round',
-      svgStyle: {width: '100%'},
+      svgStyle: {width: '100%', strokeLinecap: 'round'},
       text: {
         style: {
           position: 'absolute',
@@ -894,12 +893,14 @@
                 label: 'Dark Blue',
                 data: [120, 50, 150, 120, 50, 150, 120, 50, 150, 120, 50, 150, ],
                 backgroundColor: '#2B4791',
+                borderRadius: 50,
                 maxBarThickness: 7,
             },
             {
                 label: 'Blue',
                 data: [50, 10, 120, 50, 10, 120, 50, 10, 120, 50, 10, 120],
                 backgroundColor: '#4162EF',
+                borderRadius: 50,
                 maxBarThickness: 7,
             },
             {
@@ -909,7 +910,7 @@
                 maxBarThickness: 7,
                 borderColor: '#8EA9EA',
                 borderWidth: 2,
-                borderRadiusTop: 20,
+                borderRadius: 50,
             },
         ]
     },
@@ -935,6 +936,10 @@
         }
     }
     });
+  </script>
+
+  <script>
+    document.getElementById('monthName').innerHTML = calendar.getDate().getMonth()+' '+calendar.getDate().getFullYear();
   </script>
 </body>
 

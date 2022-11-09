@@ -9969,7 +9969,6 @@ section {
 
 .sec-banner {
   height: 100vh;
-  width: 100vw;
   position: relative;
 }
 @media (max-width: 600px) {

@@ -15,9 +15,9 @@
         <div class="providerFormBannerOne"></div>
         <div class="container position-relative h-100 pt-3 p-md-0 p-4">
           <div class="row justify-content-center align-items-center gx-md-5 text-white h-100">
-            <div class="col-md-5 col-12 text-md-start text-center">
-              <h1 class="banHeading mb-md-5 my-3">Become a <br> PremedGo provider</h1>
-              <h1 class="paraText mb-md-5 my-3">If you are interested in joining our platform, please fill in the details on the form opposite and a member of our team will be in touch. If you have any questions, or need further information, please do not hesitate to contact our team at <a href="mailto:info@premedgo.com"class="greenLink">info@premedgo.com</a></h1>
+            <div class="col-md-4 col-12 text-md-start text-center">
+              <h1 class="banHeading mb-md-5 my-3">Register your interest</h1>
+              <h1 class="paraText mb-md-5 my-3">If you are interested in joining our platform once it has gone live, please fill in the details on the form opposite. In the meantime, if you would like any further information, please do not hesitate to contact our team at <a href="mailto:info@premedgo.com" class="greenLink">info@premedgo.com</a></h1>
             </div>
             <div class="col-md-5 col-12 bg-white rounded-3 px-xl-4 py-xl-5 px-md-3 py-3 ms-md-3">
               <form class="container-fluid g-md-3 g-0">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="row mb-md-3 mb-4">
                   <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-large submitBtn"  data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-large submitBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
                   </div>
                 </div>
               </form>
@@ -81,12 +81,13 @@
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered registerpopup">
           <div class="modal-content">
             <div class="modal-body text-center">
               <div class="my-2"><img src="./assets/images/thumbsup.svg" alt=""></div>
               <div class="fw-bold subHeading text-center my-2">Application Submitted</div>
-              <div class="paraText text-center fw-light my-2">Thank you for your interest in PremedGo. A member of our team will be in touch shortly.</div>
+              <div class="paraText text-center fw-light my-3 mx-md-5">NOTE: We would like to contact you from time to time with news and updates about our products and services. If you do not want us to contact you in this way, please tick the box below to opt out.</div>
+              <div class="paraText text-center fw-light my-3"><img src="./assets/icons/check-square.svg" /><span class="d-inline-block ms-2">I do not wish to be contacted with news and updates from PremedGo</span></div>
               <button type="button" class="btn btn-primary text-center my-2" data-bs-dismiss="modal">Continue</button>
             </div>
           </div>
@@ -98,10 +99,11 @@
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/splide.min.js"></script>
     <script src="./assets/js/main.js"></script>
-  </body>
+    
   <script>
     document.querySelector(".submitBtn").addEventListener("click", function(event){
       event.preventDefault()
     });
   </script>
+  </body>
 </html>

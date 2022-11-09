@@ -9977,6 +9977,11 @@ section {
     height: 70vh;
   }
 }
+@media (max-width: 600px) {
+  .sec-banner.providerFormBannerWrpr {
+    height: 100%;
+  }
+}
 @media (min-width: 768px) {
   .sec-banner.providerBannerAbove .container {
     height: 100%;
@@ -10077,6 +10082,7 @@ section {
     background-image: url("../images/privacypolicy-mob.png");
   }
 }
+
 .text-Primary {
   color: #4162ef;
 }
@@ -10139,6 +10145,13 @@ section {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.greenLink {
+  color: #10E4BE;
+}
+.greenLink:hover {
+  color: #E1E7F5;
 }
 
 .subHeading {
@@ -10537,4 +10550,10 @@ input:-ms-input-placeholder {
 
 input::placeholder {
   color: #A0A0A0 !important;
+}
+
+@media (min-width: 992px) {
+  .modal .modal-dialog.registerpopup {
+    max-width: 700px;
+  }
 }/*# sourceMappingURL=styles.css.map */

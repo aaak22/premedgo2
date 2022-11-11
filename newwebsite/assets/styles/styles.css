@@ -10570,4 +10570,13 @@ input::placeholder {
 }
 .modal .modal-dialog.providerformModal .modal-content {
   border-radius: 0.5em;
+}
+
+.form-check .form-check-input {
+  float: unset;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  margin-top: 0;
+  margin-right: 10px;
 }/*# sourceMappingURL=styles.css.map */

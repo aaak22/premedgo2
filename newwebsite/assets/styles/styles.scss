@@ -406,13 +406,6 @@ header{
             background-color: #2B4791;
         }
         
-        // &.formPageHeader{
-        //     background: none;
-        //     background-color: $bgfooter;
-        //     &.stickyForm{
-        //         background: transparent linear-gradient(180deg, #0E0E5296 0%, #09093442 51%, #03031000 100%) 0% 0% no-repeat padding-box;
-        //     }
-        // }
         
     }
     @media (max-width: 600px) {
@@ -697,4 +690,12 @@ input{
             }
         }
     }
+}
+.form-check .form-check-input{
+    float: unset;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+    margin-right: 10px;
 }

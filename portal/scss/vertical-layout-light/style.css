@@ -22436,6 +22436,13 @@ h6,
   top: 40px !important;
 }
 
+.sidebar .nav .nav-item .nav-link i.menu-icon, .sidebar .nav .nav-item .nav-link img.menu-icon {
+  width: 16px;
+}
+
+.sidebar-icon-only .sidebar {
+  background-color: #F3F4F4;
+}
 .sidebar-icon-only .sidebar .nav .nav-item .nav-link img.menu-icon {
   margin-right: 0;
   width: 16px;
@@ -22575,7 +22582,16 @@ h6,
 .set-price-tabs.nav-tabs .nav-item .nav-link.active {
   background-color: transparent;
   color: #4162ef;
-  border-bottom: 3px solid #4162ef;
+  position: relative;
+}
+.set-price-tabs.nav-tabs .nav-item .nav-link.active::after {
+  content: "";
+  display: block;
+  background-color: #4162ef;
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: 0;
 }
 
 .uploadProfilePicCont .imgCont {
@@ -22736,7 +22752,7 @@ table.notificationTable tr:last-child {
 
 .form-switch .form-check-input {
   height: 24px !important;
-  width: 64px !important;
+  width: 56px !important;
   margin-left: 0;
 }
 
@@ -23699,7 +23715,7 @@ table .missed {
   overflow-x: hidden;
 }
 
-.hidePassword {
+.showPassword {
   display: none;
 }
 
@@ -23736,4 +23752,23 @@ table .missed {
 }
 .invalid-msg.hide {
   display: none;
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+  position: relative;
+}
+.form-check-input:checked[type=radio]::after {
+  content: "";
+  display: block;
+  background-color: #0d6efd;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

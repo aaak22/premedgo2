@@ -434,8 +434,13 @@ h6,
         }
     }
 }
-
+.sidebar .nav .nav-item .nav-link i.menu-icon, .sidebar .nav .nav-item .nav-link img.menu-icon{
+    width: 16px;
+}
 .sidebar-icon-only {
+    .sidebar{
+        background-color: #F3F4F4;
+    }
     .sidebar .nav .nav-item .nav-link img.menu-icon {
         margin-right: 0;
         width: 16px;
@@ -600,7 +605,17 @@ h6,
                 &.active {
                     background-color: transparent;
                     color: $primarybtn;
-                    border-bottom: 3px solid $primarybtn;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        background-color: $primarybtn;
+                        position: absolute;
+                        width: 50%;
+                        height: 3px;
+                        bottom: 0;
+                    }
                 }
             }
         }
@@ -761,7 +776,7 @@ table {
 .form-switch {
     .form-check-input {
         height: 24px !important;
-        width: 64px !important;
+        width: 56px !important;
         margin-left: 0;
     }
 }
@@ -1819,7 +1834,7 @@ table {
 #detailParent{
     overflow-x: hidden;
 }
-.hidePassword{
+.showPassword{
     display: none;
 }
 .showHidePassword{
@@ -1854,5 +1869,24 @@ table {
     }
     &.hide{
         display: none;
+    }
+}
+.form-check-input:checked[type=radio]{
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #0d6efd;
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        background-color: #0d6efd;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
     }
 }

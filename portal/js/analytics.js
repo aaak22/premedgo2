@@ -60,7 +60,7 @@ $(function() {
           labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
           datasets: [{
             label: '# of Votes',
-            data: [35, 28, 45, 15, 20, 43, 20, 12, 32, 15, 32, 40],
+            data: [35, 28, 38, 15, 20, 35, 20, 12, 32, 15, 32, 40],
             backgroundColor: gradientBg,
             borderWidth: 3,
             borderRadius: 50,
@@ -77,7 +77,8 @@ $(function() {
             scales: {
               yAxes: [{
                 ticks: {
-                  beginAtZero: true
+                  beginAtZero: true,
+                  stepSize: 10
                 },
                 gridLines: {
                   display:false

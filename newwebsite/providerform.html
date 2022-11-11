@@ -9,12 +9,27 @@
   </head>
   <body>
 
+    <!--header start-->
+    <header>
+      <nav id="myHeader" class="navbar fixed-top navbar-expand-lg justify-content-between">
+        <div class="container flex-row">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-fluid"
+              alt="logo"
+              src="./assets/images/logo.png"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--header end-->
     <!--content start-->
     <main class="main-content">
-      <section class="sec-banner providerFormBannerWrpr">
+      <section class="sec-banner providerFormBannerWrpr h-100 pb-xxl-5 pb-md-4">
         <div class="providerFormBannerOne"></div>
-        <div class="container position-relative h-100 pt-3 p-md-0 p-4">
-          <div class="row justify-content-center align-items-center gx-md-5 text-white h-100">
+        <div class="container position-relative h-100 pt-lg-5 pt-3 p-md-0 p-4">
+          <div class="row justify-content-center align-items-center gx-md-5 text-white h-100 pt-lg-5">
             <div class="col-md-5 col-12 text-md-start text-center">
               <h1 class="banHeading mb-md-5 my-3">Become a <br> PremedGo provider</h1>
               <h1 class="paraText mb-md-5 my-3">If you are interested in joining our platform, please fill in the details on the form opposite and a member of our team will be in touch. If you have any questions, or need further information, please do not hesitate to contact our team at <a href="mailto:info@premedgo.com"class="greenLink">info@premedgo.com</a></h1>
@@ -23,12 +38,12 @@
               <form class="container-fluid g-md-3 g-0">
                 <div class="mb-md-3 mb-2">
                   <label for="orgName" class="form-label">NAME OF ORGANIZATION</label>
-                  <input type="text" class="form-control" placeholder="loremipsum">
+                  <input type="text" class="form-control" placeholder="Enter name of Organization">
                 </div>
                 <div class="row mb-md-3 mb-4">
                   <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <label for="orgName" class="form-label">EMAIL</label>
-                    <input type="email" class="form-control" placeholder="abc@email.com">
+                    <input type="email" class="form-control" placeholder="abc@example.com">
                   </div>
                   <div class="col-md-6 col-12 mt-md-0 mt-3">
                     <label for="orgName" class="form-label">TEL NUMBER</label>
@@ -65,13 +80,13 @@
                 <div class="row mb-md-3 mb-4">
                   <div class="col-12">
                     <label for="orgName" class="form-label">ADDRESS 1</label>
-                    <input type="text" class="form-control" placeholder="ADDRESS">  
+                    <input type="text" class="form-control" placeholder="First Line of address">  
                   </div>
                 </div>
                 <div class="row mb-md-3 mb-4">
                   <div class="col-12">
                     <label for="orgName" class="form-label">ADDRESS 2</label>
-                    <input type="text" class="form-control" placeholder="ADDRESS">  
+                    <input type="text" class="form-control" placeholder="Second Line of address">  
                   </div>
                 </div>
                 <div class="row mb-md-3 mb-4">
@@ -93,13 +108,17 @@
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered providerformModal">
+          <div class="modal-content p-lg-5">
             <div class="modal-body text-center">
-              <div class="my-2"><img src="./assets/images/thumbsup.svg" alt=""></div>
-              <div class="fw-bold subHeading text-center my-2">Application Submitted</div>
-              <div class="paraText text-center fw-light my-2">Thank you for your interest in PremedGo. A member of our team will be in touch shortly.</div>
-              <button type="button" class="btn btn-primary text-center my-2" data-bs-dismiss="modal">Continue</button>
+              <div class="my-3"><img src="./assets/images/thumbsup.svg" alt=""></div>
+              <div class="fw-bold subHeading text-center my-3">Application Submitted</div>
+              <div class="paraText text-center fw-light my-3">Thank you for your interest in PremedGo. A member of our team will be in touch shortly.</div>
+              <div class="row justify-content-center mt-lg-3">
+                <div class="col-md-7 col-12">
+                  <button type="button" class="btn btn-primary text-center my-2 w-100" data-bs-dismiss="modal">Continue</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

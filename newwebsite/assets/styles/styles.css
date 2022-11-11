@@ -10309,6 +10309,10 @@ header .navbar .nav-item.active .nav-link:after {
 header .navbar.sticky {
   background-color: #2B4791;
 }
+header .navbar.formPage {
+  background: none;
+  background-color: #2B4791;
+}
 @media (max-width: 600px) {
   header .navbar-nav {
     background-color: #021954;
@@ -10555,4 +10559,15 @@ input::placeholder {
   .modal .modal-dialog.registerpopup {
     max-width: 700px;
   }
+}
+.modal .modal-dialog.registerpopup .modal-content {
+  border-radius: 0.5em;
+}
+@media (min-width: 992px) {
+  .modal .modal-dialog.providerformModal {
+    max-width: 640px;
+  }
+}
+.modal .modal-dialog.providerformModal .modal-content {
+  border-radius: 0.5em;
 }/*# sourceMappingURL=styles.css.map */

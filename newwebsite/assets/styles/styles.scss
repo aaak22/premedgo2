@@ -718,4 +718,16 @@ input{
   
 .scrollTopBtn:hover {
     background-color: $primarybtn; 
-  }
+}
+.privacyParas{
+    ul{
+        &.subcat{
+            list-style-type: square;
+            padding-left: 2.5em;
+            li{
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

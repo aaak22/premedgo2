@@ -10599,4 +10599,13 @@ input::placeholder {
 
 .scrollTopBtn:hover {
   background-color: #4162ef;
+}
+
+.privacyParas ul.subcat {
+  list-style-type: square;
+  padding-left: 2.5em;
+}
+.privacyParas ul.subcat li {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=styles.css.map */

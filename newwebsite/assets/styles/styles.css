@@ -10589,8 +10589,8 @@ input::placeholder {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #2848CE;
-  color: white;
+  background-color: rgba(4, 27, 86, 0.5);
+  color: #fff;
   cursor: pointer;
   padding: 7px 14px;
   border-radius: 50%;

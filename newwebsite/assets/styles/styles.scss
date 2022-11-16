@@ -699,3 +699,23 @@ input{
     margin-top: 0;
     margin-right: 10px;
 }
+
+.scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: $primarybtnhover; 
+    color: white; 
+    cursor: pointer; 
+    padding: 7px 14px; 
+    border-radius: 50%;
+    font-size: 28px; 
+  }
+  
+.scrollTopBtn:hover {
+    background-color: $primarybtn; 
+  }

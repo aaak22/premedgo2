@@ -10579,4 +10579,24 @@ input::placeholder {
   height: 25px;
   margin-top: 0;
   margin-right: 10px;
+}
+
+.scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #2848CE;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.scrollTopBtn:hover {
+  background-color: #4162ef;
 }/*# sourceMappingURL=styles.css.map */
